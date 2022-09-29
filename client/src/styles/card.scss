@@ -1,0 +1,76 @@
+#Cards {
+  .row {
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    .cardHolder {
+      margin: 0.5rem;
+      padding: 0.5rem;
+      padding-top: 2rem;
+      padding-bottom: 2rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      width:30%;
+      background: #ffffff;
+      border: 1px solid #959595;
+      border-radius: 7px;
+      .imgHolder {
+        img {
+        }
+      }
+      .title {
+        h1 {
+          font-size: 22px;
+          font-weight: 700;
+          color: #25313c;
+        }
+      }
+      .subText {
+        p {
+          text-align: center;
+          font-weight: 600;
+          font-size: 14px;
+          line-height: 163.15%;
+
+          /* Grey */
+          color: #6d7d8b;
+        }
+      }
+      .buttonHolder {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        button {
+          outline: none;
+          border: 1px solid#5A4FF3;
+          font-weight: 700;
+          font-size: 18px;
+          line-height: 23px;
+          border-radius: 10px;
+          padding: 8px;
+          color: #5a4ff3;
+          width: 40%;
+        }
+      }
+    }
+    .seeAllFeatures {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 4rem;
+      button {
+        width: 30%;
+        background: #5a4ff3;
+        border-radius: 8px;
+        padding: 12px;
+        border: 0;
+        color: #ffffff;
+      }
+    }
+  }
+}

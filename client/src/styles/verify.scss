@@ -1,0 +1,100 @@
+#VerifyEmail {
+  background-image: url("../assets/Rectangle.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  .loginHolder {
+    background: #ffffff;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.04), 0px 2px 2px rgba(0, 0, 0, 0.08),
+      0px 4px 8px rgba(0, 0, 0, 0.12);
+    border-radius: 8px;
+    width: 500px;
+    padding: 30px;
+    h1 {
+      font-weight: 800;
+      font-size: 16px;
+      line-height: 20px;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: #25313c;
+      text-align: center;
+      margin-top: 1rem;
+    }
+    .titleHolderLogin {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      h1 {
+        font-weight: 800;
+        font-size: 30px;
+        line-height: 50px;
+        text-align: center;
+        color: #25313c;
+      }
+      p {
+        width: 350px;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 163.15%;
+        text-align: center;
+        color: #6d7d8b;
+      }
+    }
+    .formHolder {
+      form {
+        .button {
+          width: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          button {
+            color: #ffffff;
+            margin-top: 15px;
+            border: 0;
+            width: 100%;
+            outline: none;
+            align-items: center;
+            padding: 10px;
+            gap: 10px;
+            width: 525px;
+            height: 52px;
+            background: #5a4ff3;
+            border-radius: 8px;
+          }
+        }
+        .dont {
+          margin-top: 1rem;
+          text-align: center;
+          font-weight: 600;
+          font-size: 14px;
+          line-height: 163.15%;
+          color: #25313c;
+          .back {
+            color: #5a4ff3;
+            width: 15px;
+          }
+        }
+      }
+    }
+  }
+  .tabNav {
+    margin-top: 2rem;
+    display: flex;
+    gap: 20px;
+    p {
+      font-weight: 500;
+      font-size: 15px;
+      line-height: 15px;
+      display: flex;
+      align-items: center;
+      color: #6d7d8b;
+    }
+  }
+}
