@@ -1,5 +1,5 @@
 #ResetPassword {
-  background-image: url("../assets/Rectangle.png");
+  background-image: url("../assets/Landing\ page.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -10,12 +10,16 @@
   justify-content: center;
   flex-direction: column;
   .loginHolder {
+    .img{
+      display: flex;
+      justify-content: center;
+    }
     background: #ffffff;
     box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.04), 0px 2px 2px rgba(0, 0, 0, 0.08),
       0px 4px 8px rgba(0, 0, 0, 0.12);
     border-radius: 8px;
     width: 500px;
-    padding: 30px;
+    padding: 10px 30px;
     h1 {
       font-weight: 800;
       font-size: 16px;
@@ -55,13 +59,13 @@
             line-height: 163.15%;
             color: #25313c;
           }
-          input {
+         input {
             padding: 12px;
             border: 0;
             outline: none;
+            width: 100%;
             background: #ffffff;
-            box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.04),
-              0px 2px 2px rgba(0, 0, 0, 0.08), 0px 4px 8px rgba(0, 0, 0, 0.12);
+            border: 1px solid #adb5bc;
             border-radius: 8px;
             &::placeholder {
               color: #adb5bc;
@@ -94,13 +98,13 @@
             line-height: 163.15%;
             color: #25313c;
           }
-          input {
+         input {
             padding: 12px;
             border: 0;
             outline: none;
+            width: 100%;
             background: #ffffff;
-            box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.04),
-              0px 2px 2px rgba(0, 0, 0, 0.08), 0px 4px 8px rgba(0, 0, 0, 0.12);
+            border: 1px solid #adb5bc;
             border-radius: 8px;
             &::placeholder {
               color: #adb5bc;
@@ -128,7 +132,7 @@
             gap: 10px;
             width: 525px;
             height: 52px;
-            background: #5a4ff3;
+            background: #128C7E;
             border-radius: 8px;
           }
         }
@@ -142,6 +146,9 @@
           .back {
             color: #5A4FF3;
             width: 15px;
+            a{
+              text-decoration: none ;
+            }
           }
         }
       }

@@ -1,5 +1,5 @@
 #Register {
-  background-image: url("../assets/Rectangle.png");
+  background-image: url("../assets/Landing\ page.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -12,17 +12,15 @@
   .container {
     .row {
       .left {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
         .contentHolder {
           display: flex;
           width: 100%;
-          align-items: center;
           gap: 20px;
           margin-bottom: 2rem;
-          .img {
-            img {
-              height: 100%;
-            }
-          }
+         
           .text {
             h1 {
               font-weight: 800;
@@ -66,38 +64,48 @@
           padding-bottom: 30px;
           h1 {
             font-weight: 800;
-            font-size: 16px;
-            line-height: 20px;
-            letter-spacing: 0.1em;
-            text-transform: uppercase;
-            color: #25313c;
+            font-size: 30px;
+            line-height: 50px;
             text-align: center;
-            margin-top: 1rem;
+            color: #25313c;
+            margin-bottom: 1rem;
           }
-          .titleHolderLogin {
-            h1 {
-              font-weight: 800;
-              font-size: 30px;
-              line-height: 50px;
-              text-align: center;
-              color: #25313c;
-            }
-            p {
-              font-weight: 600;
-              font-size: 14px;
-              line-height: 163.15%;
-              text-align: center;
-              color: #6d7d8b;
+          .act {
+            background: #ffffff;
+            box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.04),
+              0px 2px 2px rgba(0, 0, 0, 0.08), 0px 4px 8px rgba(0, 0, 0, 0.12);
+            border-bottom: 2px solid #128c7e;
+          }
+          .navTabs {
+            width: 97%;
+            background: #dae3ea;
+
+            ul {
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+              list-style: none;
+              padding: 0;
+              li {
+                flex: 1;
+                margin-right: 0.8rem;
+                padding: 0.5rem;
+                padding-left: 1rem;
+                a {
+                  text-decoration: none;
+                  color: #25313c;
+                }
+              }
             }
           }
           .formHolder {
             margin-top: 1.5rem;
             form {
               .mail {
-                margin-top: .5rem;
                 display: flex;
                 gap: 12px;
-                .fsName {
+               .number {
+                  flex: 1;
                   label {
                     display: block;
                     font-weight: 600;
@@ -108,39 +116,11 @@
                   input {
                     padding: 12px;
                     border: 0;
-                    margin-top: 0.5rem;
+
                     outline: none;
                     width: 100%;
                     background: #ffffff;
-                    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.04),
-                      0px 2px 2px rgba(0, 0, 0, 0.08),
-                      0px 4px 8px rgba(0, 0, 0, 0.12);
-                    border-radius: 8px;
-                    &::placeholder {
-                      color: #adb5bc;
-                      font-size: 16px;
-                      line-height: 163.15%;
-                    }
-                  }
-                }
-                .lsName {
-                  label {
-                    display: block;
-                    font-weight: 600;
-                    font-size: 16px;
-                    line-height: 163.15%;
-                    color: #25313c;
-                  }
-                  input {
-                    padding: 12px;
-                    margin-top: 0.5rem;
-                    border: 0;
-                    width: 100%;
-                    outline: none;
-                    background: #ffffff;
-                    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.04),
-                      0px 2px 2px rgba(0, 0, 0, 0.08),
-                      0px 4px 8px rgba(0, 0, 0, 0.12);
+                    border: 1px solid #adb5bc;
                     border-radius: 8px;
                     &::placeholder {
                       color: #adb5bc;
@@ -150,56 +130,90 @@
                   }
                 }
               }
-              .ForgotPassword {
-                width: 100%;
-                font-weight: 600;
-                font-size: 16px;
-                line-height: 163.15%;
-                display: flex;
-                justify-content: flex-end;
-                margin-top: 0.7rem;
-                p {
-                  color: #5a4ff3;
-                  margin-bottom: 0;
-                }
-              }
-              .pass {
-                display: flex;
-                flex-direction: column;
-                gap: 5px;
+
+              .a1 {
+                margin-top: 10px;
                 label {
+                  display: block;
                   font-weight: 600;
                   font-size: 16px;
                   line-height: 163.15%;
                   color: #25313c;
                 }
-                input {
-                  padding: 12px;
+                select.role {
+                  margin-bottom: 0.5rem;
+                  width: 100%;
                   border: 0;
-                  outline: none;
+                  padding: 14px;
                   background: #ffffff;
-                  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.04),
-                    0px 2px 2px rgba(0, 0, 0, 0.08),
-                    0px 4px 8px rgba(0, 0, 0, 0.12);
+                  border: 1px solid #adb5bc;
                   border-radius: 8px;
-                  &::placeholder {
-                    color: #adb5bc;
+                  color: #adb5bc;
+                  font-size: 16px;
+                }
+              }
+              .location {
+                width: 100%;
+                display: flex;
+                gap: 12px;
+                .loc {
+                  flex: 1;
+                  label {
+                    display: block;
+                    font-weight: 600;
                     font-size: 16px;
                     line-height: 163.15%;
+                    color: #25313c;
+                  }
+                  select.role {
+                    margin-bottom: 0.5rem;
+                    width: 100%;
+                    border: 0;
+                    padding: 14px;
+                    background: #ffffff;
+                    border: 1px solid #adb5bc;
+                    border-radius: 8px;
+                    color: #adb5bc;
+                    font-size: 16px;
+                  }
+                }
+                .number {
+                  flex: 1;
+                  label {
+                    display: block;
+                    font-weight: 600;
+                    font-size: 16px;
+                    line-height: 163.15%;
+                    color: #25313c;
+                  }
+                  input {
+                    padding: 12px;
+                    border: 0;
+
+                    outline: none;
+                    width: 100%;
+                    background: #ffffff;
+                    border: 1px solid #adb5bc;
+                    border-radius: 8px;
+                    &::placeholder {
+                      color: #adb5bc;
+                      font-size: 16px;
+                      line-height: 163.15%;
+                    }
                   }
                 }
               }
-              .rememberMe {
-                margin-top: 10px;
+              .check {
                 display: flex;
+                gap: 10px;
                 align-items: center;
-                gap: 9px;
-                span {
+                justify-content: center;
+                p {
                   font-size: 14px;
                   line-height: 163.15%;
-                  display: flex;
-                  align-items: center;
-                  color: #6d7d8b;
+                  color: #707173;
+                  position: relative;
+                  top: 19px;
                 }
               }
               .button {
@@ -208,7 +222,6 @@
                 align-items: center;
                 justify-content: center;
                 button {
-                  color: #ffffff;
                   margin-top: 15px;
                   border: 0;
                   width: 100%;
@@ -218,8 +231,12 @@
                   gap: 10px;
                   width: 525px;
                   height: 52px;
-                  background: #5a4ff3;
+                  background: #128c7e;
                   border-radius: 8px;
+                  a {
+                    color: #ffffff;
+                    text-decoration: none;
+                  }
                 }
               }
               .dont {

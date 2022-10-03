@@ -1,12 +1,15 @@
 import React from 'react'
 import '../styles/forgot.scss'
 import { Link } from 'react-router-dom'
+import img from "../assets/Logo.png";
 import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos';
 const ResetPassword = () => {
   return (
       <div id='ResetPassword'>
           <div className="loginHolder">
-              <h1>LOGO</h1>
+              <div className="img">
+                  <img src={img} alt="" />
+              </div>
               <div className="titleHolderLogin">
                   <h1>Reset Password</h1>
                   <p>For hello@example.com</p>

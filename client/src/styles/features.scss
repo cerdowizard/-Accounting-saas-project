@@ -1,9 +1,10 @@
-#Cards {
+#Features {
+  
   .row {
-    width: 100%;
+   
     align-items: center;
     justify-content: center;
-  border: none !important;
+    margin-bottom: 3rem;
     .cardHolder {
       margin: 0.5rem;
       padding: 0.5rem;
@@ -37,8 +38,6 @@
             font-weight: 400;
             font-size: 14px;
             line-height: 163.15%;
-            
-            
           }
         }
       }
@@ -50,8 +49,7 @@
         button {
           outline: none;
           border: 1px solid #25313c71;
-          color: #128C7E;
-          background-color: #ffffff;
+          color: #128c7e;
           font-weight: 700;
           font-size: 18px;
           line-height: 23px;
@@ -66,7 +64,7 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      margin-top: 4rem;
+      margin-top: 2rem;
       button {
         width: 30%;
         background: #128c7e;
@@ -77,4 +75,68 @@
       }
     }
   }
+  .divider{
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+  .tryDemo {
+    width: 100%;
+    flex-direction: column;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    background-image: url("../assets/Vector.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    h1 {
+      font-weight: 800;
+      font-size: 40px;
+      line-height: 50px;
+      display: flex;
+      align-items: center;
+      text-align: center;
+      width: 60%;
+      color: #000000;
+      margin-bottom: 1rem;
+    }
+    button {
+      width: 20%;
+      background: #128c7e;
+      border-radius: 8px;
+      outline: none;
+      border: none;
+      padding: 15px;
+      color: white;
+    }
+  }
+  }
+ .qAholder{
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+.faq {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+     margin-bottom: 4rem;
+  }
+  .faqHolder {
+    .button:focus:not(:focus-visible) {
+      outline: 0;
+    }
+    .accordion-button .collapsed {
+      outline: none !important;
+    }
+   
+    .accordion-item {
+      border: none !important;
+      border-bottom: 1px solid #000 !important;
+      padding: 10px;
+      border-radius: 0;
+    }
+  }
+ }
+  
 }

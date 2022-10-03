@@ -2,11 +2,14 @@ import React from 'react'
 import '../styles/verify.scss'
 import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos';
 import { Link } from 'react-router-dom';
+import img from "../assets/Logo.png";
 const VerifyEmail = () => {
   return (
       <div id='VerifyEmail'>
           <div className="loginHolder">
-              <h1>LOGO</h1>
+              <div className="img">
+                  <img src={img} alt="" />
+              </div>
               <div className="titleHolderLogin">
                   <h1>Verify your mail</h1>
                   <p>Account activation link sent to your email address: hello@example.com Please follow the link inside to continue.</p>

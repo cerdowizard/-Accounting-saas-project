@@ -1,6 +1,6 @@
 import React from 'react'
 import '../styles/price.scss'
-import checkBox from '../assets/check_circle_24px.png'
+import checkBox from '../assets/Group.png'
 const PriceCard = () => {
     const listData = [
         {
@@ -8,7 +8,7 @@ const PriceCard = () => {
             'title': "Basic",
             'sub': "Monthly",
             'price': 30,
-            'sybText': "Perfect for small business owners, and freelancers.",
+            'sybText': "Perfect for small business owners.",
             'userNumber': "1 user",
             'bussy': "5 built-in business report",
             'email': "Email/ print reports, export reports -excel, microsoft word",
@@ -42,59 +42,72 @@ const PriceCard = () => {
             'config': "Track sales and profitability for each of your locations",
             img: ""
         },
+        {
+            'id': "4",
+            'title': "Tax Module",
+            'sub': "Monthly",
+            'price': '***',
+            'sybText': "Includes both basic and advance features",
+            'userNumber': "15 user",
+            'bussy': "30 built-in business report",
+            'email': "Company setup internationalized (multi-currency)",
+            'entry': "Track Inventory",
+            'config': "Track sales and profitability for each of your locations",
+            img: ""
+        },
     ]
   return (
       <div id='PriceCard' >
-          <div className="priceCardHolder  container">
-              {listData.map((listDatas) => ( 
-                 <div className="row">
-                      <div className="priceIng" key={listDatas.id}>
+          <div className="priceCardHolder  container ">
+              <div className="row">
+                  {listData.map((listDatas) => (
+                      <div className="col-md-3">
+                          <div className="priceIng" key={listDatas.id}>
 
-                          <div className="top">
-                              <h3>{listDatas.title}</h3>
-                              <span className='pricep'>{listDatas.title}</span>
-                              <h2>$ {listDatas.price}</h2>
-                          </div>
-                          <div className="middle">
-                              <p>{listDatas.sybText}</p>
-                              <div className="pricebuttonHolder">
-                                  <button>
-                                      Buy now
-                                  </button>
-                                  <button className="lightBtn">
-                                      Start free trial for 7 days
-                                  </button>
+                              <div className="top">
+                                  <h3>{listDatas.title}</h3>
+                                  <span className='pricep'>{listDatas.title}</span>
+                                  <h2>${listDatas.price}</h2>
                               </div>
-                          </div>
-                          <div className="bottom">
-                              <ul>
-                                  <li>
-                                      <img src={checkBox} />
-                                      {listDatas.userNumber}
-                                  </li>
-                                  <li>
-                                      <img src={checkBox} />
-                                      {listDatas.bussy}
-                                  </li>
-                                  <li>
-                                      <img src={checkBox} />
-                                      {listDatas.email}
-                                  </li>
-                                  <li>
-                                      <img src={checkBox} />
-                                      {listDatas.entry}
-                                  </li>
-                                  <li>
-                                      <img src={checkBox} />
-                                      {listDatas.config}
-                                  </li>
-                              </ul>
-                          </div>
+                              <div className="middle">
+                                  <p>{listDatas.sybText}</p>
+                                  <div className="pricebuttonHolder">
+                                      <button>
+                                          Buy now
+                                      </button>
+                                    
+                                  </div>
+                              </div>
+                              <div className="bottom">
+                                  <ul>
+                                      <li>
+                                          <img src={checkBox} />
+                                          {listDatas.userNumber}
+                                      </li>
+                                      <li>
+                                          <img src={checkBox} />
+                                          {listDatas.bussy}
+                                      </li>
+                                      <li>
+                                          <img src={checkBox} />
+                                          {listDatas.email}
+                                      </li>
+                                      <li>
+                                          <img src={checkBox} />
+                                          {listDatas.entry}
+                                      </li>
+                                      <li>
+                                          <img src={checkBox} />
+                                          {listDatas.config}
+                                      </li>
+                                  </ul>
+                              </div>
 
-                      </div>     
-                 </div>
-                 
-              ))}
+                          </div>
+                      </div>
+
+                  ))}</div>
+             
           </div>
       </div>
   )

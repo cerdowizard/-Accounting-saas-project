@@ -1,11 +1,14 @@
 import React from 'react'
 import '../styles/login.scss'
+import img from "../assets/Logo.png";
 import { Link } from 'react-router-dom'
 const Login = () => {
   return (
       <div id='Login'>
           <div className="loginHolder">
-              <h1>LOGO</h1>
+              <div className="img">
+                  <img src={img} alt="" />
+              </div>
               <div className="titleHolderLogin">
                   <h1> Welcome back</h1>
                   <p>Log in to your Accounting Saas Account</p>

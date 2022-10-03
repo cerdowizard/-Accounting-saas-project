@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import img from "../assets/Logo.png";
 import '../styles/password-forgot.scss'
 import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos';
 
@@ -7,7 +8,9 @@ const ForgotPassword = () => {
     return (
         <div id='ForgotPassword'>
             <div className="loginHolder">
-                <h1>LOGO</h1>
+                <div className="img">
+                    <img src={img} alt="" />
+                </div>
                 <div className="titleHolderLogin">
                     <h1>Forgot Password?</h1>
                     <p>Enter your email and we'll send you instructions to reset your password</p>

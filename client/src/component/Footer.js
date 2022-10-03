@@ -1,28 +1,31 @@
 import React from 'react'
 import '../styles/footer.scss'
-import insta from '../assets/Instagram svg.png'
-import tw from '../assets/Twitter svg.png'
-import youTube from '../assets/YouTube svg.png'
-import ln from '../assets/Path 2520.png'
-import face from '../assets/akar-icons_facebook-fill.png'
+import insta from '../assets/Instagram svg(1).png'
+import tw from '../assets/Twitter svg(1).png'
+import youTube from '../assets/g12.png'
+import ln from '../assets/Path 2520(1).png'
+import face from '../assets/akar-icons_facebook-fill(1).png'
+import img from "../assets/Logo.png";
 const Footer = () => {
   return (
     <div id='Footer'>
       <div className="container">
         <div className="row footerContent">
           <div className="col-md-3">
-            <h1>LOGO</h1>
+            <div className="LogoHolder">
+              <img src={img} alt="" />
+            </div>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
           </div>
           <div className="col-md-2">
             <h1>Product</h1>
             <ul>
-              <li>Chart of Account</li>
-              <li>Sales Modules</li>
-              <li>Purchases Modules</li>
-              <li>Inventory Modules</li>
-              <li>Payment Modules</li>
-              <li>Budget</li>
+              <li>Customers</li>
+              <li>Vendors / Suppliers</li>
+              <li>Inventory</li>
+              <li>Payroll / Human resources</li>
+              <li>Bank reconciliation</li>
+              <li>Multi-company files</li>
             </ul>
           </div>
           <div className="col-md-2">
@@ -34,6 +37,7 @@ const Footer = () => {
               <li>Security</li>
               <li>Help center</li>
               <li>Budget</li>
+              <li>Partners</li>
             </ul>
           </div>
           <div className="col-md-2">

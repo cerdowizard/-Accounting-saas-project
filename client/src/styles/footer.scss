@@ -1,30 +1,33 @@
 #Footer {
-  background: #dae3ea;
+  background: #273443;
   padding-top: 2.5rem;
   padding-bottom: 2rem;
-
+  color: white;
   .footerContent {
     h1 {
       font-weight: 800;
       font-size: 16px;
       line-height: 20px;
+      text-transform: uppercase;
+      margin-bottom: 1rem;
     }
     p {
       font-size: 14px;
       line-height: 21px;
-      color: #6d7d8b;
+      color: #fff;
+      width: 80%;
+      
     }
     ul {
       list-style: none;
       padding-left: 0;
       display: flex;
       flex-direction: column;
-      gap: 12px;
+      gap: 10px;
       li {
-        font-weight: 600;
         font-size: 14px;
         line-height: 21px;
-        color: #6d7d8b;
+        color: #fff;
       }
     }
     .iconHolder {
@@ -39,6 +42,6 @@
     line-height: 21px;
     display: flex;
     align-items: center;
-    color: #6d7d8b;
+    color: #fff;
   }
 }

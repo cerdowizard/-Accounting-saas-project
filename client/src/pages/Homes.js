@@ -2,8 +2,7 @@ import '../styles/home.scss'
 import React from 'react'
 import Footer from '../component/Footer'
 import Navbar from '../component/Navbar'
-import playButton from '../assets/play_circle_outline_24px.png'
-import window from '../assets/Window(1).png'
+import window from '../assets/Window(3).png'
 import Cards from '../component/Cards'
 import PriceCard from '../component/PriceCard'
 const Homes = () => {
@@ -20,7 +19,7 @@ const Homes = () => {
                     </div>
                     <div className="buttonHolder">
                         <button className='btnOne'>Try For Free</button>
-                        <button className='btnTwo'><img src={playButton} /> Demo</button>
+                       
                     </div>
                 </div>
             </div>
