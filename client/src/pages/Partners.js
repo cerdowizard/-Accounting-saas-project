@@ -12,7 +12,9 @@ const Partners = () => {
                     <Headers title="Join us today and be our partner" subText="Find out how a partnership with us can extend your product, add revenue to your service offerings, or expand your addressable market." />
                 </div>
                 <div className="formHolder">
-                    
+                    <div className="innerFormHolder">
+                        
+                    </div>
                 </div>
             </div>
             <Footer />
