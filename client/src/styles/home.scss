@@ -109,7 +109,7 @@
           align-items: center;
           text-align: center;
           color: #25313c;
-         
+
           margin-bottom: 1rem;
         }
         p {
@@ -124,6 +124,11 @@
         }
       }
     }
+  }
+  .priceHolder {
+    width: 100%;
+    position: relative;
+    top: -600px;
   }
   .tryDemo {
     position: relative;

@@ -1,4 +1,4 @@
-import React from 'react'
+
 import '../styles/price.scss'
 import checkBox from '../assets/Group.png'
 const PriceCard = () => {

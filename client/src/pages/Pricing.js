@@ -1,4 +1,3 @@
-import React from "react";
 import Footer from "../component/Footer";
 import Headers from "../component/Headers";
 import Navbar from "../component/Navbar";
@@ -10,10 +9,12 @@ const Pricing = () => {
         <div>
             <Navbar />
             <div id="Pricing">
+                <div className="pricingHolder">
                 <Headers
                     title="Simple pricing for companies of any scale"
                     subText="Choose your perfect plan and get started."
                 />
+                </div>
                 <div className="pricingSection">
                     <PriceCard />
                 </div>

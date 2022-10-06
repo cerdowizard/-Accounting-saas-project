@@ -7,9 +7,13 @@ const Features = () => {
   return (
       <div>
           <Navbar/>
-          <div id="Features" className='container'>
-              <Headers title="Finance made easy" subText="Discover all the features you need to run your business"/>
-              <div className="cards">
+          <div id="Features">
+              <div className="featerHolder">
+                    <div className="main">
+                      <Headers title="Finance made easy" subText="Discover all the features you need to run your business" />
+                    </div>
+           </div>
+              <div className="cards container">
                   <div className="row rowCard">
                       {features.map((listData) => (
                           <div className="cardHolder" key={listData.id}>

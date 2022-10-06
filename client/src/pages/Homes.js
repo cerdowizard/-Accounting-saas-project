@@ -41,7 +41,10 @@ const Homes = () => {
                     </div>
 
                 </div>
-                <PriceCard />
+                <div className="priceHolder">
+                  <PriceCard />
+                </div>
+              
             </div>
             <div className="tryDemo">
                 <h1>Try demo of accounting saas to get a feel of how it works. Risk free</h1>

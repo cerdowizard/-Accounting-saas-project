@@ -1,19 +1,18 @@
 .headerHolder {
-    height: 350px;
+  height: 350px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     h1 {
-      width: 45%;
+      width: 100%;
+      max-width: 45%;
       font-weight: 800;
       font-size: 48px;
       line-height: 60px;
-      display: flex;
       align-items: center;
-      text-align: center;
+      text-align: center ;
       text-transform: capitalize;
-      /* Color/UI/Grey/100 */
       color: #1c1e21;
     }
     p {
