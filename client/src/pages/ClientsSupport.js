@@ -1,6 +1,7 @@
 import Navbar from '../component/Navbar'
 import Footer from '../component/Footer'
 import Header from '../component/Headers'
+import SupportCard from '../component/SupportCard'
 const ClientsSupport = () => {
   return (
     <div>
@@ -9,10 +10,11 @@ const ClientsSupport = () => {
         <Header title="Client’s support" subText="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum."/>
       </div>
       <div className="cardSection">
-      <Cli/>
+      <SupportCard/>
       </div>
       <Footer />
     </div>
+  
   )
 }
 

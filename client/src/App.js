@@ -17,6 +17,7 @@ import Pricing from './pages/Pricing';
 import Partners from './pages/Partners';
 import Contact from './pages/Contact';
 import ClientsSupport from './pages/ClientsSupport';
+import Online from './pages/Online';
 const App = () => {
   return (
     <div>
@@ -26,6 +27,7 @@ const App = () => {
           <Route path='/contact' element={<ContactUsPage />} />
          
           */}
+          <Route path='/online' element={<Online />} />
           <Route path='/support' element={<ClientsSupport />}/>
           <Route path='/contact' element={<Contact />} />
           <Route path='/partners' element={<Partners />} />
