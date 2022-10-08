@@ -1,7 +1,6 @@
 import React from 'react'
 import Homes from './pages/Homes'
 import './styles/Gobal-style.scss'
-
 import {
   BrowserRouter as Router,
   Routes,
@@ -17,6 +16,7 @@ import Features from './pages/Features';
 import Pricing from './pages/Pricing';
 import Partners from './pages/Partners';
 import Contact from './pages/Contact';
+import ClientsSupport from './pages/ClientsSupport';
 const App = () => {
   return (
     <div>
@@ -26,6 +26,7 @@ const App = () => {
           <Route path='/contact' element={<ContactUsPage />} />
          
           */}
+          <Route path='/support' element={<ClientsSupport />}/>
           <Route path='/contact' element={<Contact />} />
           <Route path='/partners' element={<Partners />} />
           <Route path='/price' element={<Pricing />} />
