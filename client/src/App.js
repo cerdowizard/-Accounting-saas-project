@@ -18,6 +18,9 @@ import Partners from './pages/Partners';
 import Contact from './pages/Contact';
 import ClientsSupport from './pages/ClientsSupport';
 import Online from './pages/Online';
+import UserNavbar from './usersdashboard/UserNavbar';
+import UserHomePage from './usersdashboard/UserHomePage';
+import Settings from './usersdashboard/Settings';
 const App = () => {
   return (
     <div>
@@ -25,8 +28,9 @@ const App = () => {
         <Routes>
           {/* <Route path='/post' element={<SinglePage />} />
           <Route path='/contact' element={<ContactUsPage />} />
-         
           */}
+          <Route path='/settings' element={<Settings />} />
+          <Route path='/user-dashboard' element={<UserHomePage />} />
           <Route path='/online' element={<Online />} />
           <Route path='/support' element={<ClientsSupport />}/>
           <Route path='/contact' element={<Contact />} />
