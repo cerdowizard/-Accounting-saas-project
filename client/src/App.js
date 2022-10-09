@@ -21,6 +21,7 @@ import Online from './pages/Online';
 import UserNavbar from './usersdashboard/UserNavbar';
 import UserHomePage from './usersdashboard/UserHomePage';
 import Settings from './usersdashboard/Settings';
+import AddNewCustomer from './usersdashboard/AddNewCustomer';
 const App = () => {
   return (
     <div>
@@ -29,6 +30,7 @@ const App = () => {
           {/* <Route path='/post' element={<SinglePage />} />
           <Route path='/contact' element={<ContactUsPage />} />
           */}
+          <Route path='/add-customer' element={<AddNewCustomer />} />
           <Route path='/settings' element={<Settings />} />
           <Route path='/user-dashboard' element={<UserHomePage />} />
           <Route path='/online' element={<Online />} />

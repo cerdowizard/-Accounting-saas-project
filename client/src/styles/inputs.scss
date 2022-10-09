@@ -1,14 +1,15 @@
 #FormInput {
-  .lable {
-    label {
+  .lables {
+    lable {
       font-weight: 600;
       font-size: 16px;
       line-height: 163.15%;
       color: #25313c;
     }
   }
-
   input {
+    margin-top: 5px;
+    margin-bottom: 5px;
     padding: 12px;
     border: 0;
     outline: none;
@@ -22,4 +23,5 @@
       line-height: 163.15%;
     }
   }
+  
 }

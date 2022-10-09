@@ -4,7 +4,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  
+
   .FormHolder {
     margin-top: 2rem;
     margin-bottom: 2rem;
@@ -14,7 +14,6 @@
     border-radius: 8px;
     width: 500px;
     padding: 20px 30px;
-    height: 500px;
     h1 {
       font-family: "Roboto";
       font-style: normal;
@@ -33,6 +32,81 @@
       line-height: 19px;
       text-align: center;
       color: #707173;
+      margin-top: 1rem;
+    }
+    .tab {
+      background-color: #e1e1e1;
+      margin-top: 1.5rem;
+      margin-bottom: 1.5rem;
+      .tabActive {
+        background-color: #ffffff;
+        border-bottom: 2px solid #128c7e;
+      }
+
+      ul {
+        display: flex;
+        list-style: none;
+        align-items: center;
+        justify-content: space-between;
+        padding-left: 0;
+
+        li {
+          display: flex;
+          padding: 7px;
+          align-items: center;
+        }
+      }
+    }
+    .check {
+      display: flex;
+      gap: 5px;
+      align-items: center;
+      justify-content: flex-end;
+      position: relative;
+      top: 25px;
+      span {
+        font-family: "Roboto";
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 163.15%;
+        color: #707173;
+      }
+    }
+    .select {
+      label {
+        display: block;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 163.15%;
+        color: #25313c;
+      }
+      select.role {
+        margin-bottom: 0.5rem;
+        width: 100%;
+        border: 0;
+        padding: 14px;
+        background: #ffffff;
+        border: 1px solid #adb5bc;
+        border-radius: 8px;
+        color: #adb5bc;
+        font-size: 16px;
+      }
+    }
+    .button{
+        width: 100%;
+        align-items: center;
+        justify-content: center;    
+        button{
+            width: 100%;
+            background-color: #128c7e;
+            border: 0;
+            outline: none;
+            padding: 10px;
+            border-radius: 8px;
+            margin-top: 10px;
+            color: white;
+        }
     }
   }
 }

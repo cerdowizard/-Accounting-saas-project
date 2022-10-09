@@ -1,0 +1,175 @@
+#AddNewCustomer {
+  background: #aaa7a7;
+  display: flex;
+  align-items: center;
+  .formHolderContact {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    width: 100%;
+    background-color: white;
+    height: 100%;
+    padding: 1rem;
+    .btnHolder {
+      width: 100%;
+      align-items: center;
+      justify-content: center;
+      button {
+        margin-top: 1rem;
+        width: 100%;
+        background-color: #ffffff;
+        border: 1px solid #128c7e;
+        color: #128c7e;
+        outline: none;
+        padding: 10px;
+        border-radius: 8px;
+      }
+    }
+    .titleHolder {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      justify-content: center;
+      gap: 5px;
+      h1 {
+        text-align: center;
+      }
+      p {
+        width: 50%;
+        text-align: center;
+      }
+    }
+    .right {
+      padding-left: 40px;
+      padding-right: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+
+      .select {
+        label {
+          display: block;
+          font-weight: 600;
+          font-size: 16px;
+          line-height: 163.15%;
+          color: #25313c;
+        }
+        select.role {
+          margin-bottom: 0.5rem;
+          width: 100%;
+          border: 0;
+          padding: 14px;
+          background: #ffffff;
+          border: 1px solid #adb5bc;
+          border-radius: 8px;
+          color: #adb5bc;
+          font-size: 16px;
+        }
+      }
+    }
+    .left {
+      padding-right: 40px;
+      padding-left: 20px;
+      display: flex;
+      flex-direction: column;
+      .check {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        top: -13px;
+        bottom: 0;
+        .checking {
+          display: flex;
+          align-items: center;
+          gap: 5px;
+          justify-content: flex-end;
+          position: relative;
+          top: 25px;
+          span {
+            font-family: "Roboto";
+            font-style: normal;
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 163.15%;
+            color: #707173;
+          }
+        }
+      }
+      .select {
+        label {
+          display: block;
+          font-weight: 600;
+          font-size: 16px;
+          line-height: 163.15%;
+          color: #25313c;
+        }
+        select.role {
+          margin-bottom: 0.5rem;
+          width: 100%;
+          border: 0;
+          padding: 14px;
+          background: #ffffff;
+          border: 1px solid #adb5bc;
+          border-radius: 8px;
+          color: #adb5bc;
+          font-size: 16px;
+        }
+      }
+    }
+    .address {
+        margin-top: 4rem;
+      .tab {
+        margin: 0 auto;
+        width: 80%;
+        background-color: #e1e1e1;
+        margin-top: 1.5rem;
+        margin-bottom: 1.5rem;
+        .tabActive {
+          background-color: #ffffff;
+          border-bottom: 2px solid #128c7e;
+          color: #128c7e;
+        }
+
+        ul {
+          display: flex;
+          list-style: none;
+          align-items: center;
+          gap:25px;
+          padding-left: 0;
+
+          li {
+            display: flex;
+            padding: 7px;
+            align-items: center;
+            /* Body Text/P1/Medium 18px */
+            font-family: "Roboto";
+            font-style: normal;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 25px;
+            color: #1c1e21;
+          }
+        }
+      }
+      .addy{
+        margin-top: 2rem;
+      }
+      .buttoning{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        button{
+            background-color: #128c7e;
+            color: white;
+            outline: none;
+            border: 0;
+            padding: 10px;
+            border-radius: 8px;
+            width: 50%;
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+        }
+      }
+    }
+  }
+}
