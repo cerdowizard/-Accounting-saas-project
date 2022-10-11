@@ -3,12 +3,13 @@
   display: flex;
   align-items: center;
   .formHolderContact {
-    margin-top: 2rem;
-    margin-bottom: 2rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    padding: 2rem;
     width: 100%;
     background-color: white;
     height: 100%;
-    padding: 1rem;
+    padding: 1.2rem;
     .btnHolder {
       width: 100%;
       align-items: center;
@@ -116,7 +117,7 @@
       }
     }
     .address {
-        margin-top: 4rem;
+      margin-top: 4rem;
       .tab {
         margin: 0 auto;
         width: 80%;
@@ -133,7 +134,7 @@
           display: flex;
           list-style: none;
           align-items: center;
-          gap:25px;
+          gap: 25px;
           padding-left: 0;
 
           li {
@@ -150,24 +151,136 @@
           }
         }
       }
-      .addy{
+      .addy {
         margin-top: 2rem;
       }
-      .buttoning{
+      .contact {
+        .dividedForm {
+          width: 100%;
+          display: flex;
+          justify-content: space-between;
+          gap: 20px;
+          .select {
+            width: 100%;
+
+            select.role {
+              margin-top: 0.3rem;
+              width: 100%;
+              border: 0;
+              padding: 15px;
+              background: #ffffff;
+              border: 1px solid #adb5bc;
+              border-radius: 8px;
+              color: #adb5bc;
+              font-size: 16px;
+            }
+          }
+        }
+      }
+      .paymentMethod {
+        width: 100%;
+        .balance {
+          width: 100%;
+          lable {
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 163.15%;
+            color: #25313c;
+          }
+          input {
+            margin-top: 5px;
+            margin-bottom: 5px;
+            padding: 12px;
+            border: 0;
+            outline: none;
+            width: 100%;
+            background: #ffffff;
+            border: 1px solid #adb5bc;
+            border-radius: 8px;
+            &::placeholder {
+              color: #adb5bc;
+              font-size: 16px;
+              line-height: 163.15%;
+            }
+          }
+        }
+      }
+      .note {
+        width: 100%;
+        label {
+          font-weight: 600;
+          font-size: 16px;
+          line-height: 163.15%;
+          color: #25313c;
+        }
+        .noteHolder {
+          width: 100%;
+          textarea {
+            width: 100%;
+            height: 200px;
+            outline: none;
+            border: 1px solid #aaa7a7;
+            border-radius: 8px;
+            margin-top: 5px;
+            margin-bottom: 5px;
+            padding: 12px;
+            border: 0;
+            outline: none;
+            width: 100%;
+            background: #ffffff;
+            border: 1px solid #adb5bc;
+            border-radius: 8px;
+            &::placeholder {
+              color: #adb5bc;
+              font-size: 16px;
+              line-height: 163.15%;
+            }
+          }
+        }
+      }
+      .attachments {
+        width: 100%;
+        label {
+          font-weight: 600;
+          font-size: 16px;
+          line-height: 163.15%;
+          color: #25313c;
+        }
+        .uploadHolder {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          width: 100%;
+          height: 200px;
+          border: 1px dashed #adb5bc;
+          border-radius: 8px;
+          input {
+        
+            &[type="file"] {
+              background-color: transparent;
+              color: #adb5bc;
+              font-size: 16px;
+              line-height: 163.15%;
+            }
+          }
+        }
+      }
+      .buttoning {
         width: 100%;
         display: flex;
         justify-content: center;
         align-items: center;
-        button{
-            background-color: #128c7e;
-            color: white;
-            outline: none;
-            border: 0;
-            padding: 10px;
-            border-radius: 8px;
-            width: 50%;
-            margin-top: 1rem;
-            margin-bottom: 1rem;
+        button {
+          background-color: #128c7e;
+          color: white;
+          outline: none;
+          border: 0;
+          padding: 10px;
+          border-radius: 8px;
+          width: 50%;
+          margin-top: 1rem;
+          margin-bottom: 1rem;
         }
       }
     }
