@@ -22,6 +22,7 @@ import UserNavbar from './usersdashboard/UserNavbar';
 import UserHomePage from './usersdashboard/UserHomePage';
 import Settings from './usersdashboard/Settings';
 import AddNewCustomer from './usersdashboard/AddNewCustomer';
+import Invoice from './usersdashboard/Invoice';
 const App = () => {
   return (
     <div>
@@ -30,6 +31,8 @@ const App = () => {
           {/* <Route path='/post' element={<SinglePage />} />
           <Route path='/contact' element={<ContactUsPage />} />
           */}
+          
+          <Route path='/invoice' element={<Invoice />} />
           <Route path='/add-customer' element={<AddNewCustomer />} />
           <Route path='/settings' element={<Settings />} />
           <Route path='/user-dashboard' element={<UserHomePage />} />

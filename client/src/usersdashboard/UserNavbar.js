@@ -5,6 +5,7 @@ import ques from '../assets/fluent_question-circle-24-regular.png'
 import phone from '../assets/fluent_call-24-regular.png'
 import userprofile from '../assets/Icon.png'
 import user from '../assets/fluent_person-support-24-regular.png'
+import SearchIcon from '@mui/icons-material/Search';
 const UserNavbar = () => {
     return (
         <div id='UserNavbar'>
@@ -12,8 +13,23 @@ const UserNavbar = () => {
                 <div className="left-user-holder">
                     <img src={img} alt="" />
                     <span>InnerReports</span>
+                    <span className='line'></span>
+                    <div className="search-box">
+                        <SearchIcon className='icon'/>
+                        <input type="text" placeholder='General search' />
+                    </div>
                 </div>
                 <div className="rightPlaceholder">
+                    <span class="dropdown">
+                        <span class="dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            CompanyA LTD
+                        </span>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </span>
                     <img src={settings} alt="" />
                     <img src={phone} alt="" />
                     <img src={ques} alt="" />
