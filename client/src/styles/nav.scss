@@ -1,6 +1,8 @@
 nav.navbar {
   padding-left: 2rem;
   padding-right: 2rem;
+
+  z-index: 1;
   a {
     color: #6d7d8b;
     font-weight: 700;

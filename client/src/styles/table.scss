@@ -1,0 +1,30 @@
+#Intable {
+  .heading {
+    background-color: #d2d2d3;
+  }
+  th {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 163.15%;
+    text-align: center;
+  }
+  tr{
+    &:hover{
+        background-color: #d2d2d3;
+        color: white;
+        transition: ease-in-out .5s;
+    cursor: pointer;
+    }
+  }
+  td {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 163.15%;
+    text-align: center;
+  }
+ 
+}

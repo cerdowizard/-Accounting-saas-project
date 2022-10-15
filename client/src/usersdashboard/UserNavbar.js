@@ -8,7 +8,7 @@ import user from '../assets/fluent_person-support-24-regular.png'
 import SearchIcon from '@mui/icons-material/Search';
 const UserNavbar = () => {
     return (
-        <div id='UserNavbar'>
+        <div id='UserNavbar' className='sticky-top'>
             <div className="fsLayer">
                 <div className="left-user-holder">
                     <img src={img} alt="" />

@@ -2,17 +2,20 @@
   background: #aaa7a7;
   display: flex;
   align-items: center;
-  height: 100%;
+  height: 100vh;
   justify-content: center;
   .Invoice-container {
     margin-top: 2rem;
     margin-bottom: 2rem;
     padding-bottom: 2rem;
     width: 100%;
-    height: 100%;
+    height: 90vh;
+    overflow-y: scroll;
     background-color: white;
     .invoice-header {
       padding: 0.5rem;
+      padding-left: 0.5rem;
+      padding-right: 0.5rem;
       width: 100%;
       display: flex;
       align-items: center;
@@ -21,23 +24,28 @@
       box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.04),
         0px 2px 2px rgba(0, 0, 0, 0.08), 0px 4px 8px rgba(0, 0, 0, 0.12);
       .top {
+        margin-left: 1rem;
         h1 {
           font-family: "Roboto";
           font-style: normal;
           font-weight: 600;
-          font-size: 32px;
+          font-size: 30px;
           line-height: 38px;
           color: #1c1e21;
         }
       }
-      .bottom {
-        h1 {
-          font-family: "Roboto";
-          font-style: normal;
-          font-weight: 500;
-          font-size: 32px;
-          line-height: 38px;
-          color: #707173;
+      .right {
+        margin-right: 1rem;
+        .top {
+          button {
+            outline: none;
+            border: 0;
+            padding: 0.5rem;
+            font-family: "Roboto";
+            color: #ffffff;
+            background: #128c7e;
+            border-radius: 8px;
+          }
         }
       }
     }
@@ -47,15 +55,30 @@
       margin-top: 2rem;
       .header {
         display: flex;
-        flex-direction: column;
         align-items: center;
-        h1 {
-          font-family: "Roboto";
-          font-style: normal;
-          font-weight: 400;
-          font-size: 24px;
-          line-height: 28px;
-          color: #1c1e21;
+        justify-content: space-between;
+        .left {
+          h1 {
+            font-family: "Roboto";
+            font-style: normal;
+            font-weight: 600;
+           font-size: 32px;
+            line-height: 28px;
+            color: #1c1e21;
+          }
+        }
+
+        .right {
+          h1 {
+            font-family: "Roboto";
+            font-style: normal;
+            font-weight: 600;
+            font-size: 32px;
+            line-height: 38px;
+          }
+          p {
+            text-align: end;
+          }
         }
         .inputHolder {
           display: flex;
@@ -123,8 +146,96 @@
             }
           }
         }
-     
+        .email-input {
+          .p {
+            padding-bottom: 1.5rem;
+          }
+        }
+        .div {
+          select.role {
+            margin-bottom: 0.5rem;
+            width: 100%;
+            border: 0;
+            padding: 14px;
+            background: #ffffff;
+            border: 1px solid #adb5bc;
+            border-radius: 8px;
+            color: #adb5bc;
+            font-size: 16px;
+          }
+        }
+        .tax-rate {
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+          .radios {
+            display: flex;
+            align-items: center;
+            margin-top: 0.5rem;
+            .check {
+              input {
+                width: 10%;
+              }
+              display: flex;
+              align-items: center;
+              gap: 5px;
+              span {
+                width: 150px;
+                font-family: "Roboto";
+                font-style: normal;
+                font-weight: 400;
+                font-size: 14px;
+              }
+            }
+          }
+        }
       }
+       .button {
+    display: flex;
+    gap: 10px;
+    .create {
+      color: #128c7e;
+      border: 1px solid #128c7e;
+      padding: 8px;
+      outline: none;
+      width: 30%;
+    }
+    .delete {
+      color: #dd4225;
+      border: 1px solid #dd4225;
+      padding: 8px;
+      outline: none;
+      width: 30%;
+    }
+  }
+  .right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 5px;
+    .Total {
+      display: flex;
+      gap: 30px;
+      h4 {
+        font-family: "Roboto";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 25px;
+      }
+      span {
+        font-family: "Roboto";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 25px;
+        input{
+            width: 50px;
+            outline: none;
+        }
+      }
+    }
+  }
     }
   }
 }
