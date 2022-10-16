@@ -62,7 +62,7 @@
             font-family: "Roboto";
             font-style: normal;
             font-weight: 600;
-           font-size: 32px;
+            font-size: 32px;
             line-height: 28px;
             color: #1c1e21;
           }
@@ -190,52 +190,94 @@
           }
         }
       }
-       .button {
-    display: flex;
-    gap: 10px;
-    .create {
-      color: #128c7e;
-      border: 1px solid #128c7e;
-      padding: 8px;
-      outline: none;
-      width: 30%;
-    }
-    .delete {
-      color: #dd4225;
-      border: 1px solid #dd4225;
-      padding: 8px;
-      outline: none;
-      width: 30%;
-    }
-  }
-  .right {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    gap: 5px;
-    .Total {
-      display: flex;
-      gap: 30px;
-      h4 {
-        font-family: "Roboto";
-        font-style: normal;
-        font-weight: 500;
-        font-size: 18px;
-        line-height: 25px;
-      }
-      span {
-        font-family: "Roboto";
-        font-style: normal;
-        font-weight: 400;
-        font-size: 18px;
-        line-height: 25px;
-        input{
-            width: 50px;
-            outline: none;
+      .button {
+        display: flex;
+        gap: 10px;
+        .create {
+          color: #128c7e;
+          border: 1px solid #128c7e;
+          padding: 8px;
+          outline: none;
+          width: 30%;
+        }
+        .delete {
+          color: #dd4225;
+          border: 1px solid #dd4225;
+          padding: 8px;
+          outline: none;
+          width: 30%;
         }
       }
-    }
-  }
+      .Message {
+        .title {
+          span {
+            font-family: "Roboto";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 163.15%;
+            color: #1c1e21;
+          }
+        }
+        textarea {
+          height: 200px;
+          outline: none;
+          border: 1px solid #d2d2d3;
+          border-radius: 8px;
+          color: #303030;
+          padding-left: 0.5rem;
+          &::placeholder {
+            font-family: "Roboto";
+            padding: 2rem;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 163.15%;
+            color: #d2d2d3;
+          }
+        }
+      }
+      .upload {
+        width: 100;
+        .file {
+          width: 75%;
+          height: 200px;
+          border: 1px dashed #46484a;
+          border-radius: 8px;
+          display: flex;
+          align-items: center;
+          flex-direction: column;
+          justify-content: center;
+        }
+      }
+      .right {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        gap: 5px;
+        .Total {
+          display: flex;
+          gap: 30px;
+          h4 {
+            font-family: "Roboto";
+            font-style: normal;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 25px;
+          }
+          span {
+            font-family: "Roboto";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 25px;
+            input {
+              width: 50px;
+              outline: none;
+            }
+          }
+        }
+      }
     }
   }
 }

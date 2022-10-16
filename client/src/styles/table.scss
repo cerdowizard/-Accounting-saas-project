@@ -10,12 +10,12 @@
     line-height: 163.15%;
     text-align: center;
   }
-  tr{
-    &:hover{
-        background-color: #d2d2d3;
-        color: white;
-        transition: ease-in-out .5s;
-    cursor: pointer;
+  tr {
+    &:hover {
+      background-color: #d2d2d3;
+      color: white;
+      transition: ease-in-out 0.5s;
+      cursor: pointer;
     }
   }
   td {
@@ -26,5 +26,4 @@
     line-height: 163.15%;
     text-align: center;
   }
- 
 }

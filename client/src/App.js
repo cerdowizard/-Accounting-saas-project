@@ -18,11 +18,11 @@ import Partners from './pages/Partners';
 import Contact from './pages/Contact';
 import ClientsSupport from './pages/ClientsSupport';
 import Online from './pages/Online';
-import UserNavbar from './usersdashboard/UserNavbar';
 import UserHomePage from './usersdashboard/UserHomePage';
 import Settings from './usersdashboard/Settings';
 import AddNewCustomer from './usersdashboard/AddNewCustomer';
 import Invoice from './usersdashboard/Invoice';
+import CustomersDashBoard from "./usersdashboard/CustomersDashBoard";
 const App = () => {
   return (
     <div>
@@ -31,7 +31,7 @@ const App = () => {
           {/* <Route path='/post' element={<SinglePage />} />
           <Route path='/contact' element={<ContactUsPage />} />
           */}
-          
+          <Route path='/csdasboard' element={<CustomersDashBoard />} />
           <Route path='/invoice' element={<Invoice />} />
           <Route path='/add-customer' element={<AddNewCustomer />} />
           <Route path='/settings' element={<Settings />} />

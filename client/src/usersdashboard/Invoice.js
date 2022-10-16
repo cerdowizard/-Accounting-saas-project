@@ -5,6 +5,7 @@ import '../styles/in.scss'
 import Table from '../component/Table'
 import { useState } from 'react'
 import Intable from "../component/Intable";
+import imgIcon from "../assets/fluent_folder-48-filled.png";
 const Invoice = () => {
     let [tableData, setTableData] = useState([]);
     // [
@@ -313,7 +314,36 @@ const Invoice = () => {
                                                     </div>
                                                     <button className='btn delete'>Clear all lines</button>
                                                 </div>
+                                                <div className="Message mt-4 w-75">
+                                                    <div className="title">
+                                                        <div className="titleHolder mb-2 d-flex justify-content-between">
+                                                            <span>  Message on Invoice</span>
+                                                            <span>Set Default Meassage</span>
+                                                        </div>
+                                                        <textarea className='w-100 h-h-75 btn-outline-info' name="" id="" placeholder='This will show up on the invoice'></textarea>
+                                                    </div>
+                                                </div>
+                                                <div className="Message mt-4 w-75">
+                                                    <div className="title">
+                                                        <div className="titleHolder mb-2 d-flex justify-content-between">
+                                                            <span>Message on Statement</span>
+                                                        </div>
+                                                        <textarea className='w-100 h-h-75 btn-outline-info' name="" id="" placeholder='If you send statements to customers, this will show up as the description for the invoice'></textarea>
+                                                    </div>
+                                                </div>
+                                                <div className="upload mt-4 ">
+                                                    <div className="tileHolder d-flex gap-5 mb-3">
+                                                        <span>  Message on Invoice</span>
+                                                        <span>Set Default Meassage</span>
+                                                    </div>
+                                                    <div className="file">
+                                                        <img src={imgIcon} alt="" />
+                                                        <input type="file" />
+                                                    </div>
+                                                   
+                                                </div>
                                             </div>
+
                                             <div className="col-md-6 right">
                                                 <div className="Total">
                                                     <h4>Total Discount</h4>
@@ -346,7 +376,7 @@ const Invoice = () => {
 
                                 </div>
                             </div>
-                            
+
                         </div>
                     </div>
                 </div>
