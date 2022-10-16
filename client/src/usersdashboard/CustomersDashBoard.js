@@ -22,6 +22,7 @@ const CustomersDashBoard = () => {
       <UserNavbar />
       <div id="CustomersDashBoard">
         <div className='container'>
+
           <div className="fsLayer">
             <h1 className='mt-3'>Customer Dashboard</h1>
             <div className="navHolder">
@@ -58,6 +59,7 @@ const CustomersDashBoard = () => {
               </div>
             </div>
           </div>
+
           <div className="secondLayer mt-5">
             <div className="row">
               <div className="col-md-6 left">
@@ -103,12 +105,49 @@ const CustomersDashBoard = () => {
                     </div>
                     <div className="para">
                       <p className='one'>Customer Transactions</p>
-                      <p>A list of all transactions for customers e.g. Invoices, receipts.</p>
+                      <p >A list of all transactions for customers e.g. Invoices, receipts.</p>
+                    </div>
+                  </div>
+
+                  <div className="secTwo">
+                    <div className="title">
+                      <h1>Customer Balances and Statements</h1>
+                    </div>
+                    <div className="para">
+                      <p>Days Outstanding</p>
+                      <p>How many days a customer’s balance has been outstanding.</p>
+                    </div>
+                    <div className="para">
+                      <p className='one'>Statement Run</p>
+                      <p >Generate and distribute statemnets to all customers</p>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
+          </div>
+
+          <div className="tabling mt-2 lefts">
+            <div className="heading">
+              <h1>Customer Balances - Days Outstanding</h1>
+              <div className="setting">
+                <span>Sort by:</span>
+                <div class="dropdown">
+                  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Balance
+                  </button>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item active" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+
+                  </ul>
+                </div>
+                <SettingsIcon />
+                <SwapVertIcon />
+              </div>
+            </div>
+            <CustomerTable />
           </div>
         </div>
       </div>
