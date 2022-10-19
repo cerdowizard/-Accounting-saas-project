@@ -17,11 +17,9 @@
       color: white;
       transition: ease-in-out 0.5s;
       cursor: pointer;
-      
     }
   }
   td {
-
     justify-content: center;
     font-family: "Roboto";
     font-style: normal;
@@ -29,24 +27,13 @@
     font-size: 15px;
     line-height: 163.15%;
     text-align: center;
-    padding: .5rem;
+    padding: 0.5rem;
   }
 }
-.act{
+.act {
   border: 1px solid #d2d2d3;
   border-radius: 8px;
   display: flex;
   align-items: center;
   justify-content: center;
-}
-.tables{
-  display: flex;
-  .left{
-    flex: 1;
-    background-color: #d2d2d3;
-  }
-  .right{
- flex: 1;
- display: flex;
-  }
 }

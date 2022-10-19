@@ -25,6 +25,12 @@ import Invoice from './usersdashboard/Invoice';
 import CustomersDashBoard from "./usersdashboard/CustomersDashBoard";
 import ListUsers from "./usersdashboard/ListUsers";
 import CustomersSales from "./usersdashboard/CustomersSales";
+import CustomerCategories from "./usersdashboard/CustomerCategories";
+import CustomerCredit from "./usersdashboard/CustomerCredit";
+import CustomerReceipt from "./usersdashboard/CustomerReceipt";
+import ListSales from "./usersdashboard/ListSales";
+import CustomerWrite from "./usersdashboard/CustomerWrite";
+import CustomerInvoices from "./usersdashboard/CustomerInvoices";
 const App = () => {
   return (
     <div>
@@ -33,6 +39,12 @@ const App = () => {
           {/* <Route path='/post' element={<SinglePage />} />
           <Route path='/contact' element={<ContactUsPage />} />
           */}
+          <Route path='/CustomerInvoices' element={<CustomerInvoices />} />
+          <Route path='/CustomerWrite' element={<CustomerWrite />} />
+          <Route path='/ListSales' element={<ListSales />} />
+          <Route path='/CustomerReceipt' element={<CustomerReceipt />} />
+          <Route path='/CustomerCredit' element={<CustomerCredit />} />
+          <Route path='/CustomerCategories' element={<CustomerCategories />} />
           <Route path='/sales' element={<CustomersSales />} />
           <Route path='/list' element={<ListUsers />} />
           <Route path='/csdasboard' element={<CustomersDashBoard />} />
