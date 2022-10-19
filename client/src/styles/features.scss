@@ -1,12 +1,9 @@
 #Features {
   .featerHolder {
-   
-    .main{
-  
+    .main {
     }
   }
   .cards {
-   
     .row {
       align-items: center;
       justify-content: center;
@@ -90,34 +87,49 @@
     .tryDemo {
       width: 100%;
       flex-direction: column;
-      padding-top: 5rem;
-      padding-bottom: 5rem;
+     
+      background-size: cover;
       background-image: url("../assets/Vector.png");
       background-position: center;
       background-repeat: no-repeat;
       background-size: cover;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      h1 {
-        font-weight: 800;
-        font-size: 40px;
-        line-height: 50px;
+
+      .right {
         display: flex;
         align-items: center;
-        text-align: center;
-        width: 60%;
-        color: #000000;
-        margin-bottom: 1rem;
+        justify-content: center;
+        span {
+          color: #128c7e;
+        }
+        h1 {
+          font-weight: 800;
+          font-size: 40px;
+          line-height: 50px;
+          width: 70%;
+          color: #000000;
+          margin-bottom: 1rem;
+        }
       }
-      button {
-        width: 20%;
-        background: #128c7e;
-        border-radius: 8px;
-        outline: none;
-        border: none;
-        padding: 15px;
-        color: white;
+    }
+
+    .left {
+      background-image: url("../assets/Countries Background.png");
+      height: 50vh;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      img {
+        width: 100%;
+      }
+      span {
+        display: flex;
+        justify-content: flex-end;
+        margin-right: 2rem;
+        margin-top: 1rem;
       }
     }
   }

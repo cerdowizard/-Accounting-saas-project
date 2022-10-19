@@ -165,5 +165,37 @@
         cursor: progress;
       }
     }
+    .paginate {
+      padding: 1rem;
+      display: flex;
+      justify-content: space-between;
+      nav {
+        display: flex;
+        flex-direction: column;
+        span {
+          margin-left: 40%;
+          font-family: "Roboto";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 19px;
+
+          /* identical to box height, or 136% */
+
+          /* Color/Text/Grey/100 */
+          color: #1c1e21;
+        }
+      }
+      .btn {
+        height: 50px;
+        font-family: "Roboto";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 21px;
+        border: 1px solid #0e9a6e;
+        color: #0e9a6e;
+      }
+    }
   }
 }

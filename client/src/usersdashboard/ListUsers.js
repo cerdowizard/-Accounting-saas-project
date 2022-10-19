@@ -4,7 +4,7 @@ import SearchIcon from '@mui/icons-material/Search';
 import SettingsIcon from '@mui/icons-material/Settings';
 import SwapVertIcon from '@mui/icons-material/SwapVert';
 import img from '../assets/Youtube video player.png'
-import { Table } from '@mui/material';
+import GetAppIcon from '@mui/icons-material/GetApp';
 import ListTabel from '../component/ListTabel';
 import dropArrow from '../assets/Vectors.png'
 const ListUsers = () => {
@@ -69,7 +69,7 @@ const ListUsers = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className="tableSection mt-5">
+                        <div className="tableSection ">
                             <div className="nav mb-2">
                                 <img src={dropArrow} alt="" />
                                 <span>Select</span>
@@ -82,8 +82,31 @@ const ListUsers = () => {
                                 <li>Create New Receipt</li>
                                 <li>View Statement</li>
                             </div>
-                            <ListTabel />
-                            
+                            <div className="p-2">
+                                <ListTabel />
+                                <div className="paginate">
+                                    <nav aria-label="...">
+                                        <ul class="pagination">
+                                            <li class="page-item disabled">
+                                                <a class="page-link">Previous</a>
+                                            </li>
+                                            <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                            <li class="page-item active" aria-current="page">
+                                                <a class="page-link" href="#">2</a>
+                                            </li>
+                                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                            <li class="page-item">
+                                                <a class="page-link" href="#">Next</a>
+                                            </li>
+                                        </ul>
+                                        <span>Displaying 1 - 2 of 2</span>
+                                    </nav>
+                                    <button className="btn">
+                                        <GetAppIcon/>
+                                        Export as CSV
+                                    </button>
+                              </div>
+                           </div>
                         </div>
                     </div>
 

@@ -5,6 +5,7 @@ import Navbar from '../component/Navbar'
 import window from '../assets/Window(3).png'
 import Cards from '../component/Cards'
 import PriceCard from '../component/PriceCard'
+import countList from '../assets/Frame 422.png'
 const Homes = () => {
     return (
         <div id='Home'>
@@ -19,7 +20,7 @@ const Homes = () => {
                     </div>
                     <div className="buttonHolder">
                         <button className='btnOne'>Try For Free</button>
-                       
+
                     </div>
                 </div>
             </div>
@@ -42,19 +43,25 @@ const Homes = () => {
 
                 </div>
                 <div className="priceHolder">
-                  <PriceCard />
+                    <PriceCard />
                 </div>
-              
+
             </div>
             <div className="tryDemo">
-                <h1>Try demo of accounting saas to get a feel of how it works. Risk free</h1>
-                <button>
-                    Schedule your demo
-                </button>
+                <div className="row">
+                    <div className="col-md-6 right">
+                        <h1><span>InnerReports</span> can be used in any English Speaking Country</h1>
+                    </div>
+
+                    <div className="col-md-6 left">
+                        <img src={countList} alt="" />
+                        <span>Available in 54+ countries</span>
+                    </div>
+                </div>
             </div>
             <div className="faq">
                 <h1>Frequently Asked Questions</h1>
-               
+
             </div>
             <div className="faqHolder container">
                 <div class="accordion" id="accordionPanelsStayOpenExample">

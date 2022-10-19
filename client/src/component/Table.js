@@ -1,33 +1,29 @@
-import React from 'react'
-
+import '../styles/table.scss'
 const Table = (props) => {
     return (
-        <div>
-            <table class="table caption-top container">
-                <caption>List of users</caption>
-                <thead>
-                    <tr>
-                        <th scope="col">#</th>
-                        <th scope="col">First</th>
-                        <th scope="col">Last</th>
-                        <th scope="col">Handle</th>
-                    </tr>
-                </thead>
-                <tbody>
-
-                    {props.data ? props.data.map((user, index) => {
-                        return (<tr key={index}>
-                            <th scope="row">{++index}</th>
-                            <td><input type="text" placeholder='name'/></td>
-                            <td><input type="text" /></td>
-                            <td><input type="text" /></td>
-                            <td><input type="text" /></td>
-                            <td><input type="text" /></td>
-                        </tr>)
-                    }) : ""}
-                </tbody>
-            </table>
-
+        <div className='tables container'>
+            <div className="left">
+                <div className="title">
+                    <h4>Features</h4>
+                    
+                </div>
+            </div>
+            <div className="right">
+                <div className="title">
+                    <h4>Basic </h4>
+                </div>
+                <div className="title">
+                    <h4>Medium</h4>
+                </div>
+                <div className="title">
+                    <h4>Advance</h4>
+                </div>
+                <div className="title">
+                    <h4>Tax Module</h4>
+                </div>
+                
+                <div className="list"></div>
+            </div>
         </div>
     )
 }

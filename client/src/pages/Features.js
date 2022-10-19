@@ -3,6 +3,7 @@ import Footer from '../component/Footer'
 import Navbar from '../component/Navbar'
 import features from '../data/features'
 import Headers from '../component/Headers'
+import countList from '../assets/Frame 422.png'
 const Features = () => {
   return (
       <div>
@@ -41,10 +42,16 @@ const Features = () => {
               </div>
               <div className="divider">
                   <div className="tryDemo">
-                      <h1>Try demo of accounting saas to get a feel of how it works. Risk free</h1>
-                      <button>
-                          Schedule your demo
-                      </button>
+                      <div className="row">
+                          <div className="col-md-6 right">
+                              <h1><span>InnerReports</span> can be used in any English Speaking Country</h1>
+                          </div>
+
+                          <div className="col-md-6 left">
+                              <img src={countList} alt="" />
+                              <span>Available in 54+ countries</span>
+                          </div>
+                      </div>
                   </div>
               </div>
               <div className="qAholder">

@@ -24,6 +24,7 @@ import AddNewCustomer from './usersdashboard/AddNewCustomer';
 import Invoice from './usersdashboard/Invoice';
 import CustomersDashBoard from "./usersdashboard/CustomersDashBoard";
 import ListUsers from "./usersdashboard/ListUsers";
+import CustomersSales from "./usersdashboard/CustomersSales";
 const App = () => {
   return (
     <div>
@@ -32,6 +33,7 @@ const App = () => {
           {/* <Route path='/post' element={<SinglePage />} />
           <Route path='/contact' element={<ContactUsPage />} />
           */}
+          <Route path='/sales' element={<CustomersSales />} />
           <Route path='/list' element={<ListUsers />} />
           <Route path='/csdasboard' element={<CustomersDashBoard />} />
           <Route path='/invoice' element={<Invoice />} />
