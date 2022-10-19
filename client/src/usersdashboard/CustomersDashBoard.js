@@ -127,7 +127,7 @@ const CustomersDashBoard = () => {
             </div>
           </div>
 
-          <div className="tabling mt-2 lefts">
+          <div className="tabling mt-2  lefts">
             <div className="heading">
               <h1>Customer Balances - Days Outstanding</h1>
               <div className="setting">

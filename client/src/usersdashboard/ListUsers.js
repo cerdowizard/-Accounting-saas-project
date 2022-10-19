@@ -6,13 +6,14 @@ import SwapVertIcon from '@mui/icons-material/SwapVert';
 import img from '../assets/Youtube video player.png'
 import { Table } from '@mui/material';
 import ListTabel from '../component/ListTabel';
+import dropArrow from '../assets/Vectors.png'
 const ListUsers = () => {
     return (
         <div>
             <UserNavbar />
             <div id="ListUsers">
                 <div className="container">
-                    <div className=" main">
+                    <div className="main ">
                         <div className="header">
                             <div className="left">
                                 <h1>List of Customers</h1>
@@ -69,8 +70,17 @@ const ListUsers = () => {
                             </div>
                         </div>
                         <div className="tableSection mt-5">
-                            <div className="nav">
-                                <h1 className='text-bg-danger'>Nav</h1>
+                            <div className="nav mb-2">
+                                <img src={dropArrow} alt="" />
+                                <span>Select</span>
+                               <li>Delete</li>
+                                <li>Mark as Active/Inactive</li>
+                                <li>Update</li>
+                                <li>Create New Invoice</li>
+                                <li>Create New Estimate/Sales Order</li>
+                                <li>Create New Cash Sales</li>
+                                <li>Create New Receipt</li>
+                                <li>View Statement</li>
                             </div>
                             <ListTabel />
                             

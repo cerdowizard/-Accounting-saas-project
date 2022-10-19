@@ -23,6 +23,7 @@ import Settings from './usersdashboard/Settings';
 import AddNewCustomer from './usersdashboard/AddNewCustomer';
 import Invoice from './usersdashboard/Invoice';
 import CustomersDashBoard from "./usersdashboard/CustomersDashBoard";
+import ListUsers from "./usersdashboard/ListUsers";
 const App = () => {
   return (
     <div>
@@ -31,6 +32,7 @@ const App = () => {
           {/* <Route path='/post' element={<SinglePage />} />
           <Route path='/contact' element={<ContactUsPage />} />
           */}
+          <Route path='/list' element={<ListUsers />} />
           <Route path='/csdasboard' element={<CustomersDashBoard />} />
           <Route path='/invoice' element={<Invoice />} />
           <Route path='/add-customer' element={<AddNewCustomer />} />
