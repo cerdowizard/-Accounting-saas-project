@@ -5,14 +5,7 @@ import '../styles/in.scss'
 import { useState } from 'react'
 import Intable from "../component/Intable";
 import imgIcon from "../assets/fluent_folder-48-filled.png";
-const Invoice = () => {
-    let [tableData, setTableData] = useState([]);
-    // [
-    //     { "id": 1, "name": "Abel", "lName": "Michael" },
-    //     { "id": 1, "name": "Abel", "lName": "Michael" },
-    //     { "id": 1, "name": "Abel", "lName": "Michael" },
-    //     { "id": 1, "name": "Abel", "lName": "Michael" },
-    // ]
+const RecurringInvoice = () => {
     return (
         <div>
             <UserNavbar />
@@ -22,13 +15,13 @@ const Invoice = () => {
                         <div className="invoice-header">
                             <div className="left">
                                 <div className="top">
-                                    <h1>Cutomer Invoice</h1>
+                                    <h1>Recurring Invoice</h1>
                                 </div>
 
                             </div>
                             <div className="right">
                                 <div className="top">
-                                    <button>Customer Invoice List</button>
+                                    <button>Recurring Invoice List</button>
                                 </div>
 
                             </div>
@@ -339,7 +332,7 @@ const Invoice = () => {
                                                         <img src={imgIcon} alt="" />
                                                         <input type="file" />
                                                     </div>
-                                                   
+
                                                 </div>
                                             </div>
 
@@ -386,4 +379,4 @@ const Invoice = () => {
     )
 }
 
-export default Invoice
+export default RecurringInvoice

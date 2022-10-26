@@ -31,6 +31,11 @@ import CustomerReceipt from "./usersdashboard/CustomerReceipt";
 import ListSales from "./usersdashboard/ListSales";
 import CustomerWrite from "./usersdashboard/CustomerWrite";
 import CustomerInvoices from "./usersdashboard/CustomerInvoices";
+import ProcessReceipt from './usersdashboard/ProcessReceipt';
+import CustomerWriteOffs from "./usersdashboard/CustomerWriteOffs";
+import NewCustomerCategory from './usersdashboard/NewCustomerCategory';
+import RecurringInvoice from "./usersdashboard/RecurringInvoice";
+import VendorDashboard from "./vendors/VendorDashboard";
 const App = () => {
   return (
     <div>
@@ -39,6 +44,11 @@ const App = () => {
           {/* <Route path='/post' element={<SinglePage />} />
           <Route path='/contact' element={<ContactUsPage />} />
           */}
+          <Route path='/VendorDashboard' element={<VendorDashboard />} />
+          <Route path='/RecurringInvoice' element={<RecurringInvoice />} />
+          <Route path='/NewCustomerCategory' element={<NewCustomerCategory />} />
+          <Route path='/CustomerWriteOffs' element={<CustomerWriteOffs />} />
+          <Route path='/ProcessReceipt' element={<ProcessReceipt />} />
           <Route path='/CustomerInvoices' element={<CustomerInvoices />} />
           <Route path='/CustomerWrite' element={<CustomerWrite />} />
           <Route path='/ListSales' element={<ListSales />} />
