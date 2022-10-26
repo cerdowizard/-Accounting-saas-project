@@ -36,6 +36,10 @@ import CustomerWriteOffs from "./usersdashboard/CustomerWriteOffs";
 import NewCustomerCategory from './usersdashboard/NewCustomerCategory';
 import RecurringInvoice from "./usersdashboard/RecurringInvoice";
 import VendorDashboard from "./vendors/VendorDashboard";
+import CreateNewVendor from './vendors/CreateNewVendor';
+import BankDetails from './vendors/BankDetails';
+import Address from './vendors/Address';
+import AdditionalContact from "./vendors/AdditionalContact";
 const App = () => {
   return (
     <div>
@@ -43,7 +47,12 @@ const App = () => {
         <Routes>
           {/* <Route path='/post' element={<SinglePage />} />
           <Route path='/contact' element={<ContactUsPage />} />
-          */}
+         
+         */}
+          <Route path='/AdditionalContact' element={< AdditionalContact />} />
+          <Route path='/Address' element={< Address />} />
+          <Route path='/BankDetails' element={< BankDetails />} />
+          <Route path='/CreateNewVendor' element={<CreateNewVendor />} />
           <Route path='/VendorDashboard' element={<VendorDashboard />} />
           <Route path='/RecurringInvoice' element={<RecurringInvoice />} />
           <Route path='/NewCustomerCategory' element={<NewCustomerCategory />} />

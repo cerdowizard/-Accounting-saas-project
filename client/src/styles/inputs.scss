@@ -11,6 +11,7 @@
     font-size: 16px;
     line-height: 163.15%;
     color: #25313c;
+    font-weight: 500;
   }
   input {
     margin-top: 5px;
@@ -29,6 +30,7 @@
     }
   }
   .select {
+    width: 100%;
     label {
       display: block;
       font-size: 16px;
@@ -47,4 +49,7 @@
       font-size: 16px;
     }
   }
+}
+span {
+  color: red;
 }

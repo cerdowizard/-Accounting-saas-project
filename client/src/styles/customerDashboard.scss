@@ -1,6 +1,6 @@
 #CustomersDashBoard {
 background: #AAA7A7;
-  padding-bottom: 4rem;
+  padding-bottom: 2rem;
   .fsLayer {
     padding-top: 1.2rem;
     display: flex;
@@ -217,5 +217,17 @@ background: #AAA7A7;
           }
         }
       }
+  }
+  .footer{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3rem;
+    color: #6D7D8B;
+    ul{
+      display: flex;
+      gap: 20px;
+      list-style: none;
+      padding: 0;
+    }
   }
 }

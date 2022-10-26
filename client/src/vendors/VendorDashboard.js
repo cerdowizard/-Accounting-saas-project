@@ -1,5 +1,5 @@
 import '../styles/customerDashboard.scss'
-
+import '../styles/tabelz.scss'
 import UserNavbar from "../usersdashboard/UserNavbar";
 import { Link } from "react-router-dom";
 import { useState } from 'react';
@@ -21,7 +21,7 @@ const VendorDashboard = () => {
 
     <div>
 
-      <UserNavbar />
+     
       <div id="CustomersDashBoard">
         <div className='container'>
 
@@ -114,6 +114,31 @@ const VendorDashboard = () => {
                         <td colspan="2">Larry the Bird</td>
                         <td>@twitter</td>
                       </tr>
+                      <tr>
+                        <th scope="row">3</th>
+                        <td colspan="2">Larry the Bird</td>
+                        <td>@twitter</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">3</th>
+                        <td colspan="2">Larry the Bird</td>
+                        <td>@twitter</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">3</th>
+                        <td colspan="2">Larry the Bird</td>
+                        <td>@twitter</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">3</th>
+                        <td colspan="2">Larry the Bird</td>
+                        <td>@twitter</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">3</th>
+                        <td colspan="2">Larry the Bird</td>
+                        <td>@twitter</td>
+                      </tr>
                     </tbody>
                   </table>
                 </div>
@@ -159,8 +184,8 @@ const VendorDashboard = () => {
             </div>
           </div>
 
-          <div className="tabling mt-2  lefts">
-            <div className="heading">
+          <div className="tabling mt-2 lefts">
+            <div className="heading mb-2">
               <h1>Vendor Balances - Days Outstanding</h1>
               <div className="setting">
                 <span>Sort by:</span>
@@ -179,7 +204,7 @@ const VendorDashboard = () => {
                 <SwapVertIcon />
               </div>
             </div>
-            <div className="table mt-2">
+            <div className="tablez mt-2 ">
               <table className="table">
                 <thead>
                   <tr>
@@ -195,7 +220,7 @@ const VendorDashboard = () => {
                 </thead>
                 <tbody>
                   <tr>
-                    <th scope="row">1</th>
+                    <td>1</td>
                     <td>Vendor A</td>
                     <td>michael.mitc@example.com</td>
                     <td>+2349022618242</td>
@@ -205,7 +230,7 @@ const VendorDashboard = () => {
                     <td>₦12,000</td>
                   </tr>
                   <tr>
-                    <th scope="row">2</th>
+                    <td scope="row">2</td>
                     <td>Vendor A</td>
                     <td>michael.mitc@example.com</td>
                     <td>+2349022618242</td>
@@ -215,7 +240,7 @@ const VendorDashboard = () => {
                     <td>₦12,000</td>
                   </tr>
                   <tr>
-                    <th scope="row">3</th>
+                    <td scope="row">3</td>
                     <td>Vendor A</td>
                     <td>michael.mitc@example.com</td>
                     <td>+2349022618242</td>
@@ -225,7 +250,7 @@ const VendorDashboard = () => {
                     <td>₦12,000</td>
                   </tr>
                   <tr>
-                    <th scope="row">3</th>
+                    <td scope="row">3</td>
                     <td>Vendor A</td>
                     <td>michael.mitc@example.com</td>
                     <td>+2349022618242</td>
@@ -235,7 +260,7 @@ const VendorDashboard = () => {
                     <td>₦12,000</td>
                   </tr>
                   <tr>
-                    <th scope="row">3</th>
+                    <td scope="row">3</td>
                     <td>Vendor A</td>
                     <td>michael.mitc@example.com</td>
                     <td>+2349022618242</td>
@@ -245,7 +270,7 @@ const VendorDashboard = () => {
                     <td>₦12,000</td>
                   </tr>
                   <tr>
-                    <th scope="row">3</th>
+                    <td scope="row">3</td>
                     <td>Vendor A</td>
                     <td>michael.mitc@example.com</td>
                     <td>+2349022618242</td>
@@ -258,6 +283,14 @@ const VendorDashboard = () => {
               </table>
             </div>
           </div>
+        </div>
+        <div className="footer container">
+          <p>© Copyright Accounting Saas.</p>
+          <ul>
+            <li>Accounting Saas</li>
+            <li>Terms & conditions</li>
+            <li>Privacy Policy</li>
+          </ul>
         </div>
       </div>
 
