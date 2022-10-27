@@ -40,6 +40,19 @@ import CreateNewVendor from './vendors/CreateNewVendor';
 import BankDetails from './vendors/BankDetails';
 import Address from './vendors/Address';
 import AdditionalContact from "./vendors/AdditionalContact";
+import Payment from './vendors/Payment';
+import Notes from './vendors/Notes';
+import Upload from './vendors/Upload';
+import VendorAdjustments from "./vendors/VendorAdjustments";
+import ListVendors from "./vendors/ListVendors";
+import VendorCategories from "./vendors/VendorCategories";
+import VendorPurchaseOrders from "./vendors/VendorPurchaseOrders";
+import VendorInvoices from './vendors/VendorInvoices';
+import VendorReturns from './vendors/VendorReturns';
+import VendorPayment from './vendors/VendorPayment';
+import ProcessPayment from './vendors/ProcessPayment';
+import AdjustVendorOpeningBalances from './vendors/AdjustVendorOpeningBalances';
+import NewVendorCategory from './vendors/NewVendorCategory';
 const App = () => {
   return (
     <div>
@@ -49,6 +62,19 @@ const App = () => {
           <Route path='/contact' element={<ContactUsPage />} />
          
          */}
+          <Route path='/AdjustVendorOpeningBalances' element={< NewVendorCategory />} />
+          <Route path='/AdjustVendorOpeningBalances' element={< AdjustVendorOpeningBalances />} />
+          <Route path='/ProcessPayment' element={< ProcessPayment />} />
+          <Route path='/VendorPayment' element={< VendorPayment />} />
+          <Route path='/VendorReturns' element={< VendorReturns />} />
+          <Route path='/VendorInvoices' element={< VendorInvoices />} />
+          <Route path='/VendorPurchaseOrders' element={< VendorPurchaseOrders />} />
+          <Route path='/VendorCategories' element={< VendorCategories />} />
+          <Route path='/ListVendors' element={< ListVendors />} />
+          <Route path='/VendorAdjustments' element={< VendorAdjustments />} />
+          <Route path='/Upload' element={< Upload />} />
+          <Route path='/Note' element={< Notes />} />
+          <Route path='/Payment' element={< Payment />} />
           <Route path='/AdditionalContact' element={< AdditionalContact />} />
           <Route path='/Address' element={< Address />} />
           <Route path='/BankDetails' element={< BankDetails />} />

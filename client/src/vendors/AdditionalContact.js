@@ -69,9 +69,9 @@ const AdditionalContact = () => {
                                                   <li ><Link to='/BankDetails'>Banking Details</Link></li>
                                                   <li><Link to='/Address'>Address</Link></li>
                                                   <li className="tabActive"><Link to='/AdditionalContact'>Additional Contact</Link></li>
-                                                  <li>Payment and Billing</li>
-                                                  <li>Notes</li>
-                                                  <li>Attachments</li>
+                                                  <li><Link to='/Payment'>Payment and Billing</Link></li>
+                                                  <li><Link to='/Note'>Notes</Link></li>
+                                                  <li><Link to='/Upload'>Attachments</Link></li>
                                               </ul>
                                           </div>
                                           <div className="formHoldering">

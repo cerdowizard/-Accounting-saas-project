@@ -1,4 +1,4 @@
-import '../styles/table.scss'
+
 const ListTabel = () => {
     return (
         <div id='Intable'>
@@ -17,9 +17,9 @@ const ListTabel = () => {
                 </thead>
                 <tbody>
                     <tr>
-                        <th scope="row">
+                        <td scope="row">
                             <input type="checkbox" />
-                        </th>
+                        </td>
                         <td>Company A</td>
                         <td>Developer</td>
                         <td>₦50,000</td>
@@ -41,9 +41,9 @@ const ListTabel = () => {
                     </tr>
                    
                     <tr>
-                        <th scope="row">
+                        <td scope="row">
                             <input type="checkbox" />
-                        </th>
+                        </td>
                         <td >Company B</td>
                         <td>Developer</td>
                         <td>₦50,000</td>
@@ -65,9 +65,9 @@ const ListTabel = () => {
                     </tr>
 
                     <tr>
-                        <th scope="row">
+                        <td scope="row">
                             <input type="checkbox" />
-                        </th>
+                        </td>
                         <td>Company C</td>
                         <td>Developer</td>
                         <td>₦50,000</td>

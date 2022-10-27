@@ -68,6 +68,7 @@
     .middle {
       display: flex;
       gap: 20px;
+      align-items: flex-end;
       .search {
         background-color: transparent;
         display: flex;
@@ -169,6 +170,14 @@
       padding: 1rem;
       display: flex;
       justify-content: space-between;
+    a{
+      color: gray;
+    }
+    .acts{
+       a{
+      color: #00c5ae;
+    }
+    }
       nav {
         display: flex;
         flex-direction: column;

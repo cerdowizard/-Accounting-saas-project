@@ -2,11 +2,9 @@ import '../styles/CreateNewVendor.scss'
 import UserNavbar from '../usersdashboard/UserNavbar'
 import "../styles/addcustomer.scss";
 import '../styles/inputs.scss'
-import FormInput from "../component/FormInput";
 import imgIcon from "../assets/fluent_folder-48-filled.png";
-import { Link } from "react-router-dom";
-
-const BankDetails = () => {
+import { Link } from 'react-router-dom';
+const Upload = () => {
     return (
         <div>
             <div>
@@ -68,53 +66,22 @@ const BankDetails = () => {
                                         <div className="tab">
                                             <ul>
                                                 <li ><Link to='/CreateNewVendor'>Contact Details</Link></li>
-                                                <li className="tabActive">Banking Details</li>
+                                                <li ><Link to='/BankDetails'>Banking Details</Link></li>
                                                 <li><Link to='/Address'>Address</Link></li>
                                                 <li><Link to='/AdditionalContact'>Additional Contact</Link></li>
-                                                <li><Link to='/Payment'>Payment and Billing</Link></li>
-                                                <li><Link to='/Note'>Notes</Link></li>
-                                                <li><Link to='/Upload'>Attachments</Link></li>
+                                                <li ><Link to='/Payment'>Payment and Billing</Link></li>
+                                                <li ><Link to='/Note'>Notes</Link></li>
+                                                <li className="tabActive"><Link to='/Upload'>Attachments</Link></li>
                                             </ul>
                                         </div>
                                         <div className="formHoldering">
-                                            <div className="row addy">
-                                                <div className="col-md-6 right">
-                                                    <div className="mt-2">
-                                                        <label htmlFor="">Account Name</label>
-                                                        <div className="email-input">
-                                                            <input type="text" placeholder="SEnter account name" />
-                                                        </div>
-                                                    </div>
-                                                    <div className="mt-2">
-                                                        <label htmlFor="">Bank Name</label>
-                                                        <div className="email-input">
-                                                            <input type="text" placeholder="Enter Bank name" />
-                                                        </div>
-                                                    </div>
 
+                                            <div className="attachments right">
+                                                <label htmlFor="">Upload Documents</label>
+                                                <div className="uploadHolder">
+                                                    <img src={imgIcon} alt="" />
+                                                    <input type="file" />
                                                 </div>
-                                                <div className="col-md-6 left">
-                                                    <div className="mt-2">
-                                                        <label htmlFor="">Account Number</label>
-                                                        <div className="email-input">
-                                                            <input type="text" placeholder="Enter your telephone number" />
-                                                        </div>
-                                                    </div>
-
-                                                    <div className="select mt-4">
-                                                        <label htmlFor="">Account Type</label>
-                                                        <select
-                                                            class="role"
-                                                            aria-label="Default select example"
-                                                        >
-                                                            <option selected>Account Type</option>
-                                                            <option value="1">Nigeria</option>
-                                                            <option value="2">Two</option>
-                                                            <option value="3">Three</option>
-                                                        </select>
-                                                    </div>
-                                                </div>
-
                                             </div>
 
                                             <div className="buttoning">
@@ -129,8 +96,7 @@ const BankDetails = () => {
                 </div>
             </div>
         </div>
-
     )
 }
 
-export default BankDetails
+export default Upload

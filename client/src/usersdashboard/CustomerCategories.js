@@ -168,7 +168,6 @@ const CustomerCategories = () => {
 
             </div>
         </div>
-
     )
 }
 
