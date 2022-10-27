@@ -83,5 +83,4 @@ const NewCustomerCategory = () => {
         </div>
     )
 }
-
 export default NewCustomerCategory

@@ -53,6 +53,7 @@ import VendorPayment from './vendors/VendorPayment';
 import ProcessPayment from './vendors/ProcessPayment';
 import AdjustVendorOpeningBalances from './vendors/AdjustVendorOpeningBalances';
 import NewVendorCategory from './vendors/NewVendorCategory';
+import ProcessVendorInvoice from './vendors/ProcessVendorInvoice';
 const App = () => {
   return (
     <div>
@@ -62,7 +63,8 @@ const App = () => {
           <Route path='/contact' element={<ContactUsPage />} />
          
          */}
-          <Route path='/AdjustVendorOpeningBalances' element={< NewVendorCategory />} />
+          <Route path='/ProcessVendorInvoice' element={< ProcessVendorInvoice />} />
+          <Route path='/NewVendorCategory' element={< NewVendorCategory />} />
           <Route path='/AdjustVendorOpeningBalances' element={< AdjustVendorOpeningBalances />} />
           <Route path='/ProcessPayment' element={< ProcessPayment />} />
           <Route path='/VendorPayment' element={< VendorPayment />} />

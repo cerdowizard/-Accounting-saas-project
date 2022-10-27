@@ -1,0 +1,15 @@
+.btnHolder {
+      width: 100%;
+      align-items: center;
+      justify-content: center;
+      button {
+        margin-top: 1rem;
+        width: 100%;
+        background-color: #ffffff;
+        border: 1px solid #128c7e;
+        color: #128c7e;
+        outline: none;
+        padding: 10px;
+        border-radius: 8px;
+      }
+    }

@@ -2,7 +2,6 @@ import '../styles/CreateNewVendor.scss'
 import UserNavbar from '../usersdashboard/UserNavbar'
 import "../styles/addcustomer.scss";
 import '../styles/inputs.scss'
-import imgIcon from "../assets/fluent_folder-48-filled.png";
 import { Link } from 'react-router-dom';
 const CreateNewVendor = () => {
     return (
