@@ -1,0 +1,13 @@
+.selectItem{
+    .itemLeft{
+        display: flex;
+        align-items: center;
+       gap: 10px;
+        input{
+            width: 20px !important;
+        }
+        p{
+            margin-top: 13px;
+        }
+    }
+}
