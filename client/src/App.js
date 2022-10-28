@@ -54,6 +54,9 @@ import ProcessPayment from './vendors/ProcessPayment';
 import AdjustVendorOpeningBalances from './vendors/AdjustVendorOpeningBalances';
 import NewVendorCategory from './vendors/NewVendorCategory';
 import ProcessVendorInvoice from './vendors/ProcessVendorInvoice';
+import ProcessVendorReturn from './vendors/ProcessVendorReturn';
+import ProcessVendorAdjustment from "./vendors/ProcessVendorAdjustment";
+import ItemDashboard from './Items/ItemDashboard';
 const App = () => {
   return (
     <div>
@@ -61,8 +64,10 @@ const App = () => {
         <Routes>
           {/* <Route path='/post' element={<SinglePage />} />
           <Route path='/contact' element={<ContactUsPage />} />
-         
          */}
+          <Route path='/ItemDashboard' element={< ItemDashboard />} />
+          <Route path='/ProcessVendorAdjustment' element={< ProcessVendorAdjustment />} />
+          <Route path='/ProcessVendorReturn' element={< ProcessVendorReturn />} />
           <Route path='/ProcessVendorInvoice' element={< ProcessVendorInvoice />} />
           <Route path='/NewVendorCategory' element={< NewVendorCategory />} />
           <Route path='/AdjustVendorOpeningBalances' element={< AdjustVendorOpeningBalances />} />

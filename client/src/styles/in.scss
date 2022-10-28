@@ -226,6 +226,22 @@
           width: 30%;
         }
       }
+      .Exchange{
+          .box-circl-holder{
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            input{
+              width: 20px;
+            }
+            span{
+              color: #707173;
+            }
+            .text{
+              width: 43%;
+            }
+          }
+        }
       .Message {
         .title {
           span {

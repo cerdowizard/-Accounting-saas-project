@@ -20,8 +20,6 @@ const VendorDashboard = () => {
   return (
 
     <div>
-
-     
       <div id="CustomersDashBoard">
         <div className='container'>
 
@@ -30,19 +28,19 @@ const VendorDashboard = () => {
             <div className="navHolder">
 
               <div className="boxes act" onClick={handleClick}>
-                <Link to=''>Create New Vendor</Link>
+                <Link to='/CreateNewVendor'>Create New Vendor</Link>
               </div>
               <div className="boxes" onClick={handleClick}>
                 <Link to=''>Create New Purchase Order</Link>
               </div>
               <div className="boxes" onClick={handleClick}>
-                <Link to='' >Create New Vendor Invoice</Link>
+                <Link to='/ProcessVendorInvoice' >Create New Vendor Invoice</Link>
               </div>
               <div className="boxes" onClick={handleClick}>
-                <Link to='' >Create New Vendor Returns</Link>
+                <Link to='/ProcessVendorReturn' >Create New Vendor Returns</Link>
               </div>
               <div className="boxes" onClick={handleClick}>
-                <Link to=''>Create Vendor Payment</Link>
+                <Link to='/ProcessPayment'>Create Vendor Payment</Link>
               </div>
               <div className="boxes" onClick={handleClick}>
                 <Link to=''>Create Vendor Cash Payment</Link>
@@ -51,7 +49,7 @@ const VendorDashboard = () => {
                 <Link to='' >Allocate Payment</Link>
               </div>
               <div className="boxes" onClick={handleClick}>
-                <Link to='' >Create New Vendor Adjustment</Link>
+                <Link to='/ProcessVendorAdjustment' >Create New Vendor Adjustment</Link>
               </div>
 
             </div>

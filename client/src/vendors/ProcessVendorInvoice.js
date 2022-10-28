@@ -2,7 +2,6 @@ import ButtomNav from '../component/ButtomNav'
 import UserNavbar from '../usersdashboard/UserNavbar'
 import '../styles/inputs.scss'
 import '../styles/in.scss'
-import { useState } from 'react'
 import Intable from "../component/Intable";
 import imgIcon from "../assets/fluent_folder-48-filled.png";
 
@@ -16,7 +15,7 @@ const ProcessVendorInvoice = () => {
                         <div className="invoice-header">
                             <div className="left">
                                 <div className="top">
-                                    <h1>Vendor Invoice</h1>
+                                    <h1>Process Vendor Invoice</h1>
                                 </div>
 
                             </div>
@@ -50,7 +49,7 @@ const ProcessVendorInvoice = () => {
                                         </div>
                                     </div>
                                 </div>
-                               
+
                                 <div className="right">
                                     <h1>Balance Due:</h1>
                                     <p>₦0.00</p>
@@ -78,14 +77,7 @@ const ProcessVendorInvoice = () => {
                                                 <div className="btnHolder">
                                                     <button>Add new Vendor</button>
                                                 </div>
-                                                <div className="row">
-                                                    <div className="col-md-6">
-                                                        left
-                                                    </div>
-                                                     <div className="col-md-6">
-                                                        right
-                                                    </div>
-                                                </div>
+
                                             </div>
                                         </div>
                                         <div className="col-md-6">
@@ -96,6 +88,24 @@ const ProcessVendorInvoice = () => {
                                                 </div>
                                             </div>
 
+                                        </div>
+                                    </div>
+                                    <div className="row mt-3">
+                                        <div className="col-md-6">
+                                            <div className="email">
+                                                <label htmlFor="">VAT Reference</label>
+                                                <div className="email-input">
+                                                    <input type="text" placeholder='VAT Reference' />
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div className="col-md-6">
+                                            <div className="email">
+                                                <label htmlFor="">Credit limit</label>
+                                                <div className="email-input">
+                                                    <input type="text" placeholder='N0.00' />
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                     <div className="row shipping mt-4">
@@ -163,37 +173,88 @@ const ProcessVendorInvoice = () => {
                                     <div className="payment">
                                         <div className="row mt-3">
                                             <h1>Payment Details</h1>
-                                            <div className="col-md-6">
+                                            <div className="paymentMethod">
+                                                <div className="row">
+                                                    <div className="col-md-6">
+                                                        <div className="dividedForm">
+                                                            <div className="select mt-2">
+                                                                <label htmlFor="">Currency</label>
+                                                                <select
+                                                                    class="role"
+                                                                    aria-label="Default select example"
+                                                                >
+                                                                    <option selected>Nigerian Naira NGN</option>
+                                                                    <option value="1">Nigeria</option>
+                                                                    <option value="2">Two</option>
+                                                                    <option value="3">Three</option>
+                                                                </select>
+                                                            </div>
+                                                            <div className="select mt-2">
+                                                                <label htmlFor="">Preferred Payment Method</label>
+                                                                <select
+                                                                    class="role"
+                                                                    aria-label="Default select example"
+                                                                >
+                                                                    <option selected>Select payment method</option>
+                                                                    <option value="1">Nigeria</option>
+                                                                    <option value="2">Two</option>
+                                                                    <option value="3">Three</option>
+                                                                </select>
+                                                            </div>
+                                                            <div className="select mt-2">
+                                                                <label htmlFor="">Preferred Delivery Method</label>
+                                                                <select
+                                                                    class="role"
+                                                                    aria-label="Default select example"
+                                                                >
+                                                                    <option selected>Select delivery method</option>
+                                                                    <option value="1">Nigeria</option>
+                                                                    <option value="2">Two</option>
+                                                                    <option value="3">Three</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div className="left col-md-6">
+                                                        <div className="Exchange mt-2">
+                                                            <label htmlFor="">Exchange Rate</label>
+                                                            <div className="box-circl-holder d-flex">
 
-                                                <div className="select">
-                                                    <label htmlFor="">Payment Method</label>
-                                                    <select
-                                                        class="role"
-                                                        aria-label="Default select example"
-                                                    >
-                                                        <option selected>Select Vendor</option>
-                                                        <option value="1">Nigeria</option>
-                                                        <option value="2">Two</option>
-                                                        <option value="3">Three</option>
-                                                    </select>
-                                                </div>
-                                                <div className="select">
-                                                    <label htmlFor="">Deposit to</label>
-                                                    <select
-                                                        class="role"
-                                                        aria-label="Default select example"
-                                                    >
-                                                        <option selected>Select Vendor</option>
-                                                        <option value="1">Nigeria</option>
-                                                        <option value="2">Two</option>
-                                                        <option value="3">Three</option>
-                                                    </select>
-                                                </div>
-                                            </div>
-                                            <div className="col-md-6">
-                                                <label htmlFor="">Reference no.</label>
-                                                <div className="email-input">
-                                                    <input type="text" placeholder='15268558' />
+                                                                <input type="radio" defaultChecked />
+                                                                <span>Market Rate</span>
+
+                                                                <input type="radio" />
+                                                                <span>Custom Rate</span>
+                                                                <input type="text" placeholder='N0.00' className='text' />
+                                                            </div>
+                                                        </div>
+                                                        <div className="select mt-2">
+                                                            <label htmlFor="">Terms</label>
+                                                            <select
+                                                                class="role"
+                                                                aria-label="Default select example"
+                                                            >
+                                                                <option selected>NET 15</option>
+                                                                <option value="1">Nigeria</option>
+                                                                <option value="2">Two</option>
+                                                                <option value="3">Three</option>
+                                                            </select>
+                                                        </div>
+                                                        <div className="dividedForm d-flex gap-2">
+                                                            <div className="balance">
+                                                                <label htmlFor="">Opening Balance</label>
+                                                                <div className="">
+                                                                    <input type="text" placeholder="N0.00" />
+                                                                </div>
+                                                            </div>
+                                                            <div className="balance">
+                                                                <label htmlFor="">As of</label>
+                                                                <div className="">
+                                                                    <input type="date" />
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
