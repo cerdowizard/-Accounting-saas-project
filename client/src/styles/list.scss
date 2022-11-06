@@ -4,10 +4,13 @@
   display: flex;
   align-items: center;
   padding: 3rem;
+
   .main {
     background-color: #ffffff;
     width: 100%;
     height: 100%;
+    padding-bottom: 2rem;
+
     .header {
       height: 70px;
       background: #ffffff;
@@ -17,6 +20,7 @@
       align-items: center;
       justify-content: space-between;
       padding: 1rem;
+
       .left {
         h1 {
           font-family: "Roboto";
@@ -28,17 +32,21 @@
           color: #1c1e21;
         }
       }
+
       .right {
         display: flex;
         gap: 10px;
+
         button {
           border: 1px solid #128c7e;
           border-radius: 8px;
           outline: none;
         }
+
         .btn {
           color: #128c7e;
         }
+
         .button {
           background-color: #128c7e;
           color: white;
@@ -46,12 +54,14 @@
       }
     }
   }
+
   .secondLayer {
     display: flex;
     gap: 50px;
     padding: 1rem;
     padding-top: 2rem;
     padding-bottom: 2rem;
+
     .left {
       .btn {
         border: 1px solid #128c7e;
@@ -65,19 +75,23 @@
         line-height: 21px;
       }
     }
+
     .middle {
       display: flex;
       gap: 20px;
       align-items: flex-end;
+
       .search {
         background-color: transparent;
         display: flex;
         align-items: center;
+
         .icon {
           background-color: #128c7e;
           color: white;
           font-size: 37px;
         }
+
         span {
           font-family: "Roboto";
           font-style: normal;
@@ -87,8 +101,10 @@
           margin-right: 0.5rem;
           color: #000000;
         }
+
         div {
           border: 1px solid #aaa7a7;
+
           input {
             border: none;
             outline: none;
@@ -96,10 +112,12 @@
           }
         }
       }
+
       .setting {
         display: flex;
         align-items: center;
         gap: 10px;
+
         span {
           font-family: "Roboto";
           font-style: normal;
@@ -107,6 +125,7 @@
           font-size: 14px;
           line-height: 19px;
         }
+
         .dropdown {
           button {
             outline: none;
@@ -117,8 +136,10 @@
         }
       }
     }
+
     .right {
       padding-top: 2rem;
+
       .youtube {
         h1 {
           font-family: "Roboto";
@@ -128,18 +149,22 @@
           line-height: 19px;
           color: #1c1e21;
         }
+
         img {
           width: 200px;
           height: 100%;
         }
       }
     }
+
     .tableSection {
       margin-top: 5rem;
     }
   }
+
   .tableSection {
     width: 100%;
+
     .nav {
       width: 95%;
       margin: 0 auto;
@@ -147,6 +172,7 @@
       display: flex;
       align-items: center;
       gap: 10px;
+
       li {
         display: flex;
         justify-content: center;
@@ -166,21 +192,26 @@
         cursor: progress;
       }
     }
+
     .paginate {
       padding: 1rem;
       display: flex;
       justify-content: space-between;
-    a{
-      color: gray;
-    }
-    .acts{
-       a{
-      color: #00c5ae;
-    }
-    }
+
+      a {
+        color: gray;
+      }
+
+      .acts {
+        a {
+          color: #00c5ae;
+        }
+      }
+
       nav {
         display: flex;
         flex-direction: column;
+
         span {
           margin-left: 40%;
           font-family: "Roboto";
@@ -195,6 +226,7 @@
           color: #1c1e21;
         }
       }
+
       .btn {
         height: 50px;
         font-family: "Roboto";
@@ -207,8 +239,10 @@
       }
     }
   }
+
   .tableListing {
     padding: 1rem;
+
     .heading {
       display: flex;
       justify-content: space-between;
@@ -217,21 +251,21 @@
       padding-bottom: 20px;
       padding-left: 1rem;
       padding-right: 1rem;
+
       span {
         font-family: "Roboto";
         font-style: normal;
         font-weight: 500;
         font-size: 16px;
         line-height: 21px;
-        /* Color/Text/Grey/100 */
         color: #1c1e21;
       }
+
+    }
+
+    .body {
+      padding: 1rem;
     }
   }
-  .body {
-    display: flex;
-    justify-content: space-between;
-    padding: 1rem;
-    border-bottom: 1px solid #ebecee;
-  }
+
 }

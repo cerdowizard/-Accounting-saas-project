@@ -1,13 +1,80 @@
-.selectItem{
-    .itemLeft{
-        display: flex;
-        align-items: center;
-       gap: 10px;
-        input{
-            width: 20px !important;
-        }
-        p{
-            margin-top: 13px;
-        }
+.selectItem {
+  .title {
+    margin-left: 1rem;
+    h1 {
+      font-family: "Roboto";
+      font-style: normal;
+      font-weight: 600;
+      font-size: 24px;
+      line-height: 28px;
+      color: #46484a;
+    }
+  }
+  .itemLeft {
+    margin-left: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 1px;
+    input {
+      width: 20px !important;
+    }
+    h6 {
+      margin-top: 10px;
+    }
+  }
+  .h6 {
+    margin-left: 35px;
+    font-weight: 400;
+  }
+}
+.inventoeyDetail {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  input {
+    width: 20px !important;
+  }
+}
+.PurchaseDetails {
+  margin-top: 1rem;
+  .title {
+    h1 {
+      font-family: "Roboto";
+      font-style: normal;
+      font-weight: 600;
+      font-size: 24px;
+      line-height: 28px;
+      color: #46484a;
+    }
+  }
+}
+.Description {
+  h1 {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 163.15%;
+
+    /* or 26px */
+    display: flex;
+    align-items: center;
+
+    /* Color/Text/Grey/80 */
+    color: #46484a;
+  }
+  textarea {
+    border: 1px solid #dcdddf;
+    border-radius: 8px;
+    width: 100%;
+  }
+}
+
+.fesSection{
+    width: 100%;
+    gap: 20px;
+   input.date{
+    width: 160% !important;
+   
     }
 }

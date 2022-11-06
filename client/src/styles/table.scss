@@ -1,7 +1,9 @@
 #Intable {
   .heading {
-    background-color: #d2d2d3;
+    background: #EBECEE;
+
   }
+
   th {
     font-family: "Roboto";
     font-style: normal;
@@ -11,6 +13,7 @@
     text-align: center;
     padding: 1rem;
   }
+
   tr {
     &:hover {
       background-color: #d2d2d3;
@@ -19,6 +22,7 @@
       cursor: pointer;
     }
   }
+
   td {
     justify-content: center;
     font-family: "Roboto";
@@ -30,10 +34,11 @@
     padding: 0.5rem;
   }
 }
-.act {
-  border: 1px solid #d2d2d3;
-  border-radius: 8px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
+
+// .act {
+//   border: 1px solid #d2d2d3;
+//   border-radius: 8px;
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+// }

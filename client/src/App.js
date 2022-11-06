@@ -58,6 +58,16 @@ import ProcessVendorReturn from './vendors/ProcessVendorReturn';
 import ProcessVendorAdjustment from "./vendors/ProcessVendorAdjustment";
 import ItemDashboard from './Items/ItemDashboard';
 import CreateNewItem from './Items/CreateNewItem';
+import CreateNewPhysical from './Items/CreateNewPhysical';
+import CreateItemUnchecked from './Items/CreateItemUnchecked ';
+import CreateItemChecked from "./Items/CreateItemChecked";
+import ItemDashboardCat from "./Items/ItemDashboardCat";
+import ItemDashboarList from './Items/ItemDashboarList';
+import ListItemBundles from './Items/ListItemBundles';
+import AdjustItemOpeningBalances from "./Items/AdjustItemOpeningBalances";
+import ItemBundle from './Items/ItemBundle';
+import CreateInventoryAdjustment from './Items/CreateInventoryAdjustment';
+import ItemReceipt from './Items/ItemReceipt';
 const App = () => {
   return (
     <div>
@@ -66,6 +76,16 @@ const App = () => {
           {/* <Route path='/post' element={<SinglePage />} />
           <Route path='/contact' element={<ContactUsPage />} />
          */}
+          <Route path='/ItemReceipt' element={<ItemReceipt />} />
+          <Route path='/CreateInventoryAdjustment' element={<CreateInventoryAdjustment />} />
+          <Route path='/ItemBundle' element={<ItemBundle />} />
+          <Route path='/AdjustItemOpeningBalances' element={<AdjustItemOpeningBalances />} />
+          <Route path='/ListItemBundles' element={<ListItemBundles />} />
+          <Route path='/ItemDashboarList' element={< ItemDashboarList />} />
+          <Route path='/ItemDashboardCat' element={< ItemDashboardCat />} />
+          <Route path='/CreateItemChecked' element={< CreateItemChecked />} />
+          <Route path='/CreateItemUnchecked' element={< CreateItemUnchecked />} />
+          <Route path='/CreateNewPhysical' element={< CreateNewPhysical />} />
           <Route path='/CreateNewItem' element={< CreateNewItem />} />
           <Route path='/ItemDashboard' element={< ItemDashboard />} />
           <Route path='/ProcessVendorAdjustment' element={< ProcessVendorAdjustment />} />

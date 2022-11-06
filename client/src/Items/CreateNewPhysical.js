@@ -2,7 +2,8 @@ import '../styles/item.scss'
 import UserNavbar from '../usersdashboard/UserNavbar'
 import ButtomNav from "../component/ButtomNav";
 import '../styles/inputs.scss'
-const CreateNewItem = () => {
+
+const CreateNewPhysical = () => {
     return (
         <div>
             <UserNavbar />
@@ -134,7 +135,7 @@ const CreateNewItem = () => {
                                                 </select>
                                             </div>
 
-                                          
+
                                             <div className="select mt-2">
                                                 <label>Tax Code</label>
                                                 <select class="role" aria-label="Default select example">
@@ -145,6 +146,32 @@ const CreateNewItem = () => {
                                                 </select>
                                             </div>
                                         </div>
+
+                                        <div className="PurchaseDetails">
+                                            <div className="title">
+                                                <h1>Inventory Details</h1>
+                                            </div>
+
+
+                                            <div className="select mt-2">
+                                                <label>Asset Account</label>
+                                                <select class="role" aria-label="Default select example">
+                                                    <option selected>Income Account</option>
+                                                    <option value="1">Nigeria</option>
+                                                    <option value="2">Two</option>
+                                                    <option value="3">Three</option>
+                                                </select>
+                                            </div>
+
+                                            <div className=" mt-2">
+                                                <label htmlFor="">On Hand</label>
+                                                <div className="email-input">
+                                                    <input type="text" placeholder='₦0.00' />
+                                                </div>
+                                            </div>
+
+                                        </div>
+
                                     </div>
                                     <div className="col-md-6 left">
                                         <div className="">
@@ -160,8 +187,8 @@ const CreateNewItem = () => {
                                                 <input type="text" placeholder="Manufacturer's Part Number" />
                                             </div>
                                         </div>
-                                        
-                                        
+
+
                                         <div className="Description mt-3 mb-5">
                                             <h1> Description on Purchase</h1>
                                             <textarea name="" id="" cols="30" rows="10"></textarea>
@@ -171,9 +198,41 @@ const CreateNewItem = () => {
                                             <h1>Description on Sales Transactions</h1>
                                             <textarea name="" id="" cols="30" rows="10"></textarea>
                                         </div>
+                                       
+
+                                        <div className="fesSection d-flex">
+                                            <div className="mt-2">
+                                                <label htmlFor="">Reorder Point (min)</label>
+                                                <div className="email-input">
+                                                    <input type="text" placeholder="Min" />
+                                                </div>
+                                            </div>
+                                            <div className="mt-2">
+                                                <label htmlFor="">Max</label>
+                                                <div className="email-input">
+                                                    <input type="text" placeholder="Max" />
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        
+                                        <div className="fesSection d-flex">
+                                            <div className="mt-2">
+                                                <label htmlFor="">Total Value</label>
+                                                <div className="email-input">
+                                                    <input type="text" placeholder="N0.00" />
+                                                </div>
+                                            </div>
+                                            <div className="mt-2">
+                                                <label htmlFor="">As of</label>
+                                                <div>
+                                                    <input type="date" className='date' placeholder="Manufacturer's Part Number" />
+                                                </div>
+                                            </div>
+                                        </div>
 
                                     </div>
-                                   
+
                                 </div>
 
                             </div>
@@ -186,4 +245,4 @@ const CreateNewItem = () => {
     )
 }
 
-export default CreateNewItem
+export default CreateNewPhysical

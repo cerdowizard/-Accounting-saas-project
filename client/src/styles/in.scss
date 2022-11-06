@@ -4,6 +4,7 @@
   align-items: center;
   height: 100vh;
   justify-content: center;
+
   .Invoice-container {
     margin-top: 2rem;
     padding-bottom: 2rem;
@@ -11,6 +12,7 @@
     height: 90vh;
     overflow-y: scroll;
     background-color: white;
+
     .invoice-header {
       padding: 0.5rem;
       padding-left: 0.5rem;
@@ -22,8 +24,10 @@
       background: #ffffff;
       box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.04),
         0px 2px 2px rgba(0, 0, 0, 0.08), 0px 4px 8px rgba(0, 0, 0, 0.12);
+
       .top {
         margin-left: 1rem;
+
         h1 {
           font-family: "Roboto";
           font-style: normal;
@@ -33,8 +37,10 @@
           color: #1c1e21;
         }
       }
+
       .right {
         margin-right: 1rem;
+
         .top {
           button {
             outline: none;
@@ -48,20 +54,53 @@
         }
       }
     }
+
+    .note {
+      width: 85%;
+      margin: 0 auto;
+      display: flex;
+      gap: 13px;
+      padding: 2rem;
+
+      .icircle {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid #1C1E21;
+        height: 20px;
+        width: 20px;
+        padding: 6px;
+        border-radius: 50%;
+        font-weight: 600;
+      }
+
+      span {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 163.15%;
+        color: #1C1E21;
+      }
+    }
+
     .main {
       width: 90%;
       margin: 0 auto;
       justify-content: center;
       border-radius: 50px;
       padding: 10px;
-      margin-top: 2rem;
+      margin-top: .5rem;
+
       .header {
         display: flex;
         align-items: center;
         justify-content: space-between;
+
         .note {
           display: flex;
           gap: 10px;
+
           span {
             margin-top: .3rem;
             width: 20px;
@@ -94,18 +133,22 @@
             font-size: 32px;
             line-height: 38px;
           }
+
           p {
             text-align: end;
           }
         }
+
         .inputHolder {
           display: flex;
           align-items: center;
           gap: 20px;
+
           .in-check {
             display: flex;
             gap: 5px;
             align-items: center;
+
             span {
               font-family: "Roboto";
               font-style: normal;
@@ -119,6 +162,13 @@
           }
         }
       }
+
+      .item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
       form {
         h1 {
           font-family: "Roboto";
@@ -128,6 +178,7 @@
           line-height: 28px;
           color: #1c1e21;
         }
+
         .name {
           .select {
             label {
@@ -136,6 +187,7 @@
               line-height: 163.15%;
               color: #25313c;
             }
+
             select.role {
               margin-bottom: 0.5rem;
               width: 100%;
@@ -148,10 +200,12 @@
               font-size: 16px;
             }
           }
+
           .btnHolder {
             width: 100%;
             align-items: center;
             justify-content: center;
+
             button {
               margin-top: 1rem;
               width: 100%;
@@ -164,11 +218,13 @@
             }
           }
         }
+
         .email-input {
           .p {
             padding-bottom: 1.5rem;
           }
         }
+
         .div {
           select.role {
             margin-bottom: 0.5rem;
@@ -182,21 +238,26 @@
             font-size: 16px;
           }
         }
+
         .tax-rate {
           width: 100%;
           display: flex;
           flex-direction: column;
+
           .radios {
             display: flex;
             align-items: center;
             margin-top: 0.5rem;
+
             .check {
               input {
                 width: 10%;
               }
+
               display: flex;
               align-items: center;
               gap: 5px;
+
               span {
                 width: 150px;
                 font-family: "Roboto";
@@ -208,9 +269,11 @@
           }
         }
       }
+
       .button {
         display: flex;
         gap: 10px;
+
         .create {
           color: #128c7e;
           border: 1px solid #128c7e;
@@ -218,6 +281,7 @@
           outline: none;
           width: 30%;
         }
+
         .delete {
           color: #dd4225;
           border: 1px solid #dd4225;
@@ -226,22 +290,27 @@
           width: 30%;
         }
       }
-      .Exchange{
-          .box-circl-holder{
-            display: flex;
-            align-items: center;
-            gap: 10px;
-            input{
-              width: 20px;
-            }
-            span{
-              color: #707173;
-            }
-            .text{
-              width: 43%;
-            }
+
+      .Exchange {
+        .box-circl-holder {
+          display: flex;
+          align-items: center;
+          gap: 10px;
+
+          input {
+            width: 20px;
+          }
+
+          span {
+            color: #707173;
+          }
+
+          .text {
+            width: 43%;
           }
         }
+      }
+
       .Message {
         .title {
           span {
@@ -253,6 +322,7 @@
             color: #1c1e21;
           }
         }
+
         textarea {
           height: 200px;
           outline: none;
@@ -260,6 +330,7 @@
           border-radius: 8px;
           color: #303030;
           padding-left: 0.5rem;
+
           &::placeholder {
             font-family: "Roboto";
             padding: 2rem;
@@ -271,8 +342,10 @@
           }
         }
       }
+
       .upload {
         width: 100;
+
         .file {
           width: 75%;
           height: 200px;
@@ -284,14 +357,17 @@
           justify-content: center;
         }
       }
+
       .right {
         display: flex;
         flex-direction: column;
         align-items: flex-end;
         gap: 5px;
+
         .Total {
           display: flex;
           gap: 30px;
+
           h4 {
             font-family: "Roboto";
             font-style: normal;
@@ -299,12 +375,14 @@
             font-size: 18px;
             line-height: 25px;
           }
+
           span {
             font-family: "Roboto";
             font-style: normal;
             font-weight: 400;
             font-size: 18px;
             line-height: 25px;
+
             input {
               width: 50px;
               outline: none;
@@ -312,6 +390,7 @@
           }
         }
       }
+
       .Process {
         .Message {
           .title {
@@ -323,6 +402,7 @@
               line-height: 163.15%;
               color: #1c1e21;
             }
+
             .set {
               font-family: "Roboto";
               font-style: normal;
@@ -335,6 +415,7 @@
               color: #128c7e;
             }
           }
+
           textarea {
             height: 130px;
             outline: none;
@@ -342,6 +423,7 @@
             border-radius: 8px;
             color: #303030;
             padding-left: 0.5rem;
+
             &::placeholder {
               font-family: "Roboto";
               padding: 2rem;
@@ -354,8 +436,10 @@
           }
         }
       }
+
       .UnpaidInvoices {
         margin-top: 2rem;
+
         h1 {
           font-family: "Roboto";
           font-style: normal;
@@ -366,12 +450,15 @@
           /* Color/Text/Grey/100 */
           color: #1c1e21;
         }
+
         .Unallocate {
           width: 100%;
           display: flex;
           justify-content: flex-end;
+
           .Unallocated {
             width: 30%;
+
             p {
               font-family: "Roboto";
               font-style: normal;
@@ -386,6 +473,7 @@
               /* Color/Text/Grey/80 */
               color: #46484a;
             }
+
             span {
               display: flex;
               border: 1px solid #d2d2d3;
