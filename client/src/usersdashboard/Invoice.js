@@ -7,12 +7,7 @@ import Intable from "../component/Intable";
 import imgIcon from "../assets/fluent_folder-48-filled.png";
 const Invoice = () => {
     let [tableData, setTableData] = useState([]);
-    // [
-    //     { "id": 1, "name": "Abel", "lName": "Michael" },
-    //     { "id": 1, "name": "Abel", "lName": "Michael" },
-    //     { "id": 1, "name": "Abel", "lName": "Michael" },
-    //     { "id": 1, "name": "Abel", "lName": "Michael" },
-    // ]
+  
     return (
         <div>
             <UserNavbar />

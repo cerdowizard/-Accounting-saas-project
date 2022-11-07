@@ -68,6 +68,11 @@ import AdjustItemOpeningBalances from "./Items/AdjustItemOpeningBalances";
 import ItemBundle from './Items/ItemBundle';
 import CreateInventoryAdjustment from './Items/CreateInventoryAdjustment';
 import ItemReceipt from './Items/ItemReceipt';
+import ListOfAccounr from "./chart/ListOfAccount";
+import ListOfAccount from './chart/ListOfAccount';
+import CreateAnAccount from './chart/CreateAnAccount';
+import ChartOfAccountExpenses from './chart/ChartOfAccountExpenses';
+import MakeJournalEntries from "./chart/MakeJournalEntries";
 const App = () => {
   return (
     <div>
@@ -76,6 +81,10 @@ const App = () => {
           {/* <Route path='/post' element={<SinglePage />} />
           <Route path='/contact' element={<ContactUsPage />} />
          */}
+          <Route path='/MakeJournalEntries' element={<MakeJournalEntries />} />
+          <Route path='/ChartOfAccountExpenses' element={<ChartOfAccountExpenses />} />
+          <Route path='/CreateAnAccount' element={<CreateAnAccount />} />
+          <Route path='/ListOfAccount' element={<ListOfAccount />} />
           <Route path='/ItemReceipt' element={<ItemReceipt />} />
           <Route path='/CreateInventoryAdjustment' element={<CreateInventoryAdjustment />} />
           <Route path='/ItemBundle' element={<ItemBundle />} />
@@ -127,14 +136,14 @@ const App = () => {
           <Route path='/settings' element={<Settings />} />
           <Route path='/user-dashboard' element={<UserHomePage />} />
           <Route path='/online' element={<Online />} />
-          <Route path='/support' element={<ClientsSupport />}/>
+          <Route path='/support' element={<ClientsSupport />} />
           <Route path='/contact' element={<Contact />} />
           <Route path='/partners' element={<Partners />} />
           <Route path='/price' element={<Pricing />} />
           <Route path='/features' element={<Features />} />
           <Route path="/token" element={<Otp />} />
           <Route path='/reg' element={<Register />} />
-          <Route path='/reset-password' element={<ResetPassword />} /> 
+          <Route path='/reset-password' element={<ResetPassword />} />
           <Route path='/forgot-password' element={<ForgotPassword />} />
           <Route path='/verify-email' element={<VerifyEmail />} />
           <Route path="/login" element={<Login />} />
