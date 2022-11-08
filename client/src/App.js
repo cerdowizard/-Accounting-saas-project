@@ -68,11 +68,11 @@ import AdjustItemOpeningBalances from "./Items/AdjustItemOpeningBalances";
 import ItemBundle from './Items/ItemBundle';
 import CreateInventoryAdjustment from './Items/CreateInventoryAdjustment';
 import ItemReceipt from './Items/ItemReceipt';
-import ListOfAccounr from "./chart/ListOfAccount";
 import ListOfAccount from './chart/ListOfAccount';
 import CreateAnAccount from './chart/CreateAnAccount';
 import ChartOfAccountExpenses from './chart/ChartOfAccountExpenses';
 import MakeJournalEntries from "./chart/MakeJournalEntries";
+import TrialBalance from './chart/TrialBalance';
 const App = () => {
   return (
     <div>
@@ -81,6 +81,7 @@ const App = () => {
           {/* <Route path='/post' element={<SinglePage />} />
           <Route path='/contact' element={<ContactUsPage />} />
          */}
+          <Route path='/TrialBalance' element={<TrialBalance />} />
           <Route path='/MakeJournalEntries' element={<MakeJournalEntries />} />
           <Route path='/ChartOfAccountExpenses' element={<ChartOfAccountExpenses />} />
           <Route path='/CreateAnAccount' element={<CreateAnAccount />} />
