@@ -248,7 +248,6 @@ const MakeJournalEntries = () => {
                                             <td></td>
                                         </tr>
 
-
                                         <tr>
                                             <td>Totals</td>
                                             <td>0.00</td>

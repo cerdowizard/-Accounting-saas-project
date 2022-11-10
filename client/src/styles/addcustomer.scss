@@ -1,16 +1,18 @@
 #AddNewCustomer {
-  a{
+  a {
     text-decoration: none;
     color: black;
-    
+
   }
+
   span {
-  color: red;
-}
+    color: red;
+  }
 
   background: #aaa7a7;
   display: flex;
   align-items: center;
+
   .formHolderContact {
     margin-top: 3rem;
     margin-bottom: 3rem;
@@ -19,10 +21,12 @@
     background-color: white;
     height: 100%;
     padding: 1.2rem;
+
     .btnHolder {
       width: 100%;
       align-items: center;
       justify-content: center;
+
       button {
         margin-top: 1rem;
         width: 100%;
@@ -34,20 +38,25 @@
         border-radius: 8px;
       }
     }
+
     .titleHolder {
       display: flex;
       align-items: center;
       flex-direction: column;
       justify-content: center;
-      gap: 5px;
+      gap: 25px;
+
       h1 {
         text-align: center;
       }
+
       p {
         width: 50%;
         text-align: center;
+        margin-bottom: 2rem;
       }
     }
+
     .right {
       padding-left: 40px;
       padding-right: 20px;
@@ -63,6 +72,7 @@
           line-height: 163.15%;
           color: #25313c;
         }
+
         select.role {
           margin-bottom: 0.5rem;
           width: 100%;
@@ -76,17 +86,20 @@
         }
       }
     }
+
     .left {
       padding-right: 40px;
       padding-left: 20px;
       display: flex;
       flex-direction: column;
+
       .check {
         display: flex;
         flex-direction: column;
         position: relative;
         top: -13px;
         bottom: 0;
+
         .checking {
           display: flex;
           align-items: center;
@@ -94,6 +107,7 @@
           justify-content: flex-end;
           position: relative;
           top: 25px;
+
           span {
             font-family: "Roboto";
             font-style: normal;
@@ -104,6 +118,7 @@
           }
         }
       }
+
       .select {
         label {
           display: block;
@@ -112,6 +127,7 @@
           line-height: 163.15%;
           color: #25313c;
         }
+
         select.role {
           margin-bottom: 0.5rem;
           width: 100%;
@@ -125,21 +141,25 @@
         }
       }
     }
+
     .address {
       margin-top: 4rem;
+
       .tab {
         margin: 0 auto;
         width: 85%;
         background-color: #e1e1e1;
         margin-top: 1.5rem;
         margin-bottom: 1.5rem;
+
         .tabActive {
           background-color: #ffffff;
           border-bottom: 2px solid #128c7e;
           color: #128c7e;
+
           a {
             text-decoration: none;
-             color: #128c7e;
+            color: #128c7e;
           }
         }
 
@@ -164,15 +184,18 @@
           }
         }
       }
+
       .addy {
         margin-top: 2rem;
       }
+
       .contact {
         .dividedForm {
           width: 100%;
           display: flex;
           justify-content: space-between;
           gap: 20px;
+
           .select {
             width: 100%;
 
@@ -190,32 +213,40 @@
           }
         }
       }
+
       .paymentMethod {
         width: 100%;
-        .Exchange{
-          .box-circl-holder{
+
+        .Exchange {
+          .box-circl-holder {
             display: flex;
             align-items: center;
             gap: 10px;
-            input{
+
+            input {
               width: 20px;
             }
-            span{
+
+            span {
               color: #707173;
             }
-            .text{
+
+            .text {
               width: 45%;
             }
           }
         }
+
         .balance {
           width: 100%;
+
           lable {
             font-weight: 600;
             font-size: 16px;
             line-height: 163.15%;
             color: #25313c;
           }
+
           input {
             margin-top: 5px;
             margin-bottom: 5px;
@@ -226,6 +257,7 @@
             background: #ffffff;
             border: 1px solid #adb5bc;
             border-radius: 8px;
+
             &::placeholder {
               color: #adb5bc;
               font-size: 16px;
@@ -234,16 +266,20 @@
           }
         }
       }
+
       .note {
         width: 100%;
+
         label {
           font-weight: 600;
           font-size: 16px;
           line-height: 163.15%;
           color: #25313c;
         }
+
         .noteHolder {
           width: 100%;
+
           textarea {
             width: 100%;
             height: 200px;
@@ -259,6 +295,7 @@
             background: #ffffff;
             border: 1px solid #adb5bc;
             border-radius: 8px;
+
             &::placeholder {
               color: #adb5bc;
               font-size: 16px;
@@ -267,14 +304,17 @@
           }
         }
       }
+
       .attachments {
         width: 100%;
+
         label {
           font-weight: 600;
           font-size: 16px;
           line-height: 163.15%;
           color: #25313c;
         }
+
         .uploadHolder {
           display: flex;
           flex-direction: column;
@@ -284,10 +324,12 @@
           height: 200px;
           border: 1px dashed #adb5bc;
           border-radius: 8px;
+
           input {
             width: 20%;
-             background-color: transparent;
-             border: none;
+            background-color: transparent;
+            border: none;
+
             &[type="file"] {
               background-color: transparent;
               color: #adb5bc;
@@ -297,20 +339,29 @@
           }
         }
       }
+
       .buttoning {
         margin-top: 1rem;
         width: 100%;
         display: flex;
-        justify-content: center;
+        justify-content: space-between;
         align-items: center;
+
+        .cancle {
+          background-color: transparent;
+          color: black;
+          border: 1px solid #128c7e;
+          margin-left: 1rem;
+        }
+
         button {
           background-color: #128c7e;
           color: white;
           outline: none;
           border: 0;
           padding: 10px;
+          width: 10%;
           border-radius: 8px;
-          width: 45%;
           margin-top: 1rem;
           margin-bottom: 1rem;
         }

@@ -37,25 +37,25 @@ const CustomersDashBoard = () => {
                 <Link to='' >Create New Sales Order</Link>
               </div>
               <div className="boxes" onClick={handleClick}>
-                <Link to='' >Create New Invoice</Link>
+                <Link to='/invoice' >Create New Invoice</Link>
               </div>
               <div className="boxes" onClick={handleClick}>
                 <Link to=''>Create New Cash Sales</Link>
               </div>
               <div className="boxes" onClick={handleClick}>
-                <Link to=''>Create New Receipt Customers</Link>
+                <Link to='/ProcessReceipt'>Create New Receipt Customers</Link>
               </div>
               <div className="boxes" onClick={handleClick}>
                 <Link to='' >Create New Credit Notes</Link>
               </div>
               <div className="boxes" onClick={handleClick}>
-                <Link to='' >Create New Credit Notes</Link>
+                <Link to='/CustomerWriteOffs' >Create New Written Off</Link>
               </div>
               <div className="boxes" onClick={handleClick}>
-                <Link to=''>Create New Recurring Invoice</Link>
+                <Link to='/RecurringInvoice'>Create New Recurring Invoice</Link>
               </div>
               <div className="boxes" onClick={handleClick}>
-                <Link to='/'>Create New Items</Link>
+                <Link to='/CreateNewItem'>Create New Items</Link>
               </div>
             </div>
           </div>

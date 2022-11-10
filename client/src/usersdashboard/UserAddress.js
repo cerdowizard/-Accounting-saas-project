@@ -2,8 +2,10 @@ import "../styles/addcustomer.scss";
 import Footer from "../component/Footer";
 import UserNavbar from "./UserNavbar";
 import '../styles/inputs.scss'
+import FormInput from "../component/FormInput";
+import imgIcon from "../assets/fluent_folder-48-filled.png";
 import { Link } from "react-router-dom";
-const AddNewCustomer = () => {
+const UserAddress = () => {
   return (
     <div>
       <UserNavbar />
@@ -111,8 +113,8 @@ const AddNewCustomer = () => {
             <div className="address" id="FormInput">
               <div className="tab">
                 <ul>
-                  <li className="tabActive"><Link to='/add-customer'>Contact Details</Link></li>
-                  <li><Link to='/UserAddress'>Address</Link></li>
+                  <li ><Link to='/add-customer'>Contact Details</Link></li>
+                  <li className="tabActive"><Link to='/UserAddress'>Address</Link></li>
                   <li><Link to='/UserAdditionalContact'>Additional Contact</Link></li>
                   <li><Link to='/UserPayment'>Payment and Billing</Link></li>
                   <li><Link to='/UserNote'>Notes</Link></li>
@@ -121,54 +123,78 @@ const AddNewCustomer = () => {
               </div>
               <div className="formHoldering">
                 <div className="row addy">
-                  <div className="col-md-6 right">
-                    <div>
-                      <label htmlFor="">Email</label>
-                      <div>
-                        <input type="text" placeholder="Separate multiple emails with commas" />
-                      </div>
-                    </div>
-
-                    <div>
-                      <label htmlFor="">Website</label>
-                      <div>
-                        <input type="text" placeholder="https://" />
-                      </div>
-                    </div>
-
-                  
-                  </div>
-                  <div className="col-md-6 left">
-                    <div>
-                      <label htmlFor="">Telephone</label>
-                      <div>
-                        <input type="text" placeholder="Enter your telephone number" />
-                      </div>
-                    </div>
-                    
-                    <div className="check">
-                      <div className="checking">
-                        <input style={{width:20}} type="checkbox" />
-                        <span>Same as Telephone</span>
-                      </div>
-                      <div>
-                        <label htmlFor="">Mobile</label>
-                        <div>
-                          <input type="text" placeholder="Enter your mobile number" />
-                        </div>
-                      </div>
-                     
-                    </div>
-                  </div>
+                 
                   <div className="contact">
                     <div className="row">
-                
                       <div className="col-md-6 right contact">
-                    
+                        <div>
+                          <label htmlFor="">Billing Address</label>
+                          <div>
+                            <input type="text" placeholder="Street" />
+                          </div>
+                        </div>
+
+                        <div className="dividedForm">
+                          <div>
+                            <input type="text" placeholder="City/Town" />
+                          </div>
+                          <div>
+                            <input type="text" placeholder="State/Province" />
+                          </div>
+
+                        </div>
+                        <div className="dividedForm">
+                          <input type="text" placeholder="City/Town" />
+                          <div className="select">
+                            <select
+                              class="role"
+                              aria-label="Default select example"
+                            >
+                              <option selected>Nigeria</option>
+                              <option value="1">Nigeria</option>
+                              <option value="2">Two</option>
+                              <option value="3">Three</option>
+                            </select>
+                          </div>
+                        </div>
+
+                      </div>
+
+                      <div className="col-md-6 right contact">
+                        <div>
+                          <label htmlFor="">Shipping Address</label>
+                          <div>
+                            <input type="text" placeholder="Street" />
+                          </div>
+                        </div>
+
+                        <div className="dividedForm">
+                          <div>
+                            <input type="text" placeholder="City/Town" />
+                          </div>
+                          <div>
+                            <input type="text" placeholder="State/Province" />
+                          </div>
+
+                        </div>
+                        <div className="dividedForm">
+                          <input type="text" placeholder="City/Town" />
+                          <div className="select">
+                            <select
+                              class="role"
+                              aria-label="Default select example"
+                            >
+                              <option selected>Nigeria</option>
+                              <option value="1">Nigeria</option>
+                              <option value="2">Two</option>
+                              <option value="3">Three</option>
+                            </select>
+                          </div>
+                        </div>
                       </div>
                     </div>
                   </div>
-              
+                 
                   <div className="buttoning">
 
                     <button className="cancle">Cancel</button>
@@ -184,4 +210,4 @@ const AddNewCustomer = () => {
   )
 };
 
-export default AddNewCustomer;
+export default UserAddress

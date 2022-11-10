@@ -73,6 +73,11 @@ import CreateAnAccount from './chart/CreateAnAccount';
 import ChartOfAccountExpenses from './chart/ChartOfAccountExpenses';
 import MakeJournalEntries from "./chart/MakeJournalEntries";
 import TrialBalance from './chart/TrialBalance';
+import UserAddress from "./usersdashboard/UserAddress";
+import UserPayment from "./usersdashboard/UserPayment";
+import UserNote from "./usersdashboard/UserNote";
+import Attachments from './usersdashboard/Attachments';
+import AdditionalContactInfo from "./usersdashboard/AdditionalContactInfo";
 const App = () => {
   return (
     <div>
@@ -81,6 +86,11 @@ const App = () => {
           {/* <Route path='/post' element={<SinglePage />} />
           <Route path='/contact' element={<ContactUsPage />} />
          */}
+          <Route path='/Attachments' element={<Attachments />} />
+          <Route path='/UserNote' element={<UserNote />} />
+          <Route path='/UserPayment' element={<UserPayment />} />
+          <Route path='/UserAdditionalContact' element={<AdditionalContactInfo />} />
+          <Route path='/UserAddress' element={<UserAddress />} />
           <Route path='/TrialBalance' element={<TrialBalance />} />
           <Route path='/MakeJournalEntries' element={<MakeJournalEntries />} />
           <Route path='/ChartOfAccountExpenses' element={<ChartOfAccountExpenses />} />
@@ -123,7 +133,7 @@ const App = () => {
           <Route path='/NewCustomerCategory' element={<NewCustomerCategory />} />
           <Route path='/CustomerWriteOffs' element={<CustomerWriteOffs />} />
           <Route path='/ProcessReceipt' element={<ProcessReceipt />} />
-          <Route path='/CustomerInvoices' element={<CustomerInvoices />} />
+          <Route path='/CustomerSalesOrder' element={<CustomerInvoices />} />
           <Route path='/CustomerWrite' element={<CustomerWrite />} />
           <Route path='/ListSales' element={<ListSales />} />
           <Route path='/CustomerReceipt' element={<CustomerReceipt />} />

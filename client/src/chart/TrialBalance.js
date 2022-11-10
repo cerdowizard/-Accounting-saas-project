@@ -22,38 +22,38 @@ const TrialBalance = () => {
 
                             <div className="filter">
                                 <div className="left d-flex">
-                                    <div className="firstSec d-flex">
+                                    <div className="Period d-flex">
                                         <span>Selected Period</span>
                                         <div className="dropdown">
-										  <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-										    Last Fiscal Year
-										  </button>
-										  <ul class="dropdown-menu dropdown-menu-dark">
-										    <li><a className="dropdown-item active" href="#">Action</a></li>
-										    <li><a className="dropdown-item" href="#">Another action</a></li>
-										    <li><a className="dropdown-item" href="#">Something else here</a></li>
-										    <li><a className="dropdown-item" href="#">Separated link</a></li>
-										  </ul>
-										</div>
+                                            <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                Last Fiscal Year
+                                            </button>
+                                            <ul class="dropdown-menu dropdown-menu-dark">
+                                                <li><a className="dropdown-item active" href="#">Action</a></li>
+                                                <li><a className="dropdown-item" href="#">Another action</a></li>
+                                                <li><a className="dropdown-item" href="#">Something else here</a></li>
+                                                <li><a className="dropdown-item" href="#">Separated link</a></li>
+                                            </ul>
+                                        </div>
                                     </div>
                                     <span>From</span>
-                                    <input type="date"/>
+                                    <input type="date" />
                                     <span>To</span>
-                                    <input type="date"/>
+                                    <input type="date" />
                                 </div>
                                 <div className="right">
-                                 <div className="dropdown">
-                                  <span>Basis</span>
-										  <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-										  Accrual
-										  </button>
-										  <ul class="dropdown-menu dropdown-menu-dark">
-										    <li><a className="dropdown-item active" href="#">Action</a></li>
-										    <li><a className="dropdown-item" href="#">Another action</a></li>
-										    <li><a className="dropdown-item" href="#">Something else here</a></li>
-										    <li><a className="dropdown-item" href="#">Separated link</a></li>
-										  </ul>
-										</div>
+                                    <div className="dropdown">
+                                        <span>Basis</span>
+                                        <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                            Accrual
+                                        </button>
+                                        <ul class="dropdown-menu dropdown-menu-dark">
+                                            <li><a className="dropdown-item active" href="#">Action</a></li>
+                                            <li><a className="dropdown-item" href="#">Another action</a></li>
+                                            <li><a className="dropdown-item" href="#">Something else here</a></li>
+                                            <li><a className="dropdown-item" href="#">Separated link</a></li>
+                                        </ul>
+                                    </div>
                                 </div>
                             </div>
 
@@ -95,7 +95,7 @@ const TrialBalance = () => {
                                             <td></td>
                                         </tr>
 
-                                         <tr>
+                                        <tr>
                                             <td>L'Oréal</td>
                                             <td></td>
                                             <td>192,432.33</td>
@@ -205,6 +205,11 @@ const TrialBalance = () => {
 
                                     </tbody>
                                 </table>
+                                <div className="total">
+                                    <span>Net Imcome</span>
+                                    <span>NGN</span>
+                                    <span>23,032.03</span>
+                                </div>
                             </div>
                             {/* <Table data={tableData} />
                             <button onClick={() => {

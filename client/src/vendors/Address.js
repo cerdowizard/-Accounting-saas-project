@@ -1,7 +1,6 @@
 import UserNavbar from '../usersdashboard/UserNavbar'
 import "../styles/addcustomer.scss";
 import '../styles/inputs.scss'
-import FormInput from "../component/FormInput";
 import { Link } from "react-router-dom";
 const Address = () => {
     return (
@@ -162,7 +161,8 @@ const Address = () => {
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div className="buttoning">
+                                            <div className="buttoning d-flex justify-content-between">
+                                                <button className="cancle">Cancel</button>
                                                 <button>Save</button>
                                             </div>
                                         </div>

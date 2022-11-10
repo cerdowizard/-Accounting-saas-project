@@ -87,7 +87,8 @@ const Notes = () => {
                                                   </div>
                                               </div>
                                           </div>
-                                          <div className="buttoning">
+                                          <div className="buttoning d-flex justify-content-between">
+                                              <button className="cancle">Cancel</button>
                                               <button>Save</button>
                                           </div>
                                       </div>

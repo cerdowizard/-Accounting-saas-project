@@ -20,6 +20,7 @@ const VendorDashboard = () => {
   return (
 
     <div>
+      <UserNavbar/>
       <div id="CustomersDashBoard">
         <div className='container'>
 

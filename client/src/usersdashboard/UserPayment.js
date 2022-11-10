@@ -3,7 +3,7 @@ import Footer from "../component/Footer";
 import UserNavbar from "./UserNavbar";
 import '../styles/inputs.scss'
 import { Link } from "react-router-dom";
-const AddNewCustomer = () => {
+const UserPayment = () => {
   return (
     <div>
       <UserNavbar />
@@ -111,64 +111,78 @@ const AddNewCustomer = () => {
             <div className="address" id="FormInput">
               <div className="tab">
                 <ul>
-                  <li className="tabActive"><Link to='/add-customer'>Contact Details</Link></li>
+                  <li ><Link to='/add-customer'>Contact Details</Link></li>
                   <li><Link to='/UserAddress'>Address</Link></li>
                   <li><Link to='/UserAdditionalContact'>Additional Contact</Link></li>
-                  <li><Link to='/UserPayment'>Payment and Billing</Link></li>
+                  <li className="tabActive"><Link to='/UserPayment'>Payment and Billing</Link></li>
                   <li><Link to='/UserNote'>Notes</Link></li>
                   <li><Link to='/Attachments'>Attachments</Link></li>
                 </ul>
               </div>
               <div className="formHoldering">
                 <div className="row addy">
-                  <div className="col-md-6 right">
-                    <div>
-                      <label htmlFor="">Email</label>
-                      <div>
-                        <input type="text" placeholder="Separate multiple emails with commas" />
-                      </div>
-                    </div>
-
-                    <div>
-                      <label htmlFor="">Website</label>
-                      <div>
-                        <input type="text" placeholder="https://" />
-                      </div>
-                    </div>
-
-                  
-                  </div>
-                  <div className="col-md-6 left">
-                    <div>
-                      <label htmlFor="">Telephone</label>
-                      <div>
-                        <input type="text" placeholder="Enter your telephone number" />
-                      </div>
-                    </div>
-                    
-                    <div className="check">
-                      <div className="checking">
-                        <input style={{width:20}} type="checkbox" />
-                        <span>Same as Telephone</span>
-                      </div>
-                      <div>
-                        <label htmlFor="">Mobile</label>
-                        <div>
-                          <input type="text" placeholder="Enter your mobile number" />
+                
+                  <div className="paymentMethod">
+                    <div className="row">
+                      <div className="col-md-6 right">
+                        <div className="dividedForm">
+                          <div className="select">
+                            <label htmlFor="">Preferred Payment Method</label>
+                            <select
+                              class="role"
+                              aria-label="Default select example"
+                            >
+                              <option selected>Select payment method</option>
+                              <option value="1">Nigeria</option>
+                              <option value="2">Two</option>
+                              <option value="3">Three</option>
+                            </select>
+                          </div>
+                          <div className="select">
+                            <label htmlFor="">Preferred Delivery Method</label>
+                            <select
+                              class="role"
+                              aria-label="Default select example"
+                            >
+                              <option selected>Select delivery method</option>
+                              <option value="1">Nigeria</option>
+                              <option value="2">Two</option>
+                              <option value="3">Three</option>
+                            </select>
+                          </div>
                         </div>
                       </div>
-                     
-                    </div>
-                  </div>
-                  <div className="contact">
-                    <div className="row">
-                
-                      <div className="col-md-6 right contact">
-                    
+                      <div className="left col-md-6">
+                        <div className="select">
+                          <label htmlFor="">Terms</label>
+                          <select
+                            class="role"
+                            aria-label="Default select example"
+                          >
+                            <option selected>NET 15</option>
+                            <option value="1">Nigeria</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                          </select>
+                        </div>
+                        <div className="dividedForm d-flex gap-2">
+                          <div className="balance">
+                            <label htmlFor="">Opening Balance</label>
+                            <div className="">
+                              <input type="text" placeholder="N0.00" />
+                            </div>
+                          </div>
+                          <div className="balance">
+                            <label htmlFor="">As of</label>
+                            <div className="">
+                              <input type="date" />
+                            </div>
+                          </div>
+                        </div>
                       </div>
                     </div>
                   </div>
-              
+
                   <div className="buttoning">
 
                     <button className="cancle">Cancel</button>
@@ -184,4 +198,4 @@ const AddNewCustomer = () => {
   )
 };
 
-export default AddNewCustomer;
+export default UserPayment
