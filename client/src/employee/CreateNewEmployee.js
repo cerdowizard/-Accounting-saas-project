@@ -2,6 +2,7 @@ import "../styles/addcustomer.scss";
 import '../styles/inputs.scss'
 import { Link } from "react-router-dom";
 import UserNavbar from "../usersdashboard/UserNavbar";
+import { padding } from "@mui/system";
 const CreateNewEmployee = () => {
     return (
         <div>
@@ -48,59 +49,104 @@ const CreateNewEmployee = () => {
                                 </div>
 
                                 <div>
-                                    <label htmlFor="">Customer VAT Number</label>
+                                    <label htmlFor="">Employee ID</label>
                                     <div>
-                                        <input type="text" placeholder="Customer VAT Number" />
+                                        <input type="text" placeholder="Enter your Employee ID" />
                                     </div>
                                 </div>
 
 
                                 <div className="select">
-                                    <label>Country</label>
+                                    <label>Gender</label>
                                     <select class="role" aria-label="Default select example">
-                                        <option selected>Nigeria</option>
+                                        <option selected>Select your gender</option>
                                         <option value="1">Nigeria</option>
                                         <option value="2">Two</option>
                                         <option value="3">Three</option>
                                     </select>
                                 </div>
-                              
+                                <div className="contact">
+                                    <div className="">
+                                        <label htmlFor="">Address</label>
+                                        <div className="email-input">
+                                            <input type="text" placeholder="Street" />
+                                        </div>
+                                    </div>
+
+                                    <div className="dividedForm d-flex gap-2">
+                                        <div className="w-100">
+                                            <div className="email-input">
+                                                <input type="text" placeholder="City/Town" />
+                                            </div>
+                                        </div>
+                                        <div className="w-100">
+                                            <div className="email-input">
+                                                <input type="text" placeholder="State/Province" />
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div className="dividedForm d-flex gap-2">
+                                        <div className="w-100">
+                                            <div className="email-input">
+                                                <input type="text" placeholder="City/Town" />
+                                            </div>
+                                        </div>
+
+                                        <div className="select mt-1">
+                                            <select
+                                                class="role"
+                                                aria-label="Default select example"
+                                            >
+                                                <option selected>Nigeria</option>
+                                                <option value="1">Nigeria</option>
+                                                <option value="2">Two</option>
+                                                <option value="3">Three</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                             <div className="col-md-6 left">
 
                                 <div>
-                                    <label htmlFor="">Company Name <span>*</span></label>
+                                    <label htmlFor="">Salary Structure <span>*</span></label>
                                     <div>
                                         <input type="text" placeholder="Enter your company name" />
                                     </div>
                                 </div>
 
 
-                                <div className="check">
-                                    <div className="checking ">
-                                        <input type="checkbox" style={{ width: 20 }} />
-                                        <span>Same as billing address</span>
-                                    </div>
-
+                                <div className="mt-2">
+                                 
                                     <div>
-                                        <label htmlFor="">Credit limit</label>
+                                        <label htmlFor="">Employee ID No.</label>
                                         <div>
-                                            <input type="text" placeholder="N0.00" />
+                                            <input type="text" placeholder="Enter your employee ID number" />
                                         </div>
                                     </div>
 
                                 </div>
 
-                                <div className="select">
-                                    <label>Sales Rep *</label>
-                                    <select class="role" aria-label="Default select example">
-                                        <option selected>Select sales rep</option>
-                                        <option value="1">Nigeria</option>
-                                        <option value="2">Two</option>
-                                        <option value="3">Three</option>
-                                    </select>
+                                <div className="mt-2">
+                                    <label>Date Of Birth</label>
+                                   <input type="date" />
                                 </div>
-                             
+                                <div className="">
+                                    <label className="mt-3">Notes</label>
+                                    <textarea style={{
+                                        width:'100%',
+                                        outline: 'none',
+                                        border:'1px solid gray',
+                                        height: 160,
+                                        borderRadius: 6,
+                                        padding:10
+                                    }}
+                                        name=""
+                                        id=""
+                                        placeholder="Write note..."
+                                    ></textarea>
+                                </div>
                             </div>
                         </div>
                         <div className="address" id="FormInput">
