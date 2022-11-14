@@ -31,7 +31,7 @@ const ListOfAccount = () => {
             <div className="secondLayer">
               <div className="left">
                 <button className='btn'>
-                 Accounts Dashboard
+                  Dashboard
                 </button>
               </div>
               <div className="middle">

@@ -31,7 +31,7 @@ const Login = () => {
                           <span>Remember me</span>
                       </div>
                       <div className="button">
-                          <button><Link to='/verify-email'>Log in</Link></button>
+                          <button><Link to='/csdasboard'>Log in</Link></button>
 
                       </div>
                       <p className='dont'>Don’t have an account? <Link to='/reg'>Create an account.</Link></p>

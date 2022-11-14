@@ -78,6 +78,16 @@ import UserPayment from "./usersdashboard/UserPayment";
 import UserNote from "./usersdashboard/UserNote";
 import Attachments from './usersdashboard/Attachments';
 import AdditionalContactInfo from "./usersdashboard/AdditionalContactInfo";
+import CreatePaymentVoucher from "./banking/CreatePaymentVoucher";
+import MakeDeposit from './banking/MakeDeposit';
+import TransferFunds from './banking/TransferFunds';
+import CreateBatchEntryBills from "./banking/CreateBatchEntryBills";
+import CreateNewEmployee from './employee/CreateNewEmployee';
+import EmergencyContact from './employee/EmergencyContact';
+import SalaryWages from "./employee/SalaryWages";
+import EmploymentDetails from "./employee/EmploymentDetails";
+import LeaveOfAbsence from "./employee/LeaveOfAbsence";
+import Termination from "./employee/Termination";
 const App = () => {
   return (
     <div>
@@ -86,6 +96,16 @@ const App = () => {
           {/* <Route path='/post' element={<SinglePage />} />
           <Route path='/contact' element={<ContactUsPage />} />
          */}
+          <Route path='/Termination' element={<Termination />} />
+          <Route path='/LeaveOfAbsence' element={<LeaveOfAbsence />} />
+          <Route path='/EmploymentDetails' element={<EmploymentDetails />} />
+          <Route path='/SalaryWages' element={<SalaryWages />} />
+          <Route path='/EmergencyContact' element={<EmergencyContact />} />
+          <Route path='/CreateNewEmployee' element={<CreateNewEmployee />} />
+          <Route path='/CreateBatchEntryBills' element={<CreateBatchEntryBills />} />
+          <Route path='/TransferFunds' element={<TransferFunds />} />
+          <Route path='/MakeDeposit' element={<MakeDeposit />} />
+          <Route path='/CreatePaymentVoucher' element={<CreatePaymentVoucher />} />
           <Route path='/Attachments' element={<Attachments />} />
           <Route path='/UserNote' element={<UserNote />} />
           <Route path='/UserPayment' element={<UserPayment />} />

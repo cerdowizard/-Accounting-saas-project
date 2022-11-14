@@ -51,17 +51,7 @@ const UserNavbar = () => {
             <div className="secondLayer">
                 <nav>
                     <div className="left">
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                Home
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Action</a></li>
-                                <li><a class="dropdown-item" href="#">Another action</a></li>
-                                <li><hr class="dropdown-divider" /></li>
-                                <li><a class="dropdown-item" href="#">Something else here</a></li>
-                            </ul>
-                        </li>
+                     
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 Customer
@@ -230,7 +220,7 @@ const UserNavbar = () => {
 
 
                                 <li>
-                                    <Link class="dropdown-item" to='/ListItemBundles'>List of Item Bundles</Link>
+                                    <Link class="dropdown-item" to='/ListItemBundles'>List of Item Bundles Dashboard</Link>
                                 </li>
 
                                 <li>
@@ -241,11 +231,9 @@ const UserNavbar = () => {
                                     <Link class="dropdown-item" to='/ItemBundle'>Item Bundle</Link>
                                 </li>
 
+                               
                                 <li>
-                                    <Link class="dropdown-item" to='/CreateInventoryAdjustment'>Process Receipt</Link>
-                                </li>
-                                <li>
-                                    <Link class="dropdown-item" to='/CustomerWrite'>Create Inventory Adjustment</Link>
+                                    <Link class="dropdown-item" to='/CreateInventoryAdjustment'>Create Inventory Adjustment</Link>
                                 </li>
 
                                 <li>
@@ -264,11 +252,11 @@ const UserNavbar = () => {
                         
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                Chart Of Accounts
+                                Chart of accounts
                             </a>
                             <ul class="dropdown-menu p-2">
                                 <li>
-                                    <Link class="dropdown-item" to='/ChartOfAccountExpenses'>Create an Account</Link>
+                                    <Link class="dropdown-item" to='/CreateAnAccount'>Create an Account</Link>
                                 </li>
                                 <li>
                                     <Link class="dropdown-item" to='/MakeJournalEntries'>Make Journal Entries
@@ -276,25 +264,75 @@ const UserNavbar = () => {
                                 </li>
 
                                 <li>
-                                    <Link class="dropdown-item" to='/CreateItemUnchecked'>Trial Balance
+                                    <Link class="dropdown-item" to='/TrialBalance'>Trial Balance
                                     </Link>
                                 </li>
 
                                 <li>
-                                    <Link class="dropdown-item" to='/CreateItemChecked'>Create Item Checked</Link>
+                                    <Link class="dropdown-item" to='/ListOfAccount'>List Of Account</Link>
                                 </li>
 
                                 <li>
-                                    <Link class="dropdown-item" to='/ItemDashboardCat'>Item Categories</Link>
-                                </li>
-
-                                <li>
-                                    <Link class="dropdown-item" to='/ItemDashboarList'>List of Item</Link>
+                                    <Link class="dropdown-item" to='/ChartOfAccountExpenses'>Chart Of Account Expenses</Link>
                                 </li>
 
 
                             </ul>
                         </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Banking 
+                            </a>
+                            <ul class="dropdown-menu p-2">
+                                <li>
+                                    <Link class="dropdown-item" to='/CreatePaymentVoucher'>Create Payment Voucher</Link>
+                                </li>
+                                <li>
+                                    <Link class="dropdown-item" to='/MakeDeposit'>Make Deposit
+                                    </Link>
+                                </li>
+
+                                <li>
+                                    <Link class="dropdown-item" to='/TransferFunds'>Transfer Funds
+                                    </Link>
+                                </li>
+
+                                <li>
+                                    <Link class="dropdown-item" to='/CreateBatchEntryBills'>Create Batch Entry - Bills</Link>
+                                </li>
+
+
+
+                            </ul>
+                        </li>
+
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Employee
+                            </a>
+                            <ul class="dropdown-menu p-2">
+                                <li>
+                                    <Link class="dropdown-item" to='/CreateNewEmployee'>Create New Employee</Link>
+                                </li>
+                                <li>
+                                    <Link class="dropdown-item" to='/MakeDeposit'>Make Deposit
+                                    </Link>
+                                </li>
+
+                                <li>
+                                    <Link class="dropdown-item" to='/TransferFunds'>Transfer Funds
+                                    </Link>
+                                </li>
+
+                                <li>
+                                    <Link class="dropdown-item" to='/CreateBatchEntryBills'>Create Batch Entry - Bills</Link>
+                                </li>
+
+
+
+                            </ul>
+                        </li>
+
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 HR/Payroll
@@ -309,7 +347,7 @@ const UserNavbar = () => {
 
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                Administration
+                            Finanicial
                             </a>
                             <ul class="dropdown-menu">
                                 <li><a class="dropdown-item" href="#">Action</a></li>
@@ -319,17 +357,6 @@ const UserNavbar = () => {
                             </ul>
                         </li>
 
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                Inventory
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Action</a></li>
-                                <li><a class="dropdown-item" href="#">Another action</a></li>
-                                <li><hr class="dropdown-divider" /></li>
-                                <li><a class="dropdown-item" href="#">Something else here</a></li>
-                            </ul>
-                        </li>
 
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">

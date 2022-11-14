@@ -55,34 +55,7 @@
       }
     }
 
-    .note {
-      width: 85%;
-      margin: 0 auto;
-      display: flex;
-      gap: 13px;
-      padding: 2rem;
 
-      .icircle {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        border: 1px solid #1C1E21;
-        height: 20px;
-        width: 20px;
-        padding: 6px;
-        border-radius: 50%;
-        font-weight: 600;
-      }
-
-      span {
-        font-family: 'Roboto';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 163.15%;
-        color: #1C1E21;
-      }
-    }
 
     .main {
       width: 90%;
@@ -122,7 +95,10 @@
         }
 
         .right {
+          display: flex;
+          gap: 20px;
           button {
+            margin-left: 10px;
             border: 1px solid #128c7e;
           }
         }
@@ -562,6 +538,122 @@
       font-size: 18px;
       line-height: 25px;
       color: #1C1E21;
+    }
+  }
+
+  .ExpensesnavHolder {
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+
+    h3 {
+      font-family: 'Roboto';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 25px;
+      color: #1C1E21;
+      padding-top: 5px;
+    }
+
+    .Expenses {
+      display: flex;
+      gap: 50px;
+      border-bottom: 2px solid #128c7e;
+      align-items: center;
+    }
+
+    .Item {
+      background: #EBECEE;
+      border-bottom: 2px solid #D2D2D3;
+      display: flex;
+      gap: 80px;
+      padding-left: 10px;
+      padding-right: 10px;
+      align-items: center;
+    }
+  }
+
+  .note {
+    width: 85%;
+    margin: 0 auto;
+    display: flex;
+    gap: 13px;
+    padding: 2rem;
+
+    .icircle {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: 1px solid #1C1E21;
+      height: 20px;
+      width: 20px;
+      padding: 6px;
+      border-radius: 50%;
+      font-weight: 600;
+    }
+
+    span {
+
+      font-family: 'Roboto';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 163.15%;
+      color: #1C1E21;
+    }
+  }
+
+  .notes {
+    width: 85%;
+    margin: 0 auto;
+    display: flex;
+    gap: 13px;
+    margin-top: 1rem;
+
+    span {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: 1px solid #1C1E21;
+      height: 20px;
+      width: 20px;
+      padding: 6px;
+      border-radius: 50%;
+      font-weight: 600;
+      margin-top: 3px;
+      font-family: 'Roboto';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 163.15%;
+      color: #1C1E21;
+    }
+  }
+
+  .deposit {
+    gap: 40px;
+    h4 {
+      font-family: 'Roboto';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 25px;
+
+      /* identical to box height, or 139% */
+      display: flex;
+      align-items: center;
+
+      /* Color/Text/Grey/100 */
+      color: #1C1E21;
+    }
+
+    .Deposit {
+      margin-top: 1rem;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
     }
   }
 }
