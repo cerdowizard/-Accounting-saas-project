@@ -88,6 +88,10 @@ import SalaryWages from "./employee/SalaryWages";
 import EmploymentDetails from "./employee/EmploymentDetails";
 import LeaveOfAbsence from "./employee/LeaveOfAbsence";
 import Termination from "./employee/Termination";
+import ListOfEmployee from "./employee/ListOfEmployee";
+import EmployeeTimeSheet from './employee/EmployeeTimeSheet';
+import CreateSalarySructure from "./employee/CreateSalarySructure";
+import CreateSructure from './employee/CreateSructure';
 const App = () => {
   return (
     <div>
@@ -96,6 +100,10 @@ const App = () => {
           {/* <Route path='/post' element={<SinglePage />} />
           <Route path='/contact' element={<ContactUsPage />} />
          */}
+          <Route path='/CreateSructure' element={<CreateSructure />} />
+          <Route path='/CreateSalarySructure' element={<CreateSalarySructure />} />
+          <Route path='/EmployeeTimeSheet' element={<EmployeeTimeSheet />} />
+          <Route path='/ListOfEmployee' element={<ListOfEmployee />} />
           <Route path='/Termination' element={<Termination />} />
           <Route path='/LeaveOfAbsence' element={<LeaveOfAbsence />} />
           <Route path='/EmploymentDetails' element={<EmploymentDetails />} />

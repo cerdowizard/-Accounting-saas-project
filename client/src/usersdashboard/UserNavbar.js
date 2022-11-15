@@ -315,19 +315,21 @@ const UserNavbar = () => {
                                     <Link class="dropdown-item" to='/CreateNewEmployee'>Create New Employee</Link>
                                 </li>
                                 <li>
-                                    <Link class="dropdown-item" to='/MakeDeposit'>Make Deposit
+                                    <Link class="dropdown-item" to='/ListOfEmployee'>List of Employees
                                     </Link>
                                 </li>
 
                                 <li>
-                                    <Link class="dropdown-item" to='/TransferFunds'>Transfer Funds
+                                    <Link class="dropdown-item" to='/EmployeeTimeSheet'>Employee/Job Time Sheet
                                     </Link>
                                 </li>
 
                                 <li>
-                                    <Link class="dropdown-item" to='/CreateBatchEntryBills'>Create Batch Entry - Bills</Link>
+                                    <Link class="dropdown-item" to='/CreateSalarySructure'>Create Salary Sructure</Link>
                                 </li>
-
+                                <li>
+                                    <Link class="dropdown-item" to='/CreateSructure'>Create Sructure</Link>
+                                </li>
 
 
                             </ul>

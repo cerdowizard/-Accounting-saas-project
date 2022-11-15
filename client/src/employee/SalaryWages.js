@@ -169,39 +169,39 @@ const SalaryWages = () => {
                       </div>
                     </div>
 
-                    <div className="select mt-1">
-                      <label>Email</label>
-                      <select
-                        class="role"
-                        aria-label="Default select example"
-                      >
-                        <option selected>Enter email address</option>
-                        <option value="1">Nigeria</option>
-                        <option value="2">Two</option>
-                        <option value="3">Three</option>
-                      </select>
+                    <div className="mt-2">
+
+                      <div>
+                        <label htmlFor="">Bank Name</label>
+                        <div>
+                          <input type="text" placeholder="Enter Bank name" />
+                        </div>
+                      </div>
+
                     </div>
 
 
                   </div>
                   <div className="col-md-6 left">
                     <div>
-                      <label htmlFor="">Relation</label>
+                      <label htmlFor="">Account Name</label>
                       <div>
                         <input type="text" placeholder="Enter your telephone number" />
                       </div>
                     </div>
-
-                    <div className="mt-2">
-
-                      <div>
-                        <label htmlFor="">Telephone number</label>
-                        <div>
-                          <input type="text" placeholder="Enter your mobile number" />
-                        </div>
-                      </div>
-
+                    <div className="select mt-4">
+                      <label>Salary Level</label>
+                      <select
+                        class="role"
+                        aria-label="Default select example"
+                      >
+                        <option selected>Billing Senior Developer</option>
+                        <option value="1">Nigeria</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                      </select>
                     </div>
+                   
                   </div>
                   <div className="contact">
                     <div className="row">
