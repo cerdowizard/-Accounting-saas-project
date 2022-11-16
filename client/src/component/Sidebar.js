@@ -2,6 +2,7 @@ import '../styles/dashboardStyle.scss'
 import img from "../assets/Logo.png";
 import { Link } from "react-router-dom";
 import DashboardIcon from '@mui/icons-material/Dashboard';
+import PeopleOutlineIcon from '@mui/icons-material/PeopleOutline';
 const Sidebar = () => {
   return (
       <div id='Sidebar'>
@@ -16,7 +17,9 @@ const Sidebar = () => {
               <hr/>
               <div className="secSection">
                   <ul>
-                      <li><Link to=''>Super Admin Team</Link> </li>
+                      <li>
+                          <PeopleOutlineIcon/>
+                          <Link to=''>Super Admin Team</Link> </li>
                       <li><Link to=''>Subscribers</Link> </li>
                       <li><Link to=''>Companies</Link> </li>
                       <li><Link to=''>Registered users</Link> </li>
