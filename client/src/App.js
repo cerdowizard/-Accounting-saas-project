@@ -92,6 +92,7 @@ import ListOfEmployee from "./employee/ListOfEmployee";
 import EmployeeTimeSheet from './employee/EmployeeTimeSheet';
 import CreateSalarySructure from "./employee/CreateSalarySructure";
 import CreateSructure from './employee/CreateSructure';
+import HomeDashboard from "./dashboard/HomeDashboard";
 const App = () => {
   return (
     <div>
@@ -100,6 +101,7 @@ const App = () => {
           {/* <Route path='/post' element={<SinglePage />} />
           <Route path='/contact' element={<ContactUsPage />} />
          */}
+          <Route path='/HomeDashboard' element={<HomeDashboard />} />
           <Route path='/CreateSructure' element={<CreateSructure />} />
           <Route path='/CreateSalarySructure' element={<CreateSalarySructure />} />
           <Route path='/EmployeeTimeSheet' element={<EmployeeTimeSheet />} />

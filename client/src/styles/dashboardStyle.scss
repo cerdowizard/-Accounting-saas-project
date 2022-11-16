@@ -1,0 +1,45 @@
+#HomeDashboard {
+    display: flex;
+    height: 100vh;
+}
+
+#Sidebar {
+    flex: 1.2;
+    background-color: #273443;
+
+    a {
+        text-decoration: none;
+        color: white;
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 21px;
+    }
+
+    hr {
+        color: #455465;
+    }
+
+    .navBarHolder {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            padding-left: 20px;
+        }
+        .fesSection{
+        padding-left: 20px;
+        }
+    }
+}
+
+#MainContent {
+    flex: 6;
+    background-color: aquamarine;
+}
