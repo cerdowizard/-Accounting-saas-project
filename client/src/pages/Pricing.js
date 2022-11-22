@@ -12,7 +12,7 @@ const Pricing = () => {
             <Navbar />
             <div id="Pricing">
                 <div className="select">
-                    <h1>SELECT COUNTRY:</h1>
+                    <h1 className="small">SELECT COUNTRY:</h1>
                     <ul>
                         <li>outside nigeria</li>
                         <li className="act">nigeria</li>

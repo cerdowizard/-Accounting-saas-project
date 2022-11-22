@@ -61,7 +61,7 @@ const PriceCard = () => {
           <div className="priceCardHolder  container ">
               <div className="row">
                   {listData.map((listDatas) => (
-                      <div className="col-md-3">
+                      <div className="col-md-3 mt-4 mb-4">
                           <div className="priceIng" key={listDatas.id}>
 
                               <div className="top">
