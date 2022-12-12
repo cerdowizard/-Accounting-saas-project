@@ -78,6 +78,7 @@ body {
 
         .cardBody {
             margin-bottom: 2rem;
+            padding: 1rem;
         }
     }
 
@@ -169,9 +170,10 @@ body {
         .small {
             font-size: 12px !important;
         }
-        h1{
+
+        h1 {
             font-size: 30px !important;
-            line-height: 50px ;
+            line-height: 50px;
         }
 
         ul {
@@ -183,7 +185,8 @@ body {
                 align-items: center;
             }
         }
-        .table{
+
+        .table {
             overflow: scroll;
         }
     }
@@ -191,9 +194,11 @@ body {
     .headerHolder {
         height: 250px !important;
         padding: 1rem;
-margin-top: 2rem !important;
+        margin-top: 2rem !important;
+
         h1 {
             max-width: 100% !important;
+            font-size: 35px !important;
         }
 
         p {
@@ -201,7 +206,227 @@ margin-top: 2rem !important;
         }
     }
 
+    #Partners {
+        .partnersHeading {
+            padding-top: 10px !important;
+            margin-bottom: 1rem !important;
+        }
+
+        .formHolder {
+            margin-top: 1rem;
+
+            .innerFormHolder {
+                .formHolder {
+                    margin-bottom: 2rem !important;
+
+                    form {
+                        width: 100% !important;
+                        padding: 1rem !important;
+
+                        h1 {
+                            font-size: 30px !important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    #Online {
+        overflow: hidden;
+
+        .online-contact-divider {
+            width: 100% !important;
+
+            .left {
+                .listHolder {
+                    width: 100% !important;
+
+                    .box {
+                        width: 100% !important;
+                        margin-left: 0px !important;
+
+                        span {
+                            width: 55% !important;
+                            font-size: 15px !important;
+                        }
+                    }
+                }
+            }
+
+            .righFormHolder {
+                margin-top: 2rem !important;
+                padding: 1rem !important;
+                display: flex;
+                width: 100%;
+
+                .right {
+
+                    width: 100% !important;
+                    max-width: 350px !important;
+                }
+
+                h1 {
+                    font-size: 25px !important;
+                    text-align: center;
+                }
+
+                .formHolder {
+                    padding: 1rem;
+
+                }
+            }
+        }
+    }
+
+    #Login .loginHolder {
+        width: 100% !important;
+    }
+
+    #Register .container .row .right .loginHolder {
+        width: 100% !important;
+    }
+
+    #Register {
+        height: 100% !important;
+    }
+
+    #Register .container .row .left .contentHolder .text p {
+        width: 100% !important;
+    }
+
+    #Register .container .row .right .loginHolder .navTabs ul li {
+        padding: 0 !important;
+    }
+
+    #ForgotPassword .loginHolder {
+        width: 100% !important;
+    }
+
     #Footer {
         padding: 1rem;
     }
+
+    #CustomersDashBoard .fsLayer .navHolder {
+        overflow: scroll;
+    }
+
+    #CustomersDashBoard .fsLayer h1 {
+        font-size: 30px !important;
+        text-align: center;
+    }
+
+    #CustomersDashBoard .fsLayer .navHolder .boxes {
+        padding: 10px;
+    }
+
+    #CustomersDashBoard {
+        padding: 1rem;
+    }
+
+    #CustomersDashBoard .secondLayer .right .innerHolder {
+        margin-top: 1rem;
+    }
+
+    #UserNavbar .fsLayer .rightPlaceholder {
+        display: none !important;
+    }
+
+    #UserNavbar .fsLayer .left-user-holder .search-box {
+        display: none !important;
+    }
+
+    #UserNavbar .fsLayer .rightPlaceholder span {
+        // display: none !important;
+    }
+.row>* {
+    padding-right: 10px !important;
+        padding-left: 10px !important;
+}
+#CustomersDashBoard .secondLayer .left {
+    padding-left: .5rem !important;
+    padding-right: 0.5rem !important;
+}
+#CustomersDashBoard .secondLayer {
+    padding-bottom: 2rem !important;
+}
+#CustomersDashBoard .tabling .heading {
+    display: block !important;
+}
+#CustomersDashBoard .tabling {
+    padding: .5rem !important;
+}#CustomersDashBoard .tabling .heading h1 {
+    font-size: 20px !important;
+    text-align: center;
+}#CustomersDashBoard .tabling .heading .setting {
+    justify-content: center;
+    margin-top: 1rem;
+}
+#Login .tabNav {
+    gap: 10px !important;
+}
+#AddNewCustomer .formHolderContact .titleHolder p {
+    width: 100% !important;
+}
+#AddNewCustomer .formHolderContact .btnHolder button {
+        margin-bottom: 2rem;
+}
+#AddNewCustomer .formHolderContact .address {
+    margin-top: 10px !important;
+}
+#AddNewCustomer .formHolderContact .address .tab {
+    width: 100% !important;
+}
+#AddNewCustomer .formHolderContact .address .tab ul {
+    display: block !important;
+}
+#AddNewCustomer .formHolderContact .address .buttoning button {
+    width: 100% !important;
+}
+#AddNewCustomer .formHolderContact .address .buttoning {
+    gap: 15px;
+}
+#ListUsers {
+    padding: 10px !important;
+}
+#ListUsers .main .header .left h1 {
+    font-size: 20px !important;
+}
+#ListUsers .secondLayer {
+    display: block !important;
+}
+#ListUsers .secondLayer .middle .search {
+    display:  none !important;
+}
+#ListUsers .secondLayer .middle {
+    display: block !important;
+}
+.search div {
+    width: 100%;
+}
+#ListUsers .secondLayer .middle .setting {
+    margin-top: 25px;
+}
+#ListUsers .tableSection .nav {
+    display: block !important;
+}
+#ListUsers .tableSection .nav li {
+    width: 100% !important;
+}
+#ListUsers .secondLayer .middle .setting {
+    width: 100% !important;
+}
+.p-2 {
+    overflow: scroll;
+}
+#ListUsers .tableSection .paginate {
+    display: block !important;
+}
+#Invoice .Invoice-container .main .filter .left {
+    // display: block !important;
+}
+    // #UserNavbar .secondLayer {
+    //    width: 100%;
+    //    flex-wrap: wrap !important;
+    // }10px
 }
