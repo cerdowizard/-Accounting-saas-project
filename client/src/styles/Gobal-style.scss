@@ -313,7 +313,6 @@ body {
 
     #CustomersDashBoard .fsLayer h1 {
         font-size: 30px !important;
-        text-align: center;
     }
 
     #CustomersDashBoard .fsLayer .navHolder .boxes {
@@ -425,8 +424,7 @@ body {
 #Invoice .Invoice-container .main .filter .left {
     // display: block !important;
 }
-    // #UserNavbar .secondLayer {
-    //    width: 100%;
-    //    flex-wrap: wrap !important;
-    // }10px
+    #UserNavbar .secondLayer {
+        display: none !important;
+    }
 }
