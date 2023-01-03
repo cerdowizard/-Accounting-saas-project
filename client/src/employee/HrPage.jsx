@@ -7,7 +7,6 @@ import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
 const HrPage = () => {
     const [isActive, setIsActive] = useState(false);
     const handleClick = event => {
-        //  toggle isActive state on click
         event.currentTarget.classList.toggle('act');
 
         event.currentTarget.classList.add('');

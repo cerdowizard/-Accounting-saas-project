@@ -105,6 +105,7 @@ import IncomeCustomerSummary from "./Report/IncomeCustomerSummary";
 import ProfitLossComparison from "./Report/ProfitLossComparison";
 import PageOne from "./Report/PageOne";
 import HrPage from './employee/HrPage';
+import BudgetPage from "./Finanicial/BudgetPage";
 const App = () => {
   return (
     <div>
@@ -113,6 +114,7 @@ const App = () => {
           {/* <Route path='/post' element={<SinglePage />} />
           <Route path='/contact' element={<ContactUsPage />} />
          */}
+          <Route path='/BudgetPage' element={<BudgetPage />} />
           <Route path='/HR/PAYROLL' element={<HrPage />} />
           <Route path='/ProfitLossComparisonOne' element={<PageOne />} />
           <Route path='/ProfitLossComparison' element={<ProfitLossComparison />} />
