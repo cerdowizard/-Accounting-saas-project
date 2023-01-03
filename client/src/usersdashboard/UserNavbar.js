@@ -7,6 +7,7 @@ import userprofile from '../assets/Icon.png'
 import user from '../assets/fluent_person-support-24-regular.png'
 import SearchIcon from '@mui/icons-material/Search';
 import { Link } from "react-router-dom";
+import DehazeIcon from '@mui/icons-material/Dehaze';
 const UserNavbar = () => {
     return (
         <div id='UserNavbar' className='sticky-top'>
@@ -337,11 +338,13 @@ const UserNavbar = () => {
 
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                HR/Payroll
+                                HR/Payroll 
                             </a>
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Action</a></li>
-                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                               
+                               <li>
+                                    <Link class="dropdown-item" to='/HR/PAYROLL'>HR/Payroll Dashboard</Link>
+                                </li>
                                 <li><hr class="dropdown-divider" /></li>
                                 <li><a class="dropdown-item" href="#">Something else here</a></li>
                             </ul>
@@ -365,9 +368,30 @@ const UserNavbar = () => {
                                 Reports
                             </a>
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Action</a></li>
-                                <li><a class="dropdown-item" href="#">Another action</a></li>
-                                <li><hr class="dropdown-divider" /></li>
+                                <li>
+                                    <Link class="dropdown-item" to='/RealizedLosses'>Realized Gains & Losses</Link>
+                                </li>
+                                <li>
+                                    <Link class="dropdown-item" to='/Unrealized'>Unrealized Gains & Losses</Link>
+                                </li>
+                                <li>
+                                    <Link class="dropdown-item" to='/ExpensesSummary'>Expenses by Vendor Summary</Link>
+                                </li>
+                                <li>
+                                    <Link class="dropdown-item" to='/IncomeCustomerDetail'>Income by Customer Detail</Link>
+                                </li>
+
+                                <li>
+                                    <Link class="dropdown-item" to='/IncomeCustomerSummary'>Income by Customer Summary</Link>
+                                </li>
+
+                                <li>
+                                    <Link class="dropdown-item" to='/ProfitLossComparison'>Profit & Loss YTD Comparison</Link>
+                                </li>
+                                
+
+                                
+                                
                                 <li><a class="dropdown-item" href="#">Something else here</a></li>
                             </ul>
                         </li>

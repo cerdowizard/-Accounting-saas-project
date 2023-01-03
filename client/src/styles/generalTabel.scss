@@ -1,22 +1,21 @@
 #GeneralTable {
   .table {
     margin-top: 1rem;
+      overflow: scroll;
   }
 
   table,
   th,
   td {
     border: 1px solid #adadad;
-  
+
   }
 
   thead {
     background-color: #D2D2D3;
   }
 
-  th {
 
-  }
 
   tr {
     align-items: center;

@@ -97,6 +97,14 @@ import Team from "./dashboard/Team";
 import Subscribers from "./dashboard/Subscribers";
 import Companies from "./dashboard/Companies";
 import RegisteredUser from './dashboard/RegisteredUser';
+import RealizedLosses from './Report/RealizedLosses';
+import UnrealizedLosses from './Report/UnrealizedLosses';
+import ExpensesSummary from "./Report/ExpensesSummary";
+import IncomeCustomerDetail from "./Report/IncomeCustomerDetail";
+import IncomeCustomerSummary from "./Report/IncomeCustomerSummary";
+import ProfitLossComparison from "./Report/ProfitLossComparison";
+import PageOne from "./Report/PageOne";
+import HrPage from './employee/HrPage';
 const App = () => {
   return (
     <div>
@@ -105,6 +113,14 @@ const App = () => {
           {/* <Route path='/post' element={<SinglePage />} />
           <Route path='/contact' element={<ContactUsPage />} />
          */}
+          <Route path='/HR/PAYROLL' element={<HrPage />} />
+          <Route path='/ProfitLossComparisonOne' element={<PageOne />} />
+          <Route path='/ProfitLossComparison' element={<ProfitLossComparison />} />
+          <Route path='/IncomeCustomerSummary' element={<IncomeCustomerSummary />} />
+          <Route path='/IncomeCustomerDetail' element={<IncomeCustomerDetail />} />
+          <Route path='/ExpensesSummary' element={<ExpensesSummary />} />
+          <Route path='/Unrealized' element={<UnrealizedLosses />} />
+          <Route path='/RealizedLosses' element={<RealizedLosses />} />
           <Route path='/RegisteredUser' element={<RegisteredUser />} />
           <Route path='/Companies' element={<Companies />} />
           <Route path='/Subscribers' element={<Subscribers />} />
