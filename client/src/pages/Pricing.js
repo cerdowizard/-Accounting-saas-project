@@ -5,7 +5,6 @@ import PriceCard from '../component/PriceCard'
 import Table from "../component/Table";
 import '../styles/pricing.scss'
 import ToggleOffIcon from '@mui/icons-material/ToggleOff';
-
 const Pricing = () => {
     return (
         <div>

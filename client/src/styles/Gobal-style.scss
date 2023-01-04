@@ -7,7 +7,27 @@
 body {
     font-family: 'Roboto';
 }
+  .switchs {
+      align-items: center;
+      justify-content: center;
 
+      .icon {
+          color: #128c7e;
+          font-size: 50px;
+      }
+
+      span {
+          font-family: "Roboto";
+          font-style: normal;
+          font-weight: 500;
+          font-size: 18px;
+          line-height: 163.15%;
+          display: flex;
+          align-items: center;
+          text-align: center;
+          color: #1c1e21;
+      }
+  }
 @media screen and (max-width: 576px) {
     nav.navbar {
         padding: 0;

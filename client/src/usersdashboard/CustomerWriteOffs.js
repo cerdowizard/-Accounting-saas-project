@@ -184,16 +184,6 @@ const CustomerWriteOffs = () => {
 
                                 </div>
                             </div>
-                            {/* <Table data={tableData} />
-                            <button onClick={() => {
-                                var tableD = tableData.map((value, index) => (value));
-                                tableD.push({ id: 2, lName: "aaa", name: "aqef" })
-                                setTableData(tableD)
-                            }}>new row</button>
-                            <button className='btn-danger' onClick={() => {
-                                setTableData([])
-                            }}>Clear All</button> */}
-
                         </div>
                     </div>
                 </div>

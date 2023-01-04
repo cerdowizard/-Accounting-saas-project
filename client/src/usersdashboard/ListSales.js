@@ -20,11 +20,7 @@ const ListSales = () => {
                                 <h1>List of Sales Reps</h1>
                             </div>
                             <div className="right">
-                                {/* <div className="left">
-                                    <button className='btn'>
-                                        Allocate Customers Receipt
-                                    </button>
-                                </div> */}
+                              
                                 <button className="button btn" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
                                     List of Sales Reps
                                 </button>

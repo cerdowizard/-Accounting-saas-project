@@ -6,7 +6,7 @@ import { useState } from 'react';
 import ArrowRightIcon from '@mui/icons-material/ArrowRight';
 import Chart from './Chart';
 import ToggleOffIcon from '@mui/icons-material/ToggleOff';
-const BudgetPage = () => {
+const Expenses = () => {
   const [isActive, setIsActive] = useState(false);
   const handleClick = event => {
     event.currentTarget.classList.toggle('act');
@@ -31,7 +31,7 @@ const BudgetPage = () => {
             <div className="navHolder">
 
               <div className="boxes act" onClick={handleClick}>
-                <Link to='/CreateRevenueStream'>Create New Revenue Stream</Link>
+                <Link to='/CreateNewVendor'>Create New Revenue Stream</Link>
               </div>
               <div className="boxes" onClick={handleClick}>
                 <Link to=''>Create Direct Cost</Link>
@@ -76,7 +76,7 @@ const BudgetPage = () => {
             <div className="upperNav">
               <ul>
                 <Link to='/BudgetPage'>
-                  <li className='act'>Revenue</li>
+                  <li >Revenue</li>
                 </Link>
                 <Link to='/DirectCosts'>
                   <li>Direct Costs</li>
@@ -85,7 +85,7 @@ const BudgetPage = () => {
                   <li>Personnel</li>
                 </Link>
                 <Link to='/Expenses'>
-                  <li>Expenses</li>
+                  <li className='act'>Expenses</li>
                 </Link>
                 <Link to='/Assets'>
                   <li>Assets</li>
@@ -99,17 +99,17 @@ const BudgetPage = () => {
                 <Link to='/CashFlowsAssumptions'>
                   <li>Cash Flows Assumptions</li>
                 </Link>
-                
+
                 <Link to='/Financin'>
                   <li>Financing</li>
                 </Link>
-              
+
               </ul>
             </div>
           </div>
           <div className="chart">
             <div className="chartNav">
-              <h3>Revenue</h3>
+              <h3>Expenses</h3>
               <button>Hide Chart</button>
             </div>
             <div className="chartHolder">
@@ -271,5 +271,4 @@ const BudgetPage = () => {
     </div>
   )
 }
-
-export default BudgetPage
+export default Expenses

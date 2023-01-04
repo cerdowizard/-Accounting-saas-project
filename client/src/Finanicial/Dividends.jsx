@@ -6,7 +6,7 @@ import { useState } from 'react';
 import ArrowRightIcon from '@mui/icons-material/ArrowRight';
 import Chart from './Chart';
 import ToggleOffIcon from '@mui/icons-material/ToggleOff';
-const BudgetPage = () => {
+const Dividends = () => {
   const [isActive, setIsActive] = useState(false);
   const handleClick = event => {
     event.currentTarget.classList.toggle('act');
@@ -31,7 +31,7 @@ const BudgetPage = () => {
             <div className="navHolder">
 
               <div className="boxes act" onClick={handleClick}>
-                <Link to='/CreateRevenueStream'>Create New Revenue Stream</Link>
+                <Link to='/CreateNewVendor'>Create New Revenue Stream</Link>
               </div>
               <div className="boxes" onClick={handleClick}>
                 <Link to=''>Create Direct Cost</Link>
@@ -76,7 +76,7 @@ const BudgetPage = () => {
             <div className="upperNav">
               <ul>
                 <Link to='/BudgetPage'>
-                  <li className='act'>Revenue</li>
+                  <li >Revenue</li>
                 </Link>
                 <Link to='/DirectCosts'>
                   <li>Direct Costs</li>
@@ -91,36 +91,26 @@ const BudgetPage = () => {
                   <li>Assets</li>
                 </Link>
                 <Link to='/Taxes'>
-                  <li>Taxes</li>
+                  <li  >Taxes</li>
                 </Link>
                 <Link to='/Dividends'>
-                  <li>Dividends</li>
+                  <li className='act'>Dividends</li>
                 </Link>
                 <Link to='/CashFlowsAssumptions'>
                   <li>Cash Flows Assumptions</li>
                 </Link>
-                
+
                 <Link to='/Financin'>
                   <li>Financing</li>
                 </Link>
-              
+
               </ul>
             </div>
           </div>
-          <div className="chart">
-            <div className="chartNav">
-              <h3>Revenue</h3>
-              <button>Hide Chart</button>
-            </div>
-            <div className="chartHolder">
-              <div className="bar mt-5">
-                <Chart />
-              </div>
-            </div>
-          </div>
+
           <div className="table">
             <div className="addBtn">
-              <button>Add Revenue Stream</button>
+              <button>Dividends</button>
               <div className="switchs d-flex">
                 <span>Monthly</span>
                 <ToggleOffIcon className="icon" />
@@ -272,4 +262,4 @@ const BudgetPage = () => {
   )
 }
 
-export default BudgetPage
+export default Dividends

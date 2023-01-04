@@ -106,6 +106,18 @@ import ProfitLossComparison from "./Report/ProfitLossComparison";
 import PageOne from "./Report/PageOne";
 import HrPage from './employee/HrPage';
 import BudgetPage from "./Finanicial/BudgetPage";
+import DirectCosts from "./Finanicial/DirectCosts";
+import Personnel from "./Finanicial/Personnel";
+import Assets from "./Finanicial/Assets";
+import CashFlowsAssumptions from "./Finanicial/CashFlowsAssumptions";
+import Dividends from "./Finanicial/Dividends";
+import Taxes from "./Finanicial/Taxes";
+import Expenses from "./Finanicial/Expenses";
+import Financing from "./Finanicial/Financing";
+import ProfitLoss from "./Finanicial/ProfitLoss";
+import BalanceSheet from "./Finanicial/BalanceSheet";
+import CashFlow from './Finanicial/CashFlow';
+import CreateRevenueStream from './Finanicial/CreateRevenueStream';
 const App = () => {
   return (
     <div>
@@ -114,6 +126,18 @@ const App = () => {
           {/* <Route path='/post' element={<SinglePage />} />
           <Route path='/contact' element={<ContactUsPage />} />
          */}
+          <Route path='/CreateRevenueStream' element={<CreateRevenueStream />} />
+          <Route path='/CashFlow' element={<CashFlow />} />
+          <Route path='/BalanceSheet' element={<BalanceSheet />} />
+          <Route path='/ProfitLoss' element={<ProfitLoss />} />
+          <Route path='/Financin' element={<Financing />} />
+          <Route path='/Expenses' element={<Expenses />} />
+          <Route path='/Taxes' element={<Taxes />} />
+          <Route path='/Dividends' element={<Dividends />} />
+          <Route path='/CashFlowsAssumptions' element={<CashFlowsAssumptions />} />
+          <Route path='/Assets' element={<Assets />} />
+          <Route path='/Personnel' element={<Personnel />} />
+          <Route path='/DirectCosts' element={<DirectCosts />} />
           <Route path='/BudgetPage' element={<BudgetPage />} />
           <Route path='/HR/PAYROLL' element={<HrPage />} />
           <Route path='/ProfitLossComparisonOne' element={<PageOne />} />

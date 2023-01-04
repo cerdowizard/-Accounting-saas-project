@@ -6,7 +6,7 @@ import { useState } from 'react';
 import ArrowRightIcon from '@mui/icons-material/ArrowRight';
 import Chart from './Chart';
 import ToggleOffIcon from '@mui/icons-material/ToggleOff';
-const BudgetPage = () => {
+const CashFlow = () => {
   const [isActive, setIsActive] = useState(false);
   const handleClick = event => {
     event.currentTarget.classList.toggle('act');
@@ -31,7 +31,7 @@ const BudgetPage = () => {
             <div className="navHolder">
 
               <div className="boxes act" onClick={handleClick}>
-                <Link to='/CreateRevenueStream'>Create New Revenue Stream</Link>
+                <Link to='/CreateNewVendor'>Create New Revenue Stream</Link>
               </div>
               <div className="boxes" onClick={handleClick}>
                 <Link to=''>Create Direct Cost</Link>
@@ -60,7 +60,7 @@ const BudgetPage = () => {
             <div className="upperNav">
               <ul>
                 <Link to='/BudgetPage'>
-                  <li className='act'>Financial Tables</li>
+                  <li >Financial Tables</li>
                 </Link>
                 <Link to='/ProfitLoss'>
                   <li>Profit & Loss</li>
@@ -69,64 +69,58 @@ const BudgetPage = () => {
                   <li>Balance Sheet</li>
                 </Link>
                 <Link to='/CashFlow'>
-                  <li>Cash Flow</li>
+                  <li className='act'>Cash Flow</li>
                 </Link>
               </ul>
             </div>
-            <div className="upperNav">
-              <ul>
-                <Link to='/BudgetPage'>
-                  <li className='act'>Revenue</li>
-                </Link>
-                <Link to='/DirectCosts'>
-                  <li>Direct Costs</li>
-                </Link>
-                <Link to='/Personnel'>
-                  <li>Personnel</li>
-                </Link>
-                <Link to='/Expenses'>
-                  <li>Expenses</li>
-                </Link>
-                <Link to='/Assets'>
-                  <li>Assets</li>
-                </Link>
-                <Link to='/Taxes'>
-                  <li>Taxes</li>
-                </Link>
-                <Link to='/Dividends'>
-                  <li>Dividends</li>
-                </Link>
-                <Link to='/CashFlowsAssumptions'>
-                  <li>Cash Flows Assumptions</li>
-                </Link>
-                
-                <Link to='/Financin'>
-                  <li>Financing</li>
-                </Link>
-              
-              </ul>
-            </div>
+          
           </div>
           <div className="chart">
             <div className="chartNav">
-              <h3>Revenue</h3>
+              <h3>Projected Cash Flow</h3>
               <button>Hide Chart</button>
             </div>
             <div className="chartHolder">
-              <div className="bar mt-5">
+              <div className="bar mt-2">
+                <div className="d-flex p-3" style={{
+                  justifyContent: 'space-between'
+                }}>
+
+                  <h4>Cash flow in</h4>
+                  <button class="dropdown" style={{
+                    backgroundColor: '#FFFFFF',
+                    outline: 'none',
+                    paddingLeft: 10,
+                    paddingRight: 10,
+                    border: '1px solid gray'
+                  }}>
+                    <span class="dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      2022
+                    </span>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">2022</a></li>
+                      <li><a class="dropdown-item" href="#">2021</a></li>
+                      <li><a class="dropdown-item" href="#">2020</a></li>
+                    </ul>
+                  </button>
+
+
+                  <h3>Cash flow by year</h3>
+                </div>
                 <Chart />
               </div>
             </div>
           </div>
           <div className="table">
             <div className="addBtn">
-              <button>Add Revenue Stream</button>
+            <div className=""></div>
               <div className="switchs d-flex">
                 <span>Monthly</span>
                 <ToggleOffIcon className="icon" />
                 <span>Annual</span>
               </div>
             </div>
+
             <div id='GeneralTable'>
               <table class="table">
                 <thead>
@@ -271,5 +265,4 @@ const BudgetPage = () => {
     </div>
   )
 }
-
-export default BudgetPage
+export default CashFlow
