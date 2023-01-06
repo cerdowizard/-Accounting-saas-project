@@ -4,30 +4,96 @@
     box-sizing: border-box;
 }
 
+p {
+    margin-bottom: 0;
+}
+
+.long {
+    background-color: #128c7e;
+}
+
+.want {
+    width: 100%;
+    background-color: #1c1e2104;
+    display: flex;
+    height: 50px;
+    justify-content: space-between;
+    align-items: center;
+
+    .one {
+        gap: 10px;
+
+        span {
+            color: #128c7e;
+        }
+    }
+
+    .two {
+        width: 170px;
+        display: flex;
+        gap: 10px;
+        align-items: center;
+
+        input {
+            width: 70px !important;
+        }
+
+        button {
+            padding: 8px !important;
+            border-radius: 10px;
+            height: 50px;
+        }
+    }
+}
+
+.lines {
+    width: 100%;
+    display: flex;
+    padding: 1rem;
+    align-items: center;
+    justify-content: space-between;
+
+    span {
+        width: 100%;
+        border: 1px solid #1c1e2136;
+    }
+}
+.yearBox{
+    display: flex;
+    justify-content: space-between;
+    .box {
+        width: 50px;
+        height: 30px;
+        border: 1px solid rgba(0, 0, 0, 0.11);
+    }
+}
+
 body {
     font-family: 'Roboto';
 }
-  .switchs {
-      align-items: center;
-      justify-content: center;
 
-      .icon {
-          color: #128c7e;
-          font-size: 50px;
-      }
+.switchs {
+    align-items: center;
+    justify-content: center;
 
-      span {
-          font-family: "Roboto";
-          font-style: normal;
-          font-weight: 500;
-          font-size: 18px;
-          line-height: 163.15%;
-          display: flex;
-          align-items: center;
-          text-align: center;
-          color: #1c1e21;
-      }
-  }
+    .icon {
+        color: #128c7e;
+        font-size: 50px;
+    }
+
+    span {
+        font-family: "Roboto";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 163.15%;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        color: #1c1e21;
+    }
+}
+
 @media screen and (max-width: 576px) {
     nav.navbar {
         padding: 0;
@@ -358,92 +424,123 @@ body {
     #UserNavbar .fsLayer .rightPlaceholder span {
         // display: none !important;
     }
-.row>* {
-    padding-right: 10px !important;
+
+    .row>* {
+        padding-right: 10px !important;
         padding-left: 10px !important;
-}
-#CustomersDashBoard .secondLayer .left {
-    padding-left: .5rem !important;
-    padding-right: 0.5rem !important;
-}
-#CustomersDashBoard .secondLayer {
-    padding-bottom: 2rem !important;
-}
-#CustomersDashBoard .tabling .heading {
-    display: block !important;
-}
-#CustomersDashBoard .tabling {
-    padding: .5rem !important;
-}#CustomersDashBoard .tabling .heading h1 {
-    font-size: 20px !important;
-    text-align: center;
-}#CustomersDashBoard .tabling .heading .setting {
-    justify-content: center;
-    margin-top: 1rem;
-}
-#Login .tabNav {
-    gap: 10px !important;
-}
-#AddNewCustomer .formHolderContact .titleHolder p {
-    width: 100% !important;
-}
-#AddNewCustomer .formHolderContact .btnHolder button {
+    }
+
+    #CustomersDashBoard .secondLayer .left {
+        padding-left: .5rem !important;
+        padding-right: 0.5rem !important;
+    }
+
+    #CustomersDashBoard .secondLayer {
+        padding-bottom: 2rem !important;
+    }
+
+    #CustomersDashBoard .tabling .heading {
+        display: block !important;
+    }
+
+    #CustomersDashBoard .tabling {
+        padding: .5rem !important;
+    }
+
+    #CustomersDashBoard .tabling .heading h1 {
+        font-size: 20px !important;
+        text-align: center;
+    }
+
+    #CustomersDashBoard .tabling .heading .setting {
+        justify-content: center;
+        margin-top: 1rem;
+    }
+
+    #Login .tabNav {
+        gap: 10px !important;
+    }
+
+    #AddNewCustomer .formHolderContact .titleHolder p {
+        width: 100% !important;
+    }
+
+    #AddNewCustomer .formHolderContact .btnHolder button {
         margin-bottom: 2rem;
-}
-#AddNewCustomer .formHolderContact .address {
-    margin-top: 10px !important;
-}
-#AddNewCustomer .formHolderContact .address .tab {
-    width: 100% !important;
-}
-#AddNewCustomer .formHolderContact .address .tab ul {
-    display: block !important;
-}
-#AddNewCustomer .formHolderContact .address .buttoning button {
-    width: 100% !important;
-}
-#AddNewCustomer .formHolderContact .address .buttoning {
-    gap: 15px;
-}
-#ListUsers {
-    padding: 10px !important;
-}
-#ListUsers .main .header .left h1 {
-    font-size: 20px !important;
-}
-#ListUsers .secondLayer {
-    display: block !important;
-}
-#ListUsers .secondLayer .middle .search {
-    display:  none !important;
-}
-#ListUsers .secondLayer .middle {
-    display: block !important;
-}
-.search div {
-    width: 100%;
-}
-#ListUsers .secondLayer .middle .setting {
-    margin-top: 25px;
-}
-#ListUsers .tableSection .nav {
-    display: block !important;
-}
-#ListUsers .tableSection .nav li {
-    width: 100% !important;
-}
-#ListUsers .secondLayer .middle .setting {
-    width: 100% !important;
-}
-.p-2 {
-    overflow: scroll;
-}
-#ListUsers .tableSection .paginate {
-    display: block !important;
-}
-#Invoice .Invoice-container .main .filter .left {
-    // display: block !important;
-}
+    }
+
+    #AddNewCustomer .formHolderContact .address {
+        margin-top: 10px !important;
+    }
+
+    #AddNewCustomer .formHolderContact .address .tab {
+        width: 100% !important;
+    }
+
+    #AddNewCustomer .formHolderContact .address .tab ul {
+        display: block !important;
+    }
+
+    #AddNewCustomer .formHolderContact .address .buttoning button {
+        width: 100% !important;
+    }
+
+    #AddNewCustomer .formHolderContact .address .buttoning {
+        gap: 15px;
+    }
+
+    #ListUsers {
+        padding: 10px !important;
+    }
+
+    #ListUsers .main .header .left h1 {
+        font-size: 20px !important;
+    }
+
+    #ListUsers .secondLayer {
+        display: block !important;
+    }
+
+    #ListUsers .secondLayer .middle .search {
+        display: none !important;
+    }
+
+    #ListUsers .secondLayer .middle {
+        display: block !important;
+    }
+
+    .search div {
+        width: 100%;
+    }
+
+    #ListUsers .secondLayer .middle .setting {
+        margin-top: 25px;
+    }
+
+    #ListUsers .tableSection .nav {
+        display: block !important;
+    }
+
+    #ListUsers .tableSection .nav li {
+        width: 100% !important;
+    }
+
+    #ListUsers .secondLayer .middle .setting {
+        width: 100% !important;
+    }
+
+    .p-2 {
+        overflow: scroll;
+    }
+
+    #ListUsers .tableSection .paginate {
+        display: block !important;
+    }
+
+    #Invoice .Invoice-container .main .filter .left {
+        // display: block !important;
+    }
+
     #UserNavbar .secondLayer {
         display: none !important;
     }

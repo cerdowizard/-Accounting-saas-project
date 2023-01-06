@@ -118,6 +118,7 @@ import ProfitLoss from "./Finanicial/ProfitLoss";
 import BalanceSheet from "./Finanicial/BalanceSheet";
 import CashFlow from './Finanicial/CashFlow';
 import CreateRevenueStream from './Finanicial/CreateRevenueStream';
+import CreateDirectCost from './Finanicial/CreateDirectCost';
 const App = () => {
   return (
     <div>
@@ -126,6 +127,8 @@ const App = () => {
           {/* <Route path='/post' element={<SinglePage />} />
           <Route path='/contact' element={<ContactUsPage />} />
          */}
+
+          <Route path='/CreateDirectCost' element={<CreateDirectCost />} />
           <Route path='/CreateRevenueStream' element={<CreateRevenueStream />} />
           <Route path='/CashFlow' element={<CashFlow />} />
           <Route path='/BalanceSheet' element={<BalanceSheet />} />

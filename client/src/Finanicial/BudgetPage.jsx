@@ -33,8 +33,8 @@ const BudgetPage = () => {
               <div className="boxes act" onClick={handleClick}>
                 <Link to='/CreateRevenueStream'>Create New Revenue Stream</Link>
               </div>
-              <div className="boxes" onClick={handleClick}>
-                <Link to=''>Create Direct Cost</Link>
+              <div className="boxes">
+                <Link to='/CreateDirectCost'>Create Direct Cost</Link>
               </div>
               <div className="boxes" onClick={handleClick}>
                 <Link to='/ProcessVendorInvoice' >Create Hourly Rate Structure</Link>
