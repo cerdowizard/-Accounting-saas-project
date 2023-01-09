@@ -107,6 +107,7 @@ const Financing = () => {
               </ul>
             </div>
           </div>
+
           <div className="chart">
             <div className="chartNav">
               <h3>Financing</h3>
@@ -143,6 +144,7 @@ const Financing = () => {
               </div>
             </div>
           </div>
+          
           <div className="table">
             <div className="addBtn">
               <div className="d-flex gap-2">

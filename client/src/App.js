@@ -119,6 +119,12 @@ import BalanceSheet from "./Finanicial/BalanceSheet";
 import CashFlow from './Finanicial/CashFlow';
 import CreateRevenueStream from './Finanicial/CreateRevenueStream';
 import CreateDirectCost from './Finanicial/CreateDirectCost';
+import CreateExpenses from './Finanicial/CreateExpenses';
+import CreateAsset from './Finanicial/CreateAsset';
+import SetTaxRate from "./Finanicial/SetTaxRate";
+import CreateDividend from './Finanicial/CreateDividend';
+import CreateLoan from "./Finanicial/CreateLoan";
+import CreateInvestment from './Finanicial/CreateInvestment';
 const App = () => {
   return (
     <div>
@@ -127,7 +133,12 @@ const App = () => {
           {/* <Route path='/post' element={<SinglePage />} />
           <Route path='/contact' element={<ContactUsPage />} />
          */}
-
+          <Route path='/CreateInvestment' element={<CreateInvestment />} />
+          <Route path='/CreateLoan' element={<CreateLoan />} />
+          <Route path='/CreateDividend' element={<CreateDividend />} />
+          <Route path='/SetTaxRate' element={<SetTaxRate />} />
+          <Route path='/CreateAsset' element={<CreateAsset />} />
+          <Route path='/CreateExpenses' element={<CreateExpenses />} />
           <Route path='/CreateDirectCost' element={<CreateDirectCost />} />
           <Route path='/CreateRevenueStream' element={<CreateRevenueStream />} />
           <Route path='/CashFlow' element={<CashFlow />} />

@@ -7,7 +7,9 @@
 p {
     margin-bottom: 0;
 }
-
+.inccs {
+    width: 20px !important;
+}
 .long {
     background-color: #128c7e;
 }
@@ -58,13 +60,66 @@ p {
         border: 1px solid #1c1e2136;
     }
 }
-.yearBox{
+
+.yearBox {
     display: flex;
     justify-content: space-between;
+
     .box {
         width: 50px;
         height: 30px;
         border: 1px solid rgba(0, 0, 0, 0.11);
+    }
+}
+
+.tax {
+    width: 90%;
+    margin: 0 auto;
+
+    .aboutTax {
+        background: #FFFFFF;
+        border: 1px solid #D2D2D3;
+        box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.04);
+        border-radius: 8px;
+        padding: 1rem;
+
+        .topNav {
+            display: flex;
+            justify-content: space-between;
+
+            .left {
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                span {
+                    border: 1px solid #D2D2D3;
+                    padding-left: 10px;
+                    padding-right: 10px;
+                    width: 10px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    border-radius: 100%;
+                }
+            }
+            .right{
+                button{
+                    border: 1px solid #D2D2D3;
+                }
+            }
+        }
+        .content{
+            width: 95%;
+            margin: 0 auto;
+            p{
+                margin-top: 1rem;
+                font-family: 'Roboto';
+                    font-size: 16px;
+                    line-height: 163.15%;
+                
+                    color: #1c1e217e;
+            }
+        }
     }
 }
 
