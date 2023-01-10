@@ -32,7 +32,8 @@ const UserNavbar = () => {
                             <li><a class="dropdown-item" href="#">Something else here</a></li>
                         </ul>
                     </span>
-                    <img src={settings} alt="" />
+                    <Link to='/AccountingSettings'><img src={settings} alt="" /></Link>
+                    
                     <img src={phone} alt="" />
                     <img src={ques} alt="" />
                     <img src={userprofile} alt="" />

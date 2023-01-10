@@ -125,6 +125,13 @@ import SetTaxRate from "./Finanicial/SetTaxRate";
 import CreateDividend from './Finanicial/CreateDividend';
 import CreateLoan from "./Finanicial/CreateLoan";
 import CreateInvestment from './Finanicial/CreateInvestment';
+import AccountingSettings from "./settings/AccountingSettings";
+import BillsSettings from "./settings/BillsSettings";
+import GeneralSettings from "./settings/GeneralSettings";
+import ItemsInventorySettings from "./settings/ItemsInventorySettings";
+import PaymentsSettinhs from "./settings/PaymentsSettinhs";
+import PayrollEmployees from "./settings/PayrollEmployees";
+import ReportsGraphs from "./settings/ReportsGraphs";
 const App = () => {
   return (
     <div>
@@ -133,6 +140,13 @@ const App = () => {
           {/* <Route path='/post' element={<SinglePage />} />
           <Route path='/contact' element={<ContactUsPage />} />
          */}
+          <Route path='/ReportsGraphs' element={<ReportsGraphs />} />
+          <Route path='/PayrollEmployees' element={<PayrollEmployees />} />
+          <Route path='/PaymentsSettings' element={<PaymentsSettinhs />} />
+          <Route path='/ItemsInventorySettings' element={<ItemsInventorySettings />} />
+          <Route path='/GeneralSettings' element={<GeneralSettings />} />
+          <Route path='/BillsSettings' element={<BillsSettings />} />
+          <Route path='/AccountingSettings' element={<AccountingSettings />} />
           <Route path='/CreateInvestment' element={<CreateInvestment />} />
           <Route path='/CreateLoan' element={<CreateLoan />} />
           <Route path='/CreateDividend' element={<CreateDividend />} />

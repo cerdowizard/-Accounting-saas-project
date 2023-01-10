@@ -5,8 +5,6 @@ import { Link } from "react-router-dom";
 const CreateInvestment = () => {
     const [isVisible, setIsVisible] = useState(false);
     const [isChecked, setIsChecked] = useState(false);
-    const [isBillabled, setIsBillabled] = useState(false);
-    const [isRecurring, setIsRecurring] = useState(false);
     const [isRecurringCharges, setRecurringCharges] = useState(false);
     const [isrevenueStream, setRevenueStream] = useState(false);
     function handleClick() {
@@ -15,12 +13,7 @@ const CreateInvestment = () => {
     function clicked() {
         setIsChecked(!isChecked);
     }
-    function Billable() {
-        setIsBillabled(!isBillabled);
-    }
-    function Recurring() {
-        setIsRecurring(!isRecurring)
-    }
+  
     function RecurringCharges() {
         setRecurringCharges(!isRecurringCharges)
         console.log('clicked');
